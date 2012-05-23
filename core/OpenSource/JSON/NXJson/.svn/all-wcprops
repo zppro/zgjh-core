@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/iPad/!svn/ver/10149/AirHello/Alpha/AirHello/AirHello/Utility/OpenSource/JSON/NXJson
+END
+NXJsonSerializer.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/iPad/!svn/ver/10149/AirHello/Alpha/AirHello/AirHello/Utility/OpenSource/JSON/NXJson/NXJsonSerializer.h
+END
+NSError+Extensions.m
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/iPad/!svn/ver/10149/AirHello/Alpha/AirHello/AirHello/Utility/OpenSource/JSON/NXJson/NSError+Extensions.m
+END
+NXDebug.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/iPad/!svn/ver/10149/AirHello/Alpha/AirHello/AirHello/Utility/OpenSource/JSON/NXJson/NXDebug.h
+END
+NXJsonParser.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/iPad/!svn/ver/10149/AirHello/Alpha/AirHello/AirHello/Utility/OpenSource/JSON/NXJson/NXJsonParser.h
+END
+NXSerializable.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/iPad/!svn/ver/10149/AirHello/Alpha/AirHello/AirHello/Utility/OpenSource/JSON/NXJson/NXSerializable.h
+END
+NXJsonSerializer.m
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/iPad/!svn/ver/10149/AirHello/Alpha/AirHello/AirHello/Utility/OpenSource/JSON/NXJson/NXJsonSerializer.m
+END
+NXDebug.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/iPad/!svn/ver/10149/AirHello/Alpha/AirHello/AirHello/Utility/OpenSource/JSON/NXJson/NXDebug.m
+END
+NXJsonParser.m
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/iPad/!svn/ver/10149/AirHello/Alpha/AirHello/AirHello/Utility/OpenSource/JSON/NXJson/NXJsonParser.m
+END
+NSError+Extensions.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/iPad/!svn/ver/10149/AirHello/Alpha/AirHello/AirHello/Utility/OpenSource/JSON/NXJson/NSError+Extensions.h
+END
