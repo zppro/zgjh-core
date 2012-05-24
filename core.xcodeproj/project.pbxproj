@@ -62,8 +62,8 @@
 		ACD3DD54156BCA3100D299B2 /* UIView+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD3DD1D156BCA3100D299B2 /* UIView+BlocksKit.m */; };
 		ACD3DD55156BCA3100D299B2 /* UIWebView+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD3DD1E156BCA3100D299B2 /* UIWebView+BlocksKit.h */; };
 		ACD3DD56156BCA3100D299B2 /* UIWebView+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD3DD1F156BCA3100D299B2 /* UIWebView+BlocksKit.m */; };
+		ACD3DDB6156E03FC00D299B2 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD3DDB5156E03FC00D299B2 /* core.h */; };
 		ACDDF37E1531BFE400011F06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDDF37D1531BFE400011F06 /* Foundation.framework */; };
-		ACDDF3841531BFE400011F06 /* core.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDDF3831531BFE400011F06 /* core.m */; };
 		ACDDF3931531C43600011F06 /* UIView+Motion.h in Headers */ = {isa = PBXBuildFile; fileRef = ACDDF38D1531C43600011F06 /* UIView+Motion.h */; };
 		ACDDF3941531C43600011F06 /* UIView+Motion.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDDF38E1531C43600011F06 /* UIView+Motion.m */; };
 		ACDDF3951531C43600011F06 /* UIView+Positioning.h in Headers */ = {isa = PBXBuildFile; fileRef = ACDDF38F1531C43600011F06 /* UIView+Positioning.h */; };
@@ -159,11 +159,10 @@
 		ACD3DD1D156BCA3100D299B2 /* UIView+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BlocksKit.m"; sourceTree = "<group>"; };
 		ACD3DD1E156BCA3100D299B2 /* UIWebView+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+BlocksKit.h"; sourceTree = "<group>"; };
 		ACD3DD1F156BCA3100D299B2 /* UIWebView+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+BlocksKit.m"; sourceTree = "<group>"; };
+		ACD3DDB5156E03FC00D299B2 /* core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
 		ACDDF37A1531BFE400011F06 /* libcore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACDDF37D1531BFE400011F06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ACDDF3811531BFE400011F06 /* core-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "core-Prefix.pch"; sourceTree = "<group>"; };
-		ACDDF3821531BFE400011F06 /* core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
-		ACDDF3831531BFE400011F06 /* core.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = core.m; sourceTree = "<group>"; };
 		ACDDF38D1531C43600011F06 /* UIView+Motion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Motion.h"; path = "Catalog/UIView/UIView+Motion.h"; sourceTree = "<group>"; };
 		ACDDF38E1531C43600011F06 /* UIView+Motion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Motion.m"; path = "Catalog/UIView/UIView+Motion.m"; sourceTree = "<group>"; };
 		ACDDF38F1531C43600011F06 /* UIView+Positioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Positioning.h"; path = "Catalog/UIView/UIView+Positioning.h"; sourceTree = "<group>"; };
@@ -328,9 +327,8 @@
 				ACDDF3BF1531D79D00011F06 /* OpenSoucre */,
 				ACDDF38B1531C1B700011F06 /* Utilities */,
 				ACDDF38A1531C03200011F06 /* Catalog */,
-				ACDDF3821531BFE400011F06 /* core.h */,
-				ACDDF3831531BFE400011F06 /* core.m */,
 				ACDDF3801531BFE400011F06 /* Supporting Files */,
+				ACD3DDB5156E03FC00D299B2 /* core.h */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -500,6 +498,7 @@
 				ACD3DD51156BCA3100D299B2 /* UIGestureRecognizer+BlocksKit.h in Headers */,
 				ACD3DD53156BCA3100D299B2 /* UIView+BlocksKit.h in Headers */,
 				ACD3DD55156BCA3100D299B2 /* UIWebView+BlocksKit.h in Headers */,
+				ACD3DDB6156E03FC00D299B2 /* core.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,7 +552,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACDDF3841531BFE400011F06 /* core.m in Sources */,
 				ACDDF3941531C43600011F06 /* UIView+Motion.m in Sources */,
 				ACDDF3961531C43600011F06 /* UIView+Positioning.m in Sources */,
 				ACDDF3981531C43600011F06 /* UIView+Size.m in Sources */,

@@ -2,12 +2,13 @@
 //  core.h
 //  core
 //
-//  Created by 钟 平 on 12-4-8.
+//  Created by 钟 平 on 12-5-24.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#ifndef core_core_h
+#define core_core_h
 
-@interface core : NSObject
+#import 
 
-@end
+#endif
