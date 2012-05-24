@@ -172,6 +172,9 @@ alpha:alphaValue]
 #define random1(x) (arc4random() % x)
 #define random2(x) ((arc4random() % x) + 1)
 
+//格式化
+#define center(x,y) ((x - y)/2.f)
+#define retina(x) (x/2.f)
 
 //初始化
 #define makeView(x,y,w,h) [[[UIView alloc] initWithFrame:CGRectMake(x, y, w, h)] autorelease]
