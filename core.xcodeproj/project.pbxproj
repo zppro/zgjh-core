@@ -63,6 +63,8 @@
 		ACD3DD55156BCA3100D299B2 /* UIWebView+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD3DD1E156BCA3100D299B2 /* UIWebView+BlocksKit.h */; };
 		ACD3DD56156BCA3100D299B2 /* UIWebView+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD3DD1F156BCA3100D299B2 /* UIWebView+BlocksKit.m */; };
 		ACD3DDB6156E03FC00D299B2 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD3DDB5156E03FC00D299B2 /* core.h */; };
+		ACD3DDB8156E05FC00D299B2 /* catalog.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD3DDB7156E05FC00D299B2 /* catalog.h */; };
+		ACD3DDBF156E095C00D299B2 /* utility.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD3DDBE156E095C00D299B2 /* utility.h */; };
 		ACDDF37E1531BFE400011F06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDDF37D1531BFE400011F06 /* Foundation.framework */; };
 		ACDDF3931531C43600011F06 /* UIView+Motion.h in Headers */ = {isa = PBXBuildFile; fileRef = ACDDF38D1531C43600011F06 /* UIView+Motion.h */; };
 		ACDDF3941531C43600011F06 /* UIView+Motion.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDDF38E1531C43600011F06 /* UIView+Motion.m */; };
@@ -160,6 +162,8 @@
 		ACD3DD1E156BCA3100D299B2 /* UIWebView+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+BlocksKit.h"; sourceTree = "<group>"; };
 		ACD3DD1F156BCA3100D299B2 /* UIWebView+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+BlocksKit.m"; sourceTree = "<group>"; };
 		ACD3DDB5156E03FC00D299B2 /* core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
+		ACD3DDB7156E05FC00D299B2 /* catalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = catalog.h; sourceTree = "<group>"; };
+		ACD3DDBE156E095C00D299B2 /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utility.h; path = Utilities/utility.h; sourceTree = "<group>"; };
 		ACDDF37A1531BFE400011F06 /* libcore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACDDF37D1531BFE400011F06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ACDDF3811531BFE400011F06 /* core-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "core-Prefix.pch"; sourceTree = "<group>"; };
@@ -348,6 +352,7 @@
 				ACDDF3A71531D4BB00011F06 /* NSBundle */,
 				ACDDF39E1531D48300011F06 /* NSData */,
 				ACDDF38C1531C40900011F06 /* UIView */,
+				ACD3DDB7156E05FC00D299B2 /* catalog.h */,
 			);
 			name = Catalog;
 			sourceTree = "<group>";
@@ -360,6 +365,7 @@
 				ACDDF3D41531D85300011F06 /* MACollectionUtilities.m */,
 				ACDDF3BB1531D71900011F06 /* MacroConstants.h */,
 				ACDDF3BC1531D71900011F06 /* MacroFunctions.h */,
+				ACD3DDBE156E095C00D299B2 /* utility.h */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -499,6 +505,8 @@
 				ACD3DD53156BCA3100D299B2 /* UIView+BlocksKit.h in Headers */,
 				ACD3DD55156BCA3100D299B2 /* UIWebView+BlocksKit.h in Headers */,
 				ACD3DDB6156E03FC00D299B2 /* core.h in Headers */,
+				ACD3DDB8156E05FC00D299B2 /* catalog.h in Headers */,
+				ACD3DDBF156E095C00D299B2 /* utility.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
