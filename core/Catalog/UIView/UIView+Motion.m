@@ -126,4 +126,19 @@
         self.center = newCenter;
     }completion:NULL];
 }
+
+
+- (UIView *) frontMe {
+    if(self.superview){
+        [self.superview bringSubviewToFront:self];
+    }
+    return self;
+}
+- (UIView *) behindMe {
+    if(self.superview){
+        [self.superview sendSubviewToBack:self];
+    }
+    return self;
+}
+
 @end

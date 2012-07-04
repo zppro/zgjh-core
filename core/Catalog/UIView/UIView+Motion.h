@@ -20,4 +20,9 @@
 - (void) moveMeTo:(CGPoint) newCenter withDuration:(float) duration;
 - (void) moveMeTo:(CGPoint) newCenter andScaleTo:(CGSize)newSize;
 - (void) moveMeTo:(CGPoint) newCenter andScaleTo:(CGSize)newSize withDuration:(float) duration;
+
+- (UIView *) frontMe;
+- (UIView *) behindMe;
+
+
 @end

@@ -9,6 +9,10 @@
 #ifndef core_utility_h
 #define core_utility_h
 
+#import "MBProgressHUD.h"
+#import "EGORefreshTableHeaderView.h"
 #import "MacroFunctions.h"
+#import "PHResourceManager.h"
+#import "SynthesizeSingleton.h"
 
 #endif

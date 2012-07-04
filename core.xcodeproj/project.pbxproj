@@ -65,6 +65,9 @@
 		ACD3DDB6156E03FC00D299B2 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD3DDB5156E03FC00D299B2 /* core.h */; };
 		ACD3DDB8156E05FC00D299B2 /* catalog.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD3DDB7156E05FC00D299B2 /* catalog.h */; };
 		ACD3DDBF156E095C00D299B2 /* utility.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD3DDBE156E095C00D299B2 /* utility.h */; };
+		ACD3DDC8156E180800D299B2 /* PHResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD3DDC7156E180800D299B2 /* PHResourceManager.m */; };
+		ACD3DDCB156E182B00D299B2 /* PHResourceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD3DDCA156E182B00D299B2 /* PHResourceManager.h */; };
+		ACD3DDCD156E185100D299B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD3DDCC156E185100D299B2 /* UIKit.framework */; };
 		ACDDF37E1531BFE400011F06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDDF37D1531BFE400011F06 /* Foundation.framework */; };
 		ACDDF3931531C43600011F06 /* UIView+Motion.h in Headers */ = {isa = PBXBuildFile; fileRef = ACDDF38D1531C43600011F06 /* UIView+Motion.h */; };
 		ACDDF3941531C43600011F06 /* UIView+Motion.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDDF38E1531C43600011F06 /* UIView+Motion.m */; };
@@ -103,6 +106,17 @@
 		ACDDF3DB1531D93900011F06 /* e0571CoreDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = ACDDF3D81531D93900011F06 /* e0571CoreDataManager.h */; };
 		ACDDF3DC1531D93900011F06 /* e0571CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDDF3D91531D93900011F06 /* e0571CoreDataManager.m */; };
 		ACDDF3DE1531D97B00011F06 /* SynthesizeSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = ACDDF3DD1531D97B00011F06 /* SynthesizeSingleton.h */; };
+		ACFBAD0115A47F2200B93F7B /* BaseController.h in Headers */ = {isa = PBXBuildFile; fileRef = ACFBACF915A47F2200B93F7B /* BaseController.h */; };
+		ACFBAD0215A47F2200B93F7B /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFBACFA15A47F2200B93F7B /* BaseController.m */; };
+		ACFBAD0315A47F2200B93F7B /* BaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = ACFBACFB15A47F2200B93F7B /* BaseModel.h */; };
+		ACFBAD0415A47F2200B93F7B /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFBACFC15A47F2200B93F7B /* BaseModel.m */; };
+		ACFBAD0715A47F2200B93F7B /* BaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = ACFBACFF15A47F2200B93F7B /* BaseView.h */; };
+		ACFBAD0815A47F2200B93F7B /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFBAD0015A47F2200B93F7B /* BaseView.m */; };
+		ACFBAD0D15A47F9900B93F7B /* EGORefreshTableHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = ACFBAD0915A47F9900B93F7B /* EGORefreshTableHeaderView.h */; };
+		ACFBAD0E15A47F9900B93F7B /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFBAD0A15A47F9900B93F7B /* EGORefreshTableHeaderView.m */; };
+		ACFBAD0F15A47F9900B93F7B /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = ACFBAD0B15A47F9900B93F7B /* MBProgressHUD.h */; };
+		ACFBAD1015A47F9900B93F7B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFBAD0C15A47F9900B93F7B /* MBProgressHUD.m */; };
+		ACFBAD1315A480F700B93F7B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFBAD1215A480F700B93F7B /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -164,6 +178,9 @@
 		ACD3DDB5156E03FC00D299B2 /* core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
 		ACD3DDB7156E05FC00D299B2 /* catalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = catalog.h; sourceTree = "<group>"; };
 		ACD3DDBE156E095C00D299B2 /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utility.h; path = Utilities/utility.h; sourceTree = "<group>"; };
+		ACD3DDC7156E180800D299B2 /* PHResourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHResourceManager.m; path = Utilities/PHResourceManager.m; sourceTree = "<group>"; };
+		ACD3DDCA156E182B00D299B2 /* PHResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHResourceManager.h; path = Utilities/PHResourceManager.h; sourceTree = "<group>"; };
+		ACD3DDCC156E185100D299B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ACDDF37A1531BFE400011F06 /* libcore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACDDF37D1531BFE400011F06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ACDDF3811531BFE400011F06 /* core-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "core-Prefix.pch"; sourceTree = "<group>"; };
@@ -205,6 +222,18 @@
 		ACDDF3D81531D93900011F06 /* e0571CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = e0571CoreDataManager.h; path = Catalog/NSManagedObject/e0571CoreDataManager.h; sourceTree = "<group>"; };
 		ACDDF3D91531D93900011F06 /* e0571CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = e0571CoreDataManager.m; path = Catalog/NSManagedObject/e0571CoreDataManager.m; sourceTree = "<group>"; };
 		ACDDF3DD1531D97B00011F06 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SynthesizeSingleton.h; path = Utilities/SynthesizeSingleton.h; sourceTree = "<group>"; };
+		ACFBACF915A47F2200B93F7B /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseController.h; path = Base/BaseController.h; sourceTree = "<group>"; };
+		ACFBACFA15A47F2200B93F7B /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseController.m; path = Base/BaseController.m; sourceTree = "<group>"; };
+		ACFBACFB15A47F2200B93F7B /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseModel.h; path = Base/BaseModel.h; sourceTree = "<group>"; };
+		ACFBACFC15A47F2200B93F7B /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseModel.m; path = Base/BaseModel.m; sourceTree = "<group>"; };
+		ACFBACFF15A47F2200B93F7B /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseView.h; path = Base/BaseView.h; sourceTree = "<group>"; };
+		ACFBAD0015A47F2200B93F7B /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseView.m; path = Base/BaseView.m; sourceTree = "<group>"; };
+		ACFBAD0915A47F9900B93F7B /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EGORefreshTableHeaderView.h; path = Utilities/EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		ACFBAD0A15A47F9900B93F7B /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EGORefreshTableHeaderView.m; path = Utilities/EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		ACFBAD0B15A47F9900B93F7B /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = Utilities/MBProgressHUD.h; sourceTree = "<group>"; };
+		ACFBAD0C15A47F9900B93F7B /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = Utilities/MBProgressHUD.m; sourceTree = "<group>"; };
+		ACFBAD1115A4807400B93F7B /* base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = base.h; path = Base/base.h; sourceTree = "<group>"; };
+		ACFBAD1215A480F700B93F7B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +241,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFBAD1315A480F700B93F7B /* QuartzCore.framework in Frameworks */,
+				ACD3DDCD156E185100D299B2 /* UIKit.framework in Frameworks */,
 				ACDDF3BA1531D61700011F06 /* CoreData.framework in Frameworks */,
 				ACDDF37E1531BFE400011F06 /* Foundation.framework in Frameworks */,
 			);
@@ -302,6 +333,7 @@
 		ACDDF36F1531BFE400011F06 = {
 			isa = PBXGroup;
 			children = (
+				ACFBAD1215A480F700B93F7B /* QuartzCore.framework */,
 				ACDDF37F1531BFE400011F06 /* core */,
 				ACDDF37C1531BFE400011F06 /* Frameworks */,
 				ACDDF37B1531BFE400011F06 /* Products */,
@@ -319,6 +351,7 @@
 		ACDDF37C1531BFE400011F06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ACD3DDCC156E185100D299B2 /* UIKit.framework */,
 				ACDDF3B91531D61700011F06 /* CoreData.framework */,
 				ACDDF37D1531BFE400011F06 /* Foundation.framework */,
 			);
@@ -328,6 +361,7 @@
 		ACDDF37F1531BFE400011F06 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				ACFBACF715A47EA900B93F7B /* Base */,
 				ACDDF3BF1531D79D00011F06 /* OpenSoucre */,
 				ACDDF38B1531C1B700011F06 /* Utilities */,
 				ACDDF38A1531C03200011F06 /* Catalog */,
@@ -360,6 +394,12 @@
 		ACDDF38B1531C1B700011F06 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				ACFBAD0915A47F9900B93F7B /* EGORefreshTableHeaderView.h */,
+				ACFBAD0A15A47F9900B93F7B /* EGORefreshTableHeaderView.m */,
+				ACFBAD0B15A47F9900B93F7B /* MBProgressHUD.h */,
+				ACFBAD0C15A47F9900B93F7B /* MBProgressHUD.m */,
+				ACD3DDCA156E182B00D299B2 /* PHResourceManager.h */,
+				ACD3DDC7156E180800D299B2 /* PHResourceManager.m */,
 				ACDDF3DD1531D97B00011F06 /* SynthesizeSingleton.h */,
 				ACDDF3D31531D85300011F06 /* MACollectionUtilities.h */,
 				ACDDF3D41531D85300011F06 /* MACollectionUtilities.m */,
@@ -447,6 +487,20 @@
 			name = DKPredicateBuilder;
 			sourceTree = "<group>";
 		};
+		ACFBACF715A47EA900B93F7B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				ACFBACF915A47F2200B93F7B /* BaseController.h */,
+				ACFBACFA15A47F2200B93F7B /* BaseController.m */,
+				ACFBACFB15A47F2200B93F7B /* BaseModel.h */,
+				ACFBACFC15A47F2200B93F7B /* BaseModel.m */,
+				ACFBACFF15A47F2200B93F7B /* BaseView.h */,
+				ACFBAD0015A47F2200B93F7B /* BaseView.m */,
+				ACFBAD1115A4807400B93F7B /* base.h */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -507,6 +561,12 @@
 				ACD3DDB6156E03FC00D299B2 /* core.h in Headers */,
 				ACD3DDB8156E05FC00D299B2 /* catalog.h in Headers */,
 				ACD3DDBF156E095C00D299B2 /* utility.h in Headers */,
+				ACD3DDCB156E182B00D299B2 /* PHResourceManager.h in Headers */,
+				ACFBAD0115A47F2200B93F7B /* BaseController.h in Headers */,
+				ACFBAD0315A47F2200B93F7B /* BaseModel.h in Headers */,
+				ACFBAD0715A47F2200B93F7B /* BaseView.h in Headers */,
+				ACFBAD0D15A47F9900B93F7B /* EGORefreshTableHeaderView.h in Headers */,
+				ACFBAD0F15A47F9900B93F7B /* MBProgressHUD.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +661,12 @@
 				ACD3DD52156BCA3100D299B2 /* UIGestureRecognizer+BlocksKit.m in Sources */,
 				ACD3DD54156BCA3100D299B2 /* UIView+BlocksKit.m in Sources */,
 				ACD3DD56156BCA3100D299B2 /* UIWebView+BlocksKit.m in Sources */,
+				ACD3DDC8156E180800D299B2 /* PHResourceManager.m in Sources */,
+				ACFBAD0215A47F2200B93F7B /* BaseController.m in Sources */,
+				ACFBAD0415A47F2200B93F7B /* BaseModel.m in Sources */,
+				ACFBAD0815A47F2200B93F7B /* BaseView.m in Sources */,
+				ACFBAD0E15A47F9900B93F7B /* EGORefreshTableHeaderView.m in Sources */,
+				ACFBAD1015A47F9900B93F7B /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

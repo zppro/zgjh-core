@@ -147,6 +147,11 @@ alpha:alphaValue]
 #define MF_DocumentFolder() [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
 #define MF_FileExists(fullPath) [[NSFileManager defaultManager] fileExistsAtPath:fullPath]
  
+//设置
+#define AppSettingInteger(key) [[NSUserDefaults standardUserDefaults] integerForKey:key]
+#define AppSetting(key) [[NSUserDefaults standardUserDefaults] valueForKey:key]
+
+
 //通知处理
 #define addN(_selector,_name)\
 ([[NSNotificationCenter defaultCenter] addObserver:self selector:_selector name:_name object:nil])
