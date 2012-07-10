@@ -6,8 +6,8 @@
 //  Copyright 2011年 codans. All rights reserved.
 //
 
-#ifndef CodansShareLibrary10_CCGGeometry_h
-#define CodansShareLibrary10_CCGGeometry_h
+#ifndef CCGGeometry_h
+#define CCGGeometry_h
 
 struct CCGPadding {
     CGFloat left;
