@@ -117,6 +117,14 @@
 		ACFBAD0F15A47F9900B93F7B /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = ACFBAD0B15A47F9900B93F7B /* MBProgressHUD.h */; };
 		ACFBAD1015A47F9900B93F7B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFBAD0C15A47F9900B93F7B /* MBProgressHUD.m */; };
 		ACFBAD1315A480F700B93F7B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFBAD1215A480F700B93F7B /* QuartzCore.framework */; };
+		ACFBAD3F15A7338A00B93F7B /* UIImage+Scale.h in Headers */ = {isa = PBXBuildFile; fileRef = ACFBAD3D15A7338A00B93F7B /* UIImage+Scale.h */; };
+		ACFBAD4015A7338A00B93F7B /* UIImage+Scale.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFBAD3E15A7338A00B93F7B /* UIImage+Scale.m */; };
+		ACFBAD4715A7347700B93F7B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFBAD4615A7347600B93F7B /* CoreFoundation.framework */; };
+		ACFBAD4B15A734D700B93F7B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFBAD4A15A734D700B93F7B /* CoreGraphics.framework */; };
+		ACFBAD4D15A734FC00B93F7B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFBAD4C15A734FC00B93F7B /* MobileCoreServices.framework */; };
+		ACFBAD4F15A7350D00B93F7B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFBAD4E15A7350C00B93F7B /* SystemConfiguration.framework */; };
+		ACFBAD5515A7BE6D00B93F7B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFBAD5415A7BE6D00B93F7B /* libz.dylib */; };
+		ACFBAD5715A7BE8900B93F7B /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFBAD5615A7BE8900B93F7B /* GameKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -234,6 +242,14 @@
 		ACFBAD0C15A47F9900B93F7B /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = Utilities/MBProgressHUD.m; sourceTree = "<group>"; };
 		ACFBAD1115A4807400B93F7B /* base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = base.h; path = Base/base.h; sourceTree = "<group>"; };
 		ACFBAD1215A480F700B93F7B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ACFBAD3D15A7338A00B93F7B /* UIImage+Scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Scale.h"; path = "Catalog/UIImage/UIImage+Scale.h"; sourceTree = "<group>"; };
+		ACFBAD3E15A7338A00B93F7B /* UIImage+Scale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Scale.m"; path = "Catalog/UIImage/UIImage+Scale.m"; sourceTree = "<group>"; };
+		ACFBAD4615A7347600B93F7B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		ACFBAD4A15A734D700B93F7B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ACFBAD4C15A734FC00B93F7B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		ACFBAD4E15A7350C00B93F7B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		ACFBAD5415A7BE6D00B93F7B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		ACFBAD5615A7BE8900B93F7B /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +257,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFBAD5715A7BE8900B93F7B /* GameKit.framework in Frameworks */,
+				ACFBAD5515A7BE6D00B93F7B /* libz.dylib in Frameworks */,
+				ACFBAD4F15A7350D00B93F7B /* SystemConfiguration.framework in Frameworks */,
+				ACFBAD4D15A734FC00B93F7B /* MobileCoreServices.framework in Frameworks */,
+				ACFBAD4B15A734D700B93F7B /* CoreGraphics.framework in Frameworks */,
+				ACFBAD4715A7347700B93F7B /* CoreFoundation.framework in Frameworks */,
 				ACFBAD1315A480F700B93F7B /* QuartzCore.framework in Frameworks */,
 				ACD3DDCD156E185100D299B2 /* UIKit.framework in Frameworks */,
 				ACDDF3BA1531D61700011F06 /* CoreData.framework in Frameworks */,
@@ -333,7 +355,6 @@
 		ACDDF36F1531BFE400011F06 = {
 			isa = PBXGroup;
 			children = (
-				ACFBAD1215A480F700B93F7B /* QuartzCore.framework */,
 				ACDDF37F1531BFE400011F06 /* core */,
 				ACDDF37C1531BFE400011F06 /* Frameworks */,
 				ACDDF37B1531BFE400011F06 /* Products */,
@@ -351,6 +372,13 @@
 		ACDDF37C1531BFE400011F06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ACFBAD5415A7BE6D00B93F7B /* libz.dylib */,
+				ACFBAD5615A7BE8900B93F7B /* GameKit.framework */,
+				ACFBAD4E15A7350C00B93F7B /* SystemConfiguration.framework */,
+				ACFBAD4C15A734FC00B93F7B /* MobileCoreServices.framework */,
+				ACFBAD4A15A734D700B93F7B /* CoreGraphics.framework */,
+				ACFBAD4615A7347600B93F7B /* CoreFoundation.framework */,
+				ACFBAD1215A480F700B93F7B /* QuartzCore.framework */,
 				ACD3DDCC156E185100D299B2 /* UIKit.framework */,
 				ACDDF3B91531D61700011F06 /* CoreData.framework */,
 				ACDDF37D1531BFE400011F06 /* Foundation.framework */,
@@ -382,6 +410,7 @@
 		ACDDF38A1531C03200011F06 /* Catalog */ = {
 			isa = PBXGroup;
 			children = (
+				ACFBAD3C15A7336B00B93F7B /* UIImage */,
 				ACDDF3AC1531D51500011F06 /* NSManagedObject */,
 				ACDDF3A71531D4BB00011F06 /* NSBundle */,
 				ACDDF39E1531D48300011F06 /* NSData */,
@@ -501,6 +530,15 @@
 			name = Base;
 			sourceTree = "<group>";
 		};
+		ACFBAD3C15A7336B00B93F7B /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				ACFBAD3D15A7338A00B93F7B /* UIImage+Scale.h */,
+				ACFBAD3E15A7338A00B93F7B /* UIImage+Scale.m */,
+			);
+			name = UIImage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -567,6 +605,7 @@
 				ACFBAD0715A47F2200B93F7B /* BaseView.h in Headers */,
 				ACFBAD0D15A47F9900B93F7B /* EGORefreshTableHeaderView.h in Headers */,
 				ACFBAD0F15A47F9900B93F7B /* MBProgressHUD.h in Headers */,
+				ACFBAD3F15A7338A00B93F7B /* UIImage+Scale.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,6 +706,7 @@
 				ACFBAD0815A47F2200B93F7B /* BaseView.m in Sources */,
 				ACFBAD0E15A47F9900B93F7B /* EGORefreshTableHeaderView.m in Sources */,
 				ACFBAD1015A47F9900B93F7B /* MBProgressHUD.m in Sources */,
+				ACFBAD4015A7338A00B93F7B /* UIImage+Scale.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
