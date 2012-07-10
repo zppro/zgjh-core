@@ -125,6 +125,15 @@
 		ACFBAD4F15A7350D00B93F7B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFBAD4E15A7350C00B93F7B /* SystemConfiguration.framework */; };
 		ACFBAD5515A7BE6D00B93F7B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFBAD5415A7BE6D00B93F7B /* libz.dylib */; };
 		ACFBAD5715A7BE8900B93F7B /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFBAD5615A7BE8900B93F7B /* GameKit.framework */; };
+		ACFBADBA15AC71D900B93F7B /* CCGGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = ACFBADB315AC71D900B93F7B /* CCGGeometry.h */; };
+		ACFBADBB15AC71D900B93F7B /* Tile.h in Headers */ = {isa = PBXBuildFile; fileRef = ACFBADB415AC71D900B93F7B /* Tile.h */; };
+		ACFBADBC15AC71D900B93F7B /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFBADB515AC71D900B93F7B /* Tile.m */; };
+		ACFBADBD15AC71DA00B93F7B /* TileBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = ACFBADB615AC71D900B93F7B /* TileBlock.h */; };
+		ACFBADBE15AC71DA00B93F7B /* TileBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFBADB715AC71D900B93F7B /* TileBlock.m */; };
+		ACFBADBF15AC71DA00B93F7B /* TileWall.h in Headers */ = {isa = PBXBuildFile; fileRef = ACFBADB815AC71D900B93F7B /* TileWall.h */; };
+		ACFBADC015AC71DA00B93F7B /* TileWall.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFBADB915AC71D900B93F7B /* TileWall.m */; };
+		ACFBADC415AC720000B93F7B /* DDPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = ACFBADC215AC720000B93F7B /* DDPageControl.h */; };
+		ACFBADC515AC720000B93F7B /* DDPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFBADC315AC720000B93F7B /* DDPageControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
