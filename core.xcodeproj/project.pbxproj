@@ -259,6 +259,15 @@
 		ACFBAD4E15A7350C00B93F7B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		ACFBAD5415A7BE6D00B93F7B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		ACFBAD5615A7BE8900B93F7B /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		ACFBADB315AC71D900B93F7B /* CCGGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCGGeometry.h; path = OpenSource/MetroUI/CCGGeometry.h; sourceTree = "<group>"; };
+		ACFBADB415AC71D900B93F7B /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tile.h; path = OpenSource/MetroUI/Tile.h; sourceTree = "<group>"; };
+		ACFBADB515AC71D900B93F7B /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tile.m; path = OpenSource/MetroUI/Tile.m; sourceTree = "<group>"; };
+		ACFBADB615AC71D900B93F7B /* TileBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TileBlock.h; path = OpenSource/MetroUI/TileBlock.h; sourceTree = "<group>"; };
+		ACFBADB715AC71D900B93F7B /* TileBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TileBlock.m; path = OpenSource/MetroUI/TileBlock.m; sourceTree = "<group>"; };
+		ACFBADB815AC71D900B93F7B /* TileWall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TileWall.h; path = OpenSource/MetroUI/TileWall.h; sourceTree = "<group>"; };
+		ACFBADB915AC71D900B93F7B /* TileWall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TileWall.m; path = OpenSource/MetroUI/TileWall.m; sourceTree = "<group>"; };
+		ACFBADC215AC720000B93F7B /* DDPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDPageControl.h; path = OpenSource/DDPageControl/DDPageControl.h; sourceTree = "<group>"; };
+		ACFBADC315AC720000B93F7B /* DDPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDPageControl.m; path = OpenSource/DDPageControl/DDPageControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -503,6 +512,8 @@
 		ACDDF3BF1531D79D00011F06 /* OpenSoucre */ = {
 			isa = PBXGroup;
 			children = (
+				ACFBADC115AC71F700B93F7B /* DDPageControl */,
+				ACFBADB115AC719900B93F7B /* MetroUI */,
 				ACD3DCE6156BCA3100D299B2 /* JSON */,
 				ACD3DCF3156BCA3100D299B2 /* BlocksKit */,
 				ACDDF3C21531D7F000011F06 /* DKPredicateBuilder */,
@@ -546,6 +557,28 @@
 				ACFBAD3E15A7338A00B93F7B /* UIImage+Scale.m */,
 			);
 			name = UIImage;
+			sourceTree = "<group>";
+		};
+		ACFBADB115AC719900B93F7B /* MetroUI */ = {
+			isa = PBXGroup;
+			children = (
+				ACFBADB315AC71D900B93F7B /* CCGGeometry.h */,
+				ACFBADB515AC71D900B93F7B /* Tile.m */,
+				ACFBADB615AC71D900B93F7B /* TileBlock.h */,
+				ACFBADB715AC71D900B93F7B /* TileBlock.m */,
+				ACFBADB815AC71D900B93F7B /* TileWall.h */,
+				ACFBADB915AC71D900B93F7B /* TileWall.m */,
+			);
+			name = MetroUI;
+			sourceTree = "<group>";
+		};
+		ACFBADC115AC71F700B93F7B /* DDPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				ACFBADC215AC720000B93F7B /* DDPageControl.h */,
+				ACFBADC315AC720000B93F7B /* DDPageControl.m */,
+			);
+			name = DDPageControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -615,6 +648,11 @@
 				ACFBAD0D15A47F9900B93F7B /* EGORefreshTableHeaderView.h in Headers */,
 				ACFBAD0F15A47F9900B93F7B /* MBProgressHUD.h in Headers */,
 				ACFBAD3F15A7338A00B93F7B /* UIImage+Scale.h in Headers */,
+				ACFBADBA15AC71D900B93F7B /* CCGGeometry.h in Headers */,
+				ACFBADBB15AC71D900B93F7B /* Tile.h in Headers */,
+				ACFBADBD15AC71DA00B93F7B /* TileBlock.h in Headers */,
+				ACFBADBF15AC71DA00B93F7B /* TileWall.h in Headers */,
+				ACFBADC415AC720000B93F7B /* DDPageControl.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -716,6 +754,10 @@
 				ACFBAD0E15A47F9900B93F7B /* EGORefreshTableHeaderView.m in Sources */,
 				ACFBAD1015A47F9900B93F7B /* MBProgressHUD.m in Sources */,
 				ACFBAD4015A7338A00B93F7B /* UIImage+Scale.m in Sources */,
+				ACFBADBC15AC71D900B93F7B /* Tile.m in Sources */,
+				ACFBADBE15AC71DA00B93F7B /* TileBlock.m in Sources */,
+				ACFBADC015AC71DA00B93F7B /* TileWall.m in Sources */,
+				ACFBADC515AC720000B93F7B /* DDPageControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
