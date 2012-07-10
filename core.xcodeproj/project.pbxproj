@@ -563,6 +563,7 @@
 			isa = PBXGroup;
 			children = (
 				ACFBADB315AC71D900B93F7B /* CCGGeometry.h */,
+				ACFBADB415AC71D900B93F7B /* Tile.h */,
 				ACFBADB515AC71D900B93F7B /* Tile.m */,
 				ACFBADB615AC71D900B93F7B /* TileBlock.h */,
 				ACFBADB715AC71D900B93F7B /* TileBlock.m */,
