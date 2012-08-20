@@ -10,5 +10,7 @@
 #define core_catalog_h
 
 #import "CatalogOfUIView.h"
+#import "CatalogOfUIDevice.h"
+
 
 #endif

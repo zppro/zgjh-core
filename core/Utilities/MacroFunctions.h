@@ -52,7 +52,23 @@
 
 #define IS_IOS_5 SYSTEM_VERSION_LIKE(@"5.")
 
+#define IS_IPHONE ([UIDevice currentDevice].platformType == UIDevice1GiPod || [UIDevice currentDevice].platformType == UIDevice2GiPod || [UIDevice currentDevice].platformType == UIDevice3GiPod || [UIDevice currentDevice].platformType == UIDevice4GiPod || [UIDevice currentDevice].platformType == UIDeviceUnknowniPod)
+#define IS_IPHONE_1 ([UIDevice currentDevice].platformType == UIDevice1GiPhone)
+#define IS_IPHONE_3 ([UIDevice currentDevice].platformType == UIDevice3GiPhone)
+#define IS_IPHONE_3S ([UIDevice currentDevice].platformType == UIDevice3GSiPhone)
+#define IS_IPHONE_4 ([UIDevice currentDevice].platformType == UIDevice4iPhone)
+#define IS_IPHONE_4S ([UIDevice currentDevice].platformType == UIDevice4SiPhone)
 
+#define IS_IPAD ([UIDevice currentDevice].platformType == UIDevice1GiPad || [UIDevice currentDevice].platformType == UIDevice2GiPad || [UIDevice currentDevice].platformType == UIDevice3GiPad || [UIDevice currentDevice].platformType ==UIDeviceUnknowniPad)
+#define IS_IPAD_1 ([UIDevice currentDevice].platformType == UIDevice1GiPad)
+#define IS_IPAD_2 ([UIDevice currentDevice].platformType == UIDevice2GiPad)
+#define IS_IPAD_3 ([UIDevice currentDevice].platformType == UIDevice3GiPad)
+
+#define IS_IPOD ([UIDevice currentDevice].platformType == UIDevice1GiPod || [UIDevice currentDevice].platformType == UIDevice2GiPod || [UIDevice currentDevice].platformType == UIDevice3GiPod || [UIDevice currentDevice].platformType == UIDevice4GiPod || [UIDevice currentDevice].platformType == UIDeviceUnknowniPod)
+#define IS_IPOD_1 ([UIDevice currentDevice].platformType == UIDevice1GiPod)
+#define IS_IPOD_2 ([UIDevice currentDevice].platformType == UIDevice2GiPod)
+#define IS_IPOD_3 ([UIDevice currentDevice].platformType == UIDevice3GiPod)
+#define IS_IPOD_4 ([UIDevice currentDevice].platformType == UIDevice4GiPod)
 
 //角度与弧度
 #define DEGREES_TO_RADIANS(d) (d * M_PI / 180)

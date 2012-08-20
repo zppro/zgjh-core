@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC08B21715DF27F10090EEDD /* IpAddressC.h in Headers */ = {isa = PBXBuildFile; fileRef = AC08B20715DF27F10090EEDD /* IpAddressC.h */; };
+		AC08B21815DF27F10090EEDD /* IpAddressC.m in Sources */ = {isa = PBXBuildFile; fileRef = AC08B20815DF27F10090EEDD /* IpAddressC.m */; };
+		AC08B21915DF27F10090EEDD /* UIDevice-Hardware.h in Headers */ = {isa = PBXBuildFile; fileRef = AC08B20915DF27F10090EEDD /* UIDevice-Hardware.h */; };
+		AC08B21A15DF27F10090EEDD /* UIDevice-Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = AC08B20A15DF27F10090EEDD /* UIDevice-Hardware.m */; };
+		AC08B21B15DF27F10090EEDD /* UIDevice-IOKitExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = AC08B20B15DF27F10090EEDD /* UIDevice-IOKitExtensions.h */; };
+		AC08B21C15DF27F10090EEDD /* UIDevice-IOKitExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AC08B20C15DF27F10090EEDD /* UIDevice-IOKitExtensions.m */; };
+		AC08B21D15DF27F10090EEDD /* UIDevice-Orientation.h in Headers */ = {isa = PBXBuildFile; fileRef = AC08B20D15DF27F10090EEDD /* UIDevice-Orientation.h */; };
+		AC08B21E15DF27F10090EEDD /* UIDevice-Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = AC08B20E15DF27F10090EEDD /* UIDevice-Orientation.m */; };
+		AC08B21F15DF27F10090EEDD /* UIDevice-Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = AC08B20F15DF27F10090EEDD /* UIDevice-Reachability.h */; };
+		AC08B22015DF27F10090EEDD /* UIDevice-Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AC08B21015DF27F10090EEDD /* UIDevice-Reachability.m */; };
+		AC08B22115DF27F10090EEDD /* UIDevice+IdentifierAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = AC08B21115DF27F10090EEDD /* UIDevice+IdentifierAddition.h */; };
+		AC08B22215DF27F10090EEDD /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = AC08B21215DF27F10090EEDD /* UIDevice+IdentifierAddition.m */; };
+		AC08B22315DF27F10090EEDD /* UIDevice+serialNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = AC08B21315DF27F10090EEDD /* UIDevice+serialNumber.h */; };
+		AC08B22415DF27F10090EEDD /* UIDevice+serialNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = AC08B21415DF27F10090EEDD /* UIDevice+serialNumber.m */; };
+		AC08B22515DF27F10090EEDD /* wwanconnect.c in Sources */ = {isa = PBXBuildFile; fileRef = AC08B21515DF27F10090EEDD /* wwanconnect.c */; };
+		AC08B22615DF27F10090EEDD /* wwanconnect.h in Headers */ = {isa = PBXBuildFile; fileRef = AC08B21615DF27F10090EEDD /* wwanconnect.h */; };
+		AC08B22915DF282A0090EEDD /* UIDevice+ZP.m in Sources */ = {isa = PBXBuildFile; fileRef = AC08B22715DF282A0090EEDD /* UIDevice+ZP.m */; };
+		AC08B22A15DF282A0090EEDD /* UIDevice+ZP.h in Headers */ = {isa = PBXBuildFile; fileRef = AC08B22815DF282A0090EEDD /* UIDevice+ZP.h */; };
+		AC08B22E15DF29670090EEDD /* NSString+MD5Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = AC08B22C15DF29670090EEDD /* NSString+MD5Addition.h */; };
+		AC08B22F15DF29670090EEDD /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = AC08B22D15DF29670090EEDD /* NSString+MD5Addition.m */; };
 		ACD3DD20156BCA3100D299B2 /* NSObject+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD3DCE7156BCA3100D299B2 /* NSObject+JSON.h */; };
 		ACD3DD21156BCA3100D299B2 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD3DCE8156BCA3100D299B2 /* NSObject+JSON.m */; };
 		ACD3DD22156BCA3100D299B2 /* NSError+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD3DCEA156BCA3100D299B2 /* NSError+Extensions.h */; };
@@ -146,6 +166,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC08B20715DF27F10090EEDD /* IpAddressC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IpAddressC.h; path = Catalog/UIDevice/IpAddressC.h; sourceTree = "<group>"; };
+		AC08B20815DF27F10090EEDD /* IpAddressC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IpAddressC.m; path = Catalog/UIDevice/IpAddressC.m; sourceTree = "<group>"; };
+		AC08B20915DF27F10090EEDD /* UIDevice-Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice-Hardware.h"; path = "Catalog/UIDevice/UIDevice-Hardware.h"; sourceTree = "<group>"; };
+		AC08B20A15DF27F10090EEDD /* UIDevice-Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice-Hardware.m"; path = "Catalog/UIDevice/UIDevice-Hardware.m"; sourceTree = "<group>"; };
+		AC08B20B15DF27F10090EEDD /* UIDevice-IOKitExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice-IOKitExtensions.h"; path = "Catalog/UIDevice/UIDevice-IOKitExtensions.h"; sourceTree = "<group>"; };
+		AC08B20C15DF27F10090EEDD /* UIDevice-IOKitExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice-IOKitExtensions.m"; path = "Catalog/UIDevice/UIDevice-IOKitExtensions.m"; sourceTree = "<group>"; };
+		AC08B20D15DF27F10090EEDD /* UIDevice-Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice-Orientation.h"; path = "Catalog/UIDevice/UIDevice-Orientation.h"; sourceTree = "<group>"; };
+		AC08B20E15DF27F10090EEDD /* UIDevice-Orientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice-Orientation.m"; path = "Catalog/UIDevice/UIDevice-Orientation.m"; sourceTree = "<group>"; };
+		AC08B20F15DF27F10090EEDD /* UIDevice-Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice-Reachability.h"; path = "Catalog/UIDevice/UIDevice-Reachability.h"; sourceTree = "<group>"; };
+		AC08B21015DF27F10090EEDD /* UIDevice-Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice-Reachability.m"; path = "Catalog/UIDevice/UIDevice-Reachability.m"; sourceTree = "<group>"; };
+		AC08B21115DF27F10090EEDD /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice+IdentifierAddition.h"; path = "Catalog/UIDevice/UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
+		AC08B21215DF27F10090EEDD /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+IdentifierAddition.m"; path = "Catalog/UIDevice/UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
+		AC08B21315DF27F10090EEDD /* UIDevice+serialNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice+serialNumber.h"; path = "Catalog/UIDevice/UIDevice+serialNumber.h"; sourceTree = "<group>"; };
+		AC08B21415DF27F10090EEDD /* UIDevice+serialNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+serialNumber.m"; path = "Catalog/UIDevice/UIDevice+serialNumber.m"; sourceTree = "<group>"; };
+		AC08B21515DF27F10090EEDD /* wwanconnect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = wwanconnect.c; path = Catalog/UIDevice/wwanconnect.c; sourceTree = "<group>"; };
+		AC08B21615DF27F10090EEDD /* wwanconnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wwanconnect.h; path = Catalog/UIDevice/wwanconnect.h; sourceTree = "<group>"; };
+		AC08B22715DF282A0090EEDD /* UIDevice+ZP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+ZP.m"; path = "Catalog/UIDevice/UIDevice+ZP.m"; sourceTree = "<group>"; };
+		AC08B22815DF282A0090EEDD /* UIDevice+ZP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice+ZP.h"; path = "Catalog/UIDevice/UIDevice+ZP.h"; sourceTree = "<group>"; };
+		AC08B22C15DF29670090EEDD /* NSString+MD5Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+MD5Addition.h"; path = "Catalog/NSString/NSString+MD5Addition.h"; sourceTree = "<group>"; };
+		AC08B22D15DF29670090EEDD /* NSString+MD5Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+MD5Addition.m"; path = "Catalog/NSString/NSString+MD5Addition.m"; sourceTree = "<group>"; };
+		AC08B23015DF2A710090EEDD /* CatalogOfUIDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CatalogOfUIDevice.h; path = Catalog/UIDevice/CatalogOfUIDevice.h; sourceTree = "<group>"; };
 		ACD3DCE7156BCA3100D299B2 /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
 		ACD3DCE8156BCA3100D299B2 /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSON.m"; sourceTree = "<group>"; };
 		ACD3DCEA156BCA3100D299B2 /* NSError+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Extensions.h"; sourceTree = "<group>"; };
@@ -310,6 +351,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC08B20515DF27430090EEDD /* UIDevice */ = {
+			isa = PBXGroup;
+			children = (
+				AC08B22815DF282A0090EEDD /* UIDevice+ZP.h */,
+				AC08B22715DF282A0090EEDD /* UIDevice+ZP.m */,
+				AC08B20715DF27F10090EEDD /* IpAddressC.h */,
+				AC08B20815DF27F10090EEDD /* IpAddressC.m */,
+				AC08B20915DF27F10090EEDD /* UIDevice-Hardware.h */,
+				AC08B20A15DF27F10090EEDD /* UIDevice-Hardware.m */,
+				AC08B20B15DF27F10090EEDD /* UIDevice-IOKitExtensions.h */,
+				AC08B20C15DF27F10090EEDD /* UIDevice-IOKitExtensions.m */,
+				AC08B20D15DF27F10090EEDD /* UIDevice-Orientation.h */,
+				AC08B20E15DF27F10090EEDD /* UIDevice-Orientation.m */,
+				AC08B20F15DF27F10090EEDD /* UIDevice-Reachability.h */,
+				AC08B21015DF27F10090EEDD /* UIDevice-Reachability.m */,
+				AC08B21115DF27F10090EEDD /* UIDevice+IdentifierAddition.h */,
+				AC08B21215DF27F10090EEDD /* UIDevice+IdentifierAddition.m */,
+				AC08B21315DF27F10090EEDD /* UIDevice+serialNumber.h */,
+				AC08B21415DF27F10090EEDD /* UIDevice+serialNumber.m */,
+				AC08B21515DF27F10090EEDD /* wwanconnect.c */,
+				AC08B21615DF27F10090EEDD /* wwanconnect.h */,
+				AC08B23015DF2A710090EEDD /* CatalogOfUIDevice.h */,
+			);
+			name = UIDevice;
+			sourceTree = "<group>";
+		};
+		AC08B22B15DF28E20090EEDD /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				AC08B22C15DF29670090EEDD /* NSString+MD5Addition.h */,
+				AC08B22D15DF29670090EEDD /* NSString+MD5Addition.m */,
+			);
+			name = NSString;
+			sourceTree = "<group>";
+		};
 		ACD3DCE6156BCA3100D299B2 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
@@ -451,10 +527,12 @@
 		ACDDF38A1531C03200011F06 /* Catalog */ = {
 			isa = PBXGroup;
 			children = (
-				ACFBAD3C15A7336B00B93F7B /* UIImage */,
-				ACDDF3AC1531D51500011F06 /* NSManagedObject */,
 				ACDDF3A71531D4BB00011F06 /* NSBundle */,
 				ACDDF39E1531D48300011F06 /* NSData */,
+				ACDDF3AC1531D51500011F06 /* NSManagedObject */,
+				AC08B22B15DF28E20090EEDD /* NSString */,
+				AC08B20515DF27430090EEDD /* UIDevice */,
+				ACFBAD3C15A7336B00B93F7B /* UIImage */,
 				ACDDF38C1531C40900011F06 /* UIView */,
 				ACD3DDB7156E05FC00D299B2 /* catalog.h */,
 			);
@@ -696,6 +774,16 @@
 				ACFBADFB15AC781400B93F7B /* SBJsonBase.h in Headers */,
 				ACFBADFD15AC781400B93F7B /* SBJsonParser.h in Headers */,
 				ACFBADFF15AC781400B93F7B /* SBJsonWriter.h in Headers */,
+				AC08B21715DF27F10090EEDD /* IpAddressC.h in Headers */,
+				AC08B21915DF27F10090EEDD /* UIDevice-Hardware.h in Headers */,
+				AC08B21B15DF27F10090EEDD /* UIDevice-IOKitExtensions.h in Headers */,
+				AC08B21D15DF27F10090EEDD /* UIDevice-Orientation.h in Headers */,
+				AC08B21F15DF27F10090EEDD /* UIDevice-Reachability.h in Headers */,
+				AC08B22115DF27F10090EEDD /* UIDevice+IdentifierAddition.h in Headers */,
+				AC08B22315DF27F10090EEDD /* UIDevice+serialNumber.h in Headers */,
+				AC08B22615DF27F10090EEDD /* wwanconnect.h in Headers */,
+				AC08B22A15DF282A0090EEDD /* UIDevice+ZP.h in Headers */,
+				AC08B22E15DF29670090EEDD /* NSString+MD5Addition.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -805,6 +893,16 @@
 				ACFBADFC15AC781400B93F7B /* SBJsonBase.m in Sources */,
 				ACFBADFE15AC781400B93F7B /* SBJsonParser.m in Sources */,
 				ACFBAE0015AC781400B93F7B /* SBJsonWriter.m in Sources */,
+				AC08B21815DF27F10090EEDD /* IpAddressC.m in Sources */,
+				AC08B21A15DF27F10090EEDD /* UIDevice-Hardware.m in Sources */,
+				AC08B21C15DF27F10090EEDD /* UIDevice-IOKitExtensions.m in Sources */,
+				AC08B21E15DF27F10090EEDD /* UIDevice-Orientation.m in Sources */,
+				AC08B22015DF27F10090EEDD /* UIDevice-Reachability.m in Sources */,
+				AC08B22215DF27F10090EEDD /* UIDevice+IdentifierAddition.m in Sources */,
+				AC08B22415DF27F10090EEDD /* UIDevice+serialNumber.m in Sources */,
+				AC08B22515DF27F10090EEDD /* wwanconnect.c in Sources */,
+				AC08B22915DF282A0090EEDD /* UIDevice+ZP.m in Sources */,
+				AC08B22F15DF29670090EEDD /* NSString+MD5Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
