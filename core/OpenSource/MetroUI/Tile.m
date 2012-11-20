@@ -287,7 +287,7 @@
 
 - (void)tapTile:(UIGestureRecognizer *)gestureRecognizer {
     [self scaleMe2D];
-    [UIView animateWithDuration:0.07 animations:^{
+    [UIView animateWithDuration:0.14 animations:^{
         self.backgroundColor = self.hightLightColor;
     }completion:^(BOOL finished) {
         if (finished) {
