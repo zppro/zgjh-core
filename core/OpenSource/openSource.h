@@ -19,8 +19,6 @@
 #import "DDPageControl.h"
 
 #import "BlocksKit.h"
-
-#import "DKArrayQuery.h"
-
+#import "SkinManager.h"
 
 #endif

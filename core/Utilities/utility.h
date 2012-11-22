@@ -15,4 +15,8 @@
 #import "PHResourceManager.h"
 #import "SynthesizeSingleton.h"
 
+#import "SkinElement.h"
+#import "SkinContainer.h"
+#import "Skin.h"
+
 #endif

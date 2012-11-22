@@ -27,6 +27,21 @@
 		AC08B22A15DF282A0090EEDD /* UIDevice+ZP.h in Headers */ = {isa = PBXBuildFile; fileRef = AC08B22815DF282A0090EEDD /* UIDevice+ZP.h */; };
 		AC08B22E15DF29670090EEDD /* NSString+MD5Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = AC08B22C15DF29670090EEDD /* NSString+MD5Addition.h */; };
 		AC08B22F15DF29670090EEDD /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = AC08B22D15DF29670090EEDD /* NSString+MD5Addition.m */; };
+		AC15B0B9165BC8F200E856E4 /* Skin.h in Headers */ = {isa = PBXBuildFile; fileRef = AC15B0B1165BC8F200E856E4 /* Skin.h */; };
+		AC15B0BA165BC8F200E856E4 /* Skin.m in Sources */ = {isa = PBXBuildFile; fileRef = AC15B0B2165BC8F200E856E4 /* Skin.m */; };
+		AC15B0BB165BC8F200E856E4 /* SkinContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = AC15B0B3165BC8F200E856E4 /* SkinContainer.h */; };
+		AC15B0BC165BC8F200E856E4 /* SkinContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = AC15B0B4165BC8F200E856E4 /* SkinContainer.m */; };
+		AC15B0BD165BC8F200E856E4 /* SkinElement.h in Headers */ = {isa = PBXBuildFile; fileRef = AC15B0B5165BC8F200E856E4 /* SkinElement.h */; };
+		AC15B0BE165BC8F200E856E4 /* SkinElement.m in Sources */ = {isa = PBXBuildFile; fileRef = AC15B0B6165BC8F200E856E4 /* SkinElement.m */; };
+		AC15B0BF165BC8F200E856E4 /* SkinManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AC15B0B7165BC8F200E856E4 /* SkinManager.h */; };
+		AC15B0C0165BC8F200E856E4 /* SkinManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AC15B0B8165BC8F200E856E4 /* SkinManager.m */; };
+		AC15B0C8165BCC5A00E856E4 /* EnumStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = AC15B0C6165BCC5A00E856E4 /* EnumStrings.h */; };
+		AC15B0C9165BCC5A00E856E4 /* EnumStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = AC15B0C7165BCC5A00E856E4 /* EnumStrings.m */; };
+		AC15B0CF165BCE3E00E856E4 /* NSArray+ArrayQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = AC15B0CB165BCE3E00E856E4 /* NSArray+ArrayQuery.h */; };
+		AC15B0D0165BCE3E00E856E4 /* NSArray+ArrayQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = AC15B0CC165BCE3E00E856E4 /* NSArray+ArrayQuery.m */; };
+		AC15B0D1165BCE3E00E856E4 /* NSArray+DeepCopy.h in Headers */ = {isa = PBXBuildFile; fileRef = AC15B0CD165BCE3E00E856E4 /* NSArray+DeepCopy.h */; };
+		AC15B0D2165BCE3E00E856E4 /* NSArray+DeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC15B0CE165BCE3E00E856E4 /* NSArray+DeepCopy.m */; };
+		AC15B0E2165BD59600E856E4 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AC15B0E1165BD59600E856E4 /* libxml2.dylib */; };
 		ACD3DD20156BCA3100D299B2 /* NSObject+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD3DCE7156BCA3100D299B2 /* NSObject+JSON.h */; };
 		ACD3DD21156BCA3100D299B2 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD3DCE8156BCA3100D299B2 /* NSObject+JSON.m */; };
 		ACD3DD22156BCA3100D299B2 /* NSError+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD3DCEA156BCA3100D299B2 /* NSError+Extensions.h */; };
@@ -187,6 +202,21 @@
 		AC08B22C15DF29670090EEDD /* NSString+MD5Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+MD5Addition.h"; path = "Catalog/NSString/NSString+MD5Addition.h"; sourceTree = "<group>"; };
 		AC08B22D15DF29670090EEDD /* NSString+MD5Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+MD5Addition.m"; path = "Catalog/NSString/NSString+MD5Addition.m"; sourceTree = "<group>"; };
 		AC08B23015DF2A710090EEDD /* CatalogOfUIDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CatalogOfUIDevice.h; path = Catalog/UIDevice/CatalogOfUIDevice.h; sourceTree = "<group>"; };
+		AC15B0B1165BC8F200E856E4 /* Skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Skin.h; path = OpenSource/Skin/Skin.h; sourceTree = "<group>"; };
+		AC15B0B2165BC8F200E856E4 /* Skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Skin.m; path = OpenSource/Skin/Skin.m; sourceTree = "<group>"; };
+		AC15B0B3165BC8F200E856E4 /* SkinContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SkinContainer.h; path = OpenSource/Skin/SkinContainer.h; sourceTree = "<group>"; };
+		AC15B0B4165BC8F200E856E4 /* SkinContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SkinContainer.m; path = OpenSource/Skin/SkinContainer.m; sourceTree = "<group>"; };
+		AC15B0B5165BC8F200E856E4 /* SkinElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SkinElement.h; path = OpenSource/Skin/SkinElement.h; sourceTree = "<group>"; };
+		AC15B0B6165BC8F200E856E4 /* SkinElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SkinElement.m; path = OpenSource/Skin/SkinElement.m; sourceTree = "<group>"; };
+		AC15B0B7165BC8F200E856E4 /* SkinManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SkinManager.h; path = OpenSource/Skin/SkinManager.h; sourceTree = "<group>"; };
+		AC15B0B8165BC8F200E856E4 /* SkinManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SkinManager.m; path = OpenSource/Skin/SkinManager.m; sourceTree = "<group>"; };
+		AC15B0C6165BCC5A00E856E4 /* EnumStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EnumStrings.h; path = Utilities/EnumStrings.h; sourceTree = "<group>"; };
+		AC15B0C7165BCC5A00E856E4 /* EnumStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EnumStrings.m; path = Utilities/EnumStrings.m; sourceTree = "<group>"; };
+		AC15B0CB165BCE3E00E856E4 /* NSArray+ArrayQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+ArrayQuery.h"; path = "Catalog/NSArray/NSArray+ArrayQuery.h"; sourceTree = "<group>"; };
+		AC15B0CC165BCE3E00E856E4 /* NSArray+ArrayQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+ArrayQuery.m"; path = "Catalog/NSArray/NSArray+ArrayQuery.m"; sourceTree = "<group>"; };
+		AC15B0CD165BCE3E00E856E4 /* NSArray+DeepCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+DeepCopy.h"; path = "Catalog/NSArray/NSArray+DeepCopy.h"; sourceTree = "<group>"; };
+		AC15B0CE165BCE3E00E856E4 /* NSArray+DeepCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+DeepCopy.m"; path = "Catalog/NSArray/NSArray+DeepCopy.m"; sourceTree = "<group>"; };
+		AC15B0E1165BD59600E856E4 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		ACD3DCE7156BCA3100D299B2 /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
 		ACD3DCE8156BCA3100D299B2 /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSON.m"; sourceTree = "<group>"; };
 		ACD3DCEA156BCA3100D299B2 /* NSError+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Extensions.h"; sourceTree = "<group>"; };
@@ -335,6 +365,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC15B0E2165BD59600E856E4 /* libxml2.dylib in Frameworks */,
 				ACFBAD5715A7BE8900B93F7B /* GameKit.framework in Frameworks */,
 				ACFBAD5515A7BE6D00B93F7B /* libz.dylib in Frameworks */,
 				ACFBAD4F15A7350D00B93F7B /* SystemConfiguration.framework in Frameworks */,
@@ -384,6 +415,32 @@
 				AC08B22D15DF29670090EEDD /* NSString+MD5Addition.m */,
 			);
 			name = NSString;
+			sourceTree = "<group>";
+		};
+		AC15B0AF165BC8DF00E856E4 /* Skin */ = {
+			isa = PBXGroup;
+			children = (
+				AC15B0B1165BC8F200E856E4 /* Skin.h */,
+				AC15B0B2165BC8F200E856E4 /* Skin.m */,
+				AC15B0B3165BC8F200E856E4 /* SkinContainer.h */,
+				AC15B0B4165BC8F200E856E4 /* SkinContainer.m */,
+				AC15B0B5165BC8F200E856E4 /* SkinElement.h */,
+				AC15B0B6165BC8F200E856E4 /* SkinElement.m */,
+				AC15B0B7165BC8F200E856E4 /* SkinManager.h */,
+				AC15B0B8165BC8F200E856E4 /* SkinManager.m */,
+			);
+			name = Skin;
+			sourceTree = "<group>";
+		};
+		AC15B0CA165BCDDD00E856E4 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				AC15B0CB165BCE3E00E856E4 /* NSArray+ArrayQuery.h */,
+				AC15B0CC165BCE3E00E856E4 /* NSArray+ArrayQuery.m */,
+				AC15B0CD165BCE3E00E856E4 /* NSArray+DeepCopy.h */,
+				AC15B0CE165BCE3E00E856E4 /* NSArray+DeepCopy.m */,
+			);
+			name = NSArray;
 			sourceTree = "<group>";
 		};
 		ACD3DCE6156BCA3100D299B2 /* JSON */ = {
@@ -490,6 +547,7 @@
 			isa = PBXGroup;
 			children = (
 				ACFBAD5415A7BE6D00B93F7B /* libz.dylib */,
+				AC15B0E1165BD59600E856E4 /* libxml2.dylib */,
 				ACFBAD5615A7BE8900B93F7B /* GameKit.framework */,
 				ACFBAD4E15A7350C00B93F7B /* SystemConfiguration.framework */,
 				ACFBAD4C15A734FC00B93F7B /* MobileCoreServices.framework */,
@@ -527,6 +585,7 @@
 		ACDDF38A1531C03200011F06 /* Catalog */ = {
 			isa = PBXGroup;
 			children = (
+				AC15B0CA165BCDDD00E856E4 /* NSArray */,
 				ACDDF3A71531D4BB00011F06 /* NSBundle */,
 				ACDDF39E1531D48300011F06 /* NSData */,
 				ACDDF3AC1531D51500011F06 /* NSManagedObject */,
@@ -542,6 +601,8 @@
 		ACDDF38B1531C1B700011F06 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				AC15B0C6165BCC5A00E856E4 /* EnumStrings.h */,
+				AC15B0C7165BCC5A00E856E4 /* EnumStrings.m */,
 				ACFBAD0915A47F9900B93F7B /* EGORefreshTableHeaderView.h */,
 				ACFBAD0A15A47F9900B93F7B /* EGORefreshTableHeaderView.m */,
 				ACFBAD0B15A47F9900B93F7B /* MBProgressHUD.h */,
@@ -613,6 +674,7 @@
 		ACDDF3BF1531D79D00011F06 /* OpenSoucre */ = {
 			isa = PBXGroup;
 			children = (
+				AC15B0AF165BC8DF00E856E4 /* Skin */,
 				ACFBADC115AC71F700B93F7B /* DDPageControl */,
 				ACFBADB115AC719900B93F7B /* MetroUI */,
 				ACD3DCE6156BCA3100D299B2 /* JSON */,
@@ -784,6 +846,13 @@
 				AC08B22615DF27F10090EEDD /* wwanconnect.h in Headers */,
 				AC08B22A15DF282A0090EEDD /* UIDevice+ZP.h in Headers */,
 				AC08B22E15DF29670090EEDD /* NSString+MD5Addition.h in Headers */,
+				AC15B0B9165BC8F200E856E4 /* Skin.h in Headers */,
+				AC15B0BB165BC8F200E856E4 /* SkinContainer.h in Headers */,
+				AC15B0BD165BC8F200E856E4 /* SkinElement.h in Headers */,
+				AC15B0BF165BC8F200E856E4 /* SkinManager.h in Headers */,
+				AC15B0C8165BCC5A00E856E4 /* EnumStrings.h in Headers */,
+				AC15B0CF165BCE3E00E856E4 /* NSArray+ArrayQuery.h in Headers */,
+				AC15B0D1165BCE3E00E856E4 /* NSArray+DeepCopy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -903,6 +972,13 @@
 				AC08B22515DF27F10090EEDD /* wwanconnect.c in Sources */,
 				AC08B22915DF282A0090EEDD /* UIDevice+ZP.m in Sources */,
 				AC08B22F15DF29670090EEDD /* NSString+MD5Addition.m in Sources */,
+				AC15B0BA165BC8F200E856E4 /* Skin.m in Sources */,
+				AC15B0BC165BC8F200E856E4 /* SkinContainer.m in Sources */,
+				AC15B0BE165BC8F200E856E4 /* SkinElement.m in Sources */,
+				AC15B0C0165BC8F200E856E4 /* SkinManager.m in Sources */,
+				AC15B0C9165BCC5A00E856E4 /* EnumStrings.m in Sources */,
+				AC15B0D0165BCE3E00E856E4 /* NSArray+ArrayQuery.m in Sources */,
+				AC15B0D2165BCE3E00E856E4 /* NSArray+DeepCopy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

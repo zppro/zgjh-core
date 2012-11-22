@@ -12,4 +12,6 @@
 
 - (DKArrayQuery *)query;
 
+- (DKArrayQuery *)queryArray;
+
 @end

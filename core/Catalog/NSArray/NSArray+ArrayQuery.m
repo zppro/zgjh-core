@@ -16,4 +16,10 @@
     
 }
 
+- (DKArrayQuery *)queryArray {
+    
+    return [DKArrayQuery queryWithArray:self];
+    
+}
+
 @end
