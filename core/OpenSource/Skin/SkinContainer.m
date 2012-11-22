@@ -36,10 +36,10 @@
 
 - (SkinElement *)getElement:(NSString*) elementName {
     
-    DKArrayQuery * arrayQuery = [DKArrayQuery queryWithArray:_elements];
-    return [[[arrayQuery where:@"name" equals:elementName] results] lastObject];
+    //DKArrayQuery * arrayQuery = [DKArrayQuery queryWithArray:_elements];
+    //return [[[arrayQuery where:@"name" equals:elementName] results] lastObject];
     
-    //return [[[[_elements query] where:@"name" equals:elementName] results] lastObject];
+    return [[[[_elements query] where:@"name" equals:elementName] results] lastObject];
 }
 
 @end

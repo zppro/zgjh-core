@@ -10,7 +10,7 @@
 #import "EnumStrings.h"
 #import "PHResourceManager.h"
 #import "MacroFunctions.h"
-
+#import "UIView+Motion.h"
 @interface SkinElement()
 - (id)generateView;
 - (id)generateLabel;

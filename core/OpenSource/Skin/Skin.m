@@ -46,9 +46,9 @@
 }
 
 - (SkinContainer *)getContainer:(NSString *) containerName {
-    DKArrayQuery * arrayQuery = [DKArrayQuery queryWithArray:_containers];
-    return [[[arrayQuery where:@"name" equals:containerName] results] lastObject];
-    //return [[[[_containers query] where:@"name" equals:containerName] results] lastObject];
+    //DKArrayQuery * arrayQuery = [DKArrayQuery queryWithArray:_containers];
+    //return [[[arrayQuery where:@"name" equals:containerName] results] lastObject];
+    return [[[[_containers query] where:@"name" equals:containerName] results] lastObject];
 }
 
 @end

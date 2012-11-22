@@ -21,7 +21,11 @@
         path = [MF_ResourceDocument() stringByAppendingFormat:@"/%@/%@", skinName, imageName];
         if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
             NSAssert(path != nil, @"%@", path);
-            return nil;
+            path = MF_Resource(MF_SWF(@"%@/%@", skinName, imageName));
+            if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
+                NSAssert(path != nil, @"%@", path);
+                return nil;
+            }
         }
     }
     UIImage *image = [UIImage imageWithContentsOfFile:path]; 
@@ -36,7 +40,11 @@
         path = [MF_ResourceDocument() stringByAppendingFormat:@"/%@", imageName];
         if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
             NSAssert(path != nil, @"%@", path);
-            return nil;
+            path = MF_Resource(MF_SWF(@"/%@", imageName));
+            if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
+                NSAssert(path != nil, @"%@", path);
+                return nil;
+            }
         }
     }
     UIImage *image = [UIImage imageWithContentsOfFile:path]; 

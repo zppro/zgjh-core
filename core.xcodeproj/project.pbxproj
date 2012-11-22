@@ -217,6 +217,7 @@
 		AC15B0CD165BCE3E00E856E4 /* NSArray+DeepCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+DeepCopy.h"; path = "Catalog/NSArray/NSArray+DeepCopy.h"; sourceTree = "<group>"; };
 		AC15B0CE165BCE3E00E856E4 /* NSArray+DeepCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+DeepCopy.m"; path = "Catalog/NSArray/NSArray+DeepCopy.m"; sourceTree = "<group>"; };
 		AC15B0E1165BD59600E856E4 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		ACACC668165DC83300CE5BC0 /* CatalogOfNSArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CatalogOfNSArray.h; path = Catalog/NSArray/CatalogOfNSArray.h; sourceTree = "<group>"; };
 		ACD3DCE7156BCA3100D299B2 /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
 		ACD3DCE8156BCA3100D299B2 /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSON.m"; sourceTree = "<group>"; };
 		ACD3DCEA156BCA3100D299B2 /* NSError+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Extensions.h"; sourceTree = "<group>"; };
@@ -439,6 +440,7 @@
 				AC15B0CC165BCE3E00E856E4 /* NSArray+ArrayQuery.m */,
 				AC15B0CD165BCE3E00E856E4 /* NSArray+DeepCopy.h */,
 				AC15B0CE165BCE3E00E856E4 /* NSArray+DeepCopy.m */,
+				ACACC668165DC83300CE5BC0 /* CatalogOfNSArray.h */,
 			);
 			name = NSArray;
 			sourceTree = "<group>";

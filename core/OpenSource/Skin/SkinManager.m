@@ -55,8 +55,9 @@ SYNTHESIZE_LESSER_SINGLETON_FOR_CLASS(SkinManager);
 }
 
 - (Skin *)getSkin:(NSString*) skinName {
-    DKArrayQuery * arrayQuery = [DKArrayQuery queryWithArray:_skins];
-    return [[[arrayQuery where:@"name" equals:skinName] results] lastObject];
+    //DKArrayQuery * arrayQuery = [DKArrayQuery queryWithArray:_skins];
+    //return [[[arrayQuery where:@"name" equals:skinName] results] lastObject];
+    return [[[[_skins query] where:@"name" equals:skinName] results] lastObject];
 }
 
 @end
