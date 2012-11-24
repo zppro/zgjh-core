@@ -21,4 +21,6 @@
 #import "BlocksKit.h"
 #import "SkinManager.h"
 
+#import "CInputAssistView.h"
+
 #endif
