@@ -155,7 +155,7 @@
     if (_textAlignment) {
         [button.titleLabel setTextAlignment:[EnumStrings UITextAlignmentFromString:_textAlignment]];
     }
-    if (_backgroundColor) {
+    if (_backgroundColor) { 
         [button setBackgroundColor:MF_ColorFromString(_backgroundColor)];
     }
     if (_image) {

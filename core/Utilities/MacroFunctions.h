@@ -118,6 +118,7 @@ typedef void (^FinalBlock)(void);
 #define MCRelease(x) [x release], x = nil
 
 //颜色
+
 #define MF_ColorFromRGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
 #define MF_ColorFromRGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 #define MF_ColorFromRGBA2(rgbValue, alphaValue) \
@@ -127,10 +128,12 @@ green:((float)((rgbValue & 0x00FF00) >> 8))/255.0 \
 blue:((float)(rgbValue & 0x0000FF))/255.0 \
 alpha:alphaValue]
 
-#define MF_ColorFromString(x) MF_ColorFromRGB(\
+#define MF_ColorFromString2(x) MF_ColorFromRGB(\
 [MF_Trim([[[x substringWithRange:NSMakeRange(1, [x length]-1)] componentsSeparatedByString:@","] objectAtIndex:0]) floatValue], \
 [MF_Trim([[[x substringWithRange:NSMakeRange(1, [x length]-1)] componentsSeparatedByString:@","] objectAtIndex:1]) floatValue], \
 [MF_Trim([[[x substringWithRange:NSMakeRange(1, [x length]-1)] componentsSeparatedByString:@","] objectAtIndex:2]) floatValue])
+
+#define MF_ColorFromString(x) [x isEqualToString: @"transparent"]?[UIColor clearColor]:MF_ColorFromString2(x)
 
 #define MF_StringFromColor(color) [NSString stringWithFormat:@"{%d,%d,%d}",\
 [[[[NSString stringWithFormat:@"%@",color] componentsSeparatedByString:@" "] objectAtIndex:1] intValue] * 255,\

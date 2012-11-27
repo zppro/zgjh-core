@@ -52,6 +52,10 @@
     [self performSelector:@selector(pushController:) withObject:controller afterDelay:0.07 * 2];
 }
 
+- (void)pushController:(UIViewController *)theController{
+    [self.navigationController pushViewController:theController animated:YES];
+}
+
 #pragma mark - waitingView
 
 

@@ -44,6 +44,14 @@
 		AC15B0E2165BD59600E856E4 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AC15B0E1165BD59600E856E4 /* libxml2.dylib */; };
 		ACACC6891661050500CE5BC0 /* CInputAssistView.h in Headers */ = {isa = PBXBuildFile; fileRef = ACACC6871661050500CE5BC0 /* CInputAssistView.h */; };
 		ACACC68A1661050500CE5BC0 /* CInputAssistView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACACC6881661050500CE5BC0 /* CInputAssistView.m */; };
+		ACACC6931661191E00CE5BC0 /* TableHeaderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = ACACC6901661191E00CE5BC0 /* TableHeaderDelegate.h */; };
+		ACACC6941661191E00CE5BC0 /* TableHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = ACACC6911661191E00CE5BC0 /* TableHeaderView.h */; };
+		ACACC6951661191E00CE5BC0 /* TableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACACC6921661191E00CE5BC0 /* TableHeaderView.m */; };
+		ACACC69816611AEE00CE5BC0 /* UIView+Common.h in Headers */ = {isa = PBXBuildFile; fileRef = ACACC69616611AEE00CE5BC0 /* UIView+Common.h */; };
+		ACACC69916611AEE00CE5BC0 /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = ACACC69716611AEE00CE5BC0 /* UIView+Common.m */; };
+		ACACC69C16611B5A00CE5BC0 /* Functions.h in Headers */ = {isa = PBXBuildFile; fileRef = ACACC69A16611B5A00CE5BC0 /* Functions.h */; };
+		ACACC69D16611B5A00CE5BC0 /* Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = ACACC69B16611B5A00CE5BC0 /* Functions.m */; };
+		ACACC69F16611C0200CE5BC0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACACC69E16611C0200CE5BC0 /* AudioToolbox.framework */; };
 		ACD3DD20156BCA3100D299B2 /* NSObject+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD3DCE7156BCA3100D299B2 /* NSObject+JSON.h */; };
 		ACD3DD21156BCA3100D299B2 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD3DCE8156BCA3100D299B2 /* NSObject+JSON.m */; };
 		ACD3DD22156BCA3100D299B2 /* NSError+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD3DCEA156BCA3100D299B2 /* NSError+Extensions.h */; };
@@ -222,6 +230,14 @@
 		ACACC668165DC83300CE5BC0 /* CatalogOfNSArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CatalogOfNSArray.h; path = Catalog/NSArray/CatalogOfNSArray.h; sourceTree = "<group>"; };
 		ACACC6871661050500CE5BC0 /* CInputAssistView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CInputAssistView.h; path = OpenSource/AssistView/CInputAssistView.h; sourceTree = "<group>"; };
 		ACACC6881661050500CE5BC0 /* CInputAssistView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CInputAssistView.m; path = OpenSource/AssistView/CInputAssistView.m; sourceTree = "<group>"; };
+		ACACC6901661191E00CE5BC0 /* TableHeaderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableHeaderDelegate.h; path = OpenSource/TableHeaderUI/TableHeaderDelegate.h; sourceTree = "<group>"; };
+		ACACC6911661191E00CE5BC0 /* TableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableHeaderView.h; path = OpenSource/TableHeaderUI/TableHeaderView.h; sourceTree = "<group>"; };
+		ACACC6921661191E00CE5BC0 /* TableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableHeaderView.m; path = OpenSource/TableHeaderUI/TableHeaderView.m; sourceTree = "<group>"; };
+		ACACC69616611AEE00CE5BC0 /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Common.h"; path = "Catalog/UIView/UIView+Common.h"; sourceTree = "<group>"; };
+		ACACC69716611AEE00CE5BC0 /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Common.m"; path = "Catalog/UIView/UIView+Common.m"; sourceTree = "<group>"; };
+		ACACC69A16611B5A00CE5BC0 /* Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Functions.h; path = Utilities/Functions.h; sourceTree = "<group>"; };
+		ACACC69B16611B5A00CE5BC0 /* Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Functions.m; path = Utilities/Functions.m; sourceTree = "<group>"; };
+		ACACC69E16611C0200CE5BC0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		ACD3DCE7156BCA3100D299B2 /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
 		ACD3DCE8156BCA3100D299B2 /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSON.m"; sourceTree = "<group>"; };
 		ACD3DCEA156BCA3100D299B2 /* NSError+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Extensions.h"; sourceTree = "<group>"; };
@@ -370,6 +386,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACACC69F16611C0200CE5BC0 /* AudioToolbox.framework in Frameworks */,
 				AC15B0E2165BD59600E856E4 /* libxml2.dylib in Frameworks */,
 				ACFBAD5715A7BE8900B93F7B /* GameKit.framework in Frameworks */,
 				ACFBAD5515A7BE6D00B93F7B /* libz.dylib in Frameworks */,
@@ -456,6 +473,16 @@
 				ACACC6881661050500CE5BC0 /* CInputAssistView.m */,
 			);
 			name = AssistView;
+			sourceTree = "<group>";
+		};
+		ACACC68F166118F100CE5BC0 /* TableHeaderUI */ = {
+			isa = PBXGroup;
+			children = (
+				ACACC6901661191E00CE5BC0 /* TableHeaderDelegate.h */,
+				ACACC6911661191E00CE5BC0 /* TableHeaderView.h */,
+				ACACC6921661191E00CE5BC0 /* TableHeaderView.m */,
+			);
+			name = TableHeaderUI;
 			sourceTree = "<group>";
 		};
 		ACD3DCE6156BCA3100D299B2 /* JSON */ = {
@@ -563,6 +590,7 @@
 			children = (
 				ACFBAD5415A7BE6D00B93F7B /* libz.dylib */,
 				AC15B0E1165BD59600E856E4 /* libxml2.dylib */,
+				ACACC69E16611C0200CE5BC0 /* AudioToolbox.framework */,
 				ACFBAD5615A7BE8900B93F7B /* GameKit.framework */,
 				ACFBAD4E15A7350C00B93F7B /* SystemConfiguration.framework */,
 				ACFBAD4C15A734FC00B93F7B /* MobileCoreServices.framework */,
@@ -616,6 +644,8 @@
 		ACDDF38B1531C1B700011F06 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				ACACC69A16611B5A00CE5BC0 /* Functions.h */,
+				ACACC69B16611B5A00CE5BC0 /* Functions.m */,
 				AC15B0C6165BCC5A00E856E4 /* EnumStrings.h */,
 				AC15B0C7165BCC5A00E856E4 /* EnumStrings.m */,
 				ACFBAD0915A47F9900B93F7B /* EGORefreshTableHeaderView.h */,
@@ -637,6 +667,8 @@
 		ACDDF38C1531C40900011F06 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				ACACC69616611AEE00CE5BC0 /* UIView+Common.h */,
+				ACACC69716611AEE00CE5BC0 /* UIView+Common.m */,
 				ACDDF38D1531C43600011F06 /* UIView+Motion.h */,
 				ACDDF38E1531C43600011F06 /* UIView+Motion.m */,
 				ACDDF38F1531C43600011F06 /* UIView+Positioning.h */,
@@ -689,6 +721,7 @@
 		ACDDF3BF1531D79D00011F06 /* OpenSoucre */ = {
 			isa = PBXGroup;
 			children = (
+				ACACC68F166118F100CE5BC0 /* TableHeaderUI */,
 				ACACC6851661044A00CE5BC0 /* AssistView */,
 				AC15B0AF165BC8DF00E856E4 /* Skin */,
 				ACFBADC115AC71F700B93F7B /* DDPageControl */,
@@ -870,6 +903,10 @@
 				AC15B0CF165BCE3E00E856E4 /* NSArray+ArrayQuery.h in Headers */,
 				AC15B0D1165BCE3E00E856E4 /* NSArray+DeepCopy.h in Headers */,
 				ACACC6891661050500CE5BC0 /* CInputAssistView.h in Headers */,
+				ACACC6931661191E00CE5BC0 /* TableHeaderDelegate.h in Headers */,
+				ACACC6941661191E00CE5BC0 /* TableHeaderView.h in Headers */,
+				ACACC69816611AEE00CE5BC0 /* UIView+Common.h in Headers */,
+				ACACC69C16611B5A00CE5BC0 /* Functions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -997,6 +1034,9 @@
 				AC15B0D0165BCE3E00E856E4 /* NSArray+ArrayQuery.m in Sources */,
 				AC15B0D2165BCE3E00E856E4 /* NSArray+DeepCopy.m in Sources */,
 				ACACC68A1661050500CE5BC0 /* CInputAssistView.m in Sources */,
+				ACACC6951661191E00CE5BC0 /* TableHeaderView.m in Sources */,
+				ACACC69916611AEE00CE5BC0 /* UIView+Common.m in Sources */,
+				ACACC69D16611B5A00CE5BC0 /* Functions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

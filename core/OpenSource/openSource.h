@@ -23,4 +23,6 @@
 
 #import "CInputAssistView.h"
 
+#import "TableHeaderView.h"
+
 #endif
