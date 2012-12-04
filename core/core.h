@@ -9,7 +9,7 @@
 #ifndef core_core_h
 #define core_core_h
 
-
+#import "extend.h"
 #import "catalog.h"
 #import "utility.h"
 
