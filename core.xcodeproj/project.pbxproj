@@ -233,6 +233,7 @@
 		AC17EF6C16688F0800E9FD41 /* ZPUIActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZPUIActionSheet.m; path = Extend/UIActionSheet/ZPUIActionSheet.m; sourceTree = "<group>"; };
 		AC17EF6F1668908E00E9FD41 /* extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = extend.h; path = Extend/extend.h; sourceTree = "<group>"; };
 		AC17EF70166890C800E9FD41 /* ExtendOfUIActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ExtendOfUIActionSheet.h; path = Extend/UIActionSheet/ExtendOfUIActionSheet.h; sourceTree = "<group>"; };
+		ACA95933166DEF9C00302D82 /* CatalogOfUIImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CatalogOfUIImage.h; path = Catalog/UIImage/CatalogOfUIImage.h; sourceTree = "<group>"; };
 		ACACC668165DC83300CE5BC0 /* CatalogOfNSArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CatalogOfNSArray.h; path = Catalog/NSArray/CatalogOfNSArray.h; sourceTree = "<group>"; };
 		ACACC6871661050500CE5BC0 /* CInputAssistView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CInputAssistView.h; path = OpenSource/AssistView/CInputAssistView.h; sourceTree = "<group>"; };
 		ACACC6881661050500CE5BC0 /* CInputAssistView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CInputAssistView.m; path = OpenSource/AssistView/CInputAssistView.m; sourceTree = "<group>"; };
@@ -794,6 +795,7 @@
 			children = (
 				ACFBAD3D15A7338A00B93F7B /* UIImage+Scale.h */,
 				ACFBAD3E15A7338A00B93F7B /* UIImage+Scale.m */,
+				ACA95933166DEF9C00302D82 /* CatalogOfUIImage.h */,
 			);
 			name = UIImage;
 			sourceTree = "<group>";

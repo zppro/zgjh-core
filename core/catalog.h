@@ -12,6 +12,6 @@
 #import "CatalogOfNSArray.h"
 #import "CatalogOfUIView.h"
 #import "CatalogOfUIDevice.h"
-
+#import "CatalogOfUIImage.h"
 
 #endif
