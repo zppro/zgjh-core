@@ -29,6 +29,8 @@
 
 #import "NSObject+JSON.h"
 #import <objc/runtime.h>
+#import "JSONKit.h"
+#import "MacroFunctions.h"
 #import "NXJsonParser.h"
 #import "NXJsonSerializer.h"
 
@@ -38,12 +40,22 @@
     return [NXJsonSerializer serialize:self];
 }
 
-@end
+
+- (NSString *)JSONRepresentation {
+    return [self JSONString]; //JSONKit 
+}
+
+@end 
 
 @implementation NSDictionary (NSDictionary_JsonWriting)
 
 - (NSString *)JSONRepresentation_NX {
     return [NXJsonSerializer serialize:self];
+}
+
+- (NSString *)JSONRepresentation {
+    return [self JSONString]; //JSONKit
+    
 }
 
 @end
@@ -80,6 +92,35 @@
 //    return [mapings JSONRepresentation];
 //}
 
+- (NSString *)customJSONRepresentation {
+    
+    unsigned int outCount, i;
+    objc_property_t *properties = class_copyPropertyList([self class], &outCount);
+    if (outCount == 0) { //没有属性???
+        return [self description];
+    }
+    
+    NSMutableDictionary *mapings = [[[NSMutableDictionary alloc] initWithCapacity:outCount] autorelease];
+    for (i = 0; i < outCount; i++) {
+        objc_property_t property = properties[i];
+        NSString *key = [[NSString alloc] initWithCString:property_getName(property)
+                                                 encoding:NSUTF8StringEncoding];
+        id value = [self valueForKey:key];
+        NSString *str;
+        
+        if (value == nil) {
+            str = @"";
+        } else {
+            str = [value JSONString];
+        }
+        
+        [mapings setObject:str forKey:key];
+        [key release];
+    }
+    
+    return [mapings JSONRepresentation];
+}
+
 @end
 
 
@@ -100,5 +141,21 @@
     return result;
     
 }
+
+- (id)JSONValue {
+    
+    // NXJson
+    NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
+    NXJsonParser *parser = [[NXJsonParser alloc] initWithData:data];
+    NSError *error = nil;
+    id result = [parser parse:&error ignoreNulls:YES];
+    [parser release];
+    if (error) {
+        DebugLog(@"-JSONValue failed. Source is: %@", self);
+        return nil;
+    }
+    return result; 
+}
+
 
 @end

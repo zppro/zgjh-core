@@ -37,6 +37,8 @@
 /// Returns a string containing the receiver encoded in JSON.
 - (NSString *)JSONRepresentation_NX;
 
+- (NSString *)JSONRepresentation;
+
 @end
 
 
@@ -45,6 +47,8 @@
 
 /// Returns a string containing the receiver encoded in JSON.
 - (NSString *)JSONRepresentation_NX;
+
+- (NSString *)JSONRepresentation;
 
 @end
 
@@ -55,6 +59,8 @@
 /// NOT SUPPORT INNER NSARRAY OR NSDICTIONARY
 //- (NSString *)customJSONRepresentation;
 
+- (NSString *)customJSONRepresentation;
+
 @end
 
 #pragma mark JSON Parsing
@@ -64,6 +70,8 @@
 
 /// Returns the NSDictionary or NSArray represented by the receiver's JSON representation, or nil on error
 - (id)JSONValue_NX;
+
+- (id)JSONValue;
 
 @end
 
