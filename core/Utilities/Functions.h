@@ -62,4 +62,7 @@ BOOL IsValidMobile(NSString* mobile);
 BOOL IsValidMobileByError(NSString* mobile,NSString** error);
 
 BOOL IsNilOrEmpty(id obj);
+
+void showHUDInfo(id delegate,UIView * view, NSString* title);
+void showHUDInfoDelay(id delegate,UIView * view, NSString* title,double delayInSeconds);
  

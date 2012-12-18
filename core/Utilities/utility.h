@@ -9,6 +9,7 @@
 #ifndef core_utility_h
 #define core_utility_h
 
+#import "Reachability.h"
 #import "Functions.h"
 #import "MBProgressHUD.h"
 #import "EGORefreshTableHeaderView.h"
@@ -20,4 +21,8 @@
 #import "SkinContainer.h"
 #import "Skin.h"
 
+#import "LeblueRequest.h"
+#import "LeblueResponse.h"
+#import "HttpAsynchronous.h"
+#import "Http.h"
 #endif

@@ -78,6 +78,7 @@
 - (void)showWaitViewWithTitle:(NSString *)title andCloseDelay:(double) delayInSeconds withAnimation:(BOOL) animated {
     self.waitView.labelText = title;
     [self.view addSubview:self.waitView];
+    DebugLog(@"view:%@",NSStringFromCGRect(self.view.frame));
     [self.view bringSubviewToFront:self.waitView]; 
     [self.waitView show:animated];
     if(delayInSeconds > 0){

@@ -10,6 +10,7 @@
 
 #import "Functions.h" 
 #import "MacroFunctions.h"
+#import "MBProgressHUD.h"
 
 void ShowInfo(NSString* message){
 	UIAlertView *alertDialog=[[UIAlertView alloc] initWithTitle:@"信息" message:message delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
@@ -194,4 +195,26 @@ BOOL IsNilOrEmpty(id obj) {
     }
     
     return NO;
+}
+
+void showHUDInfo(id delegate,UIView * view, NSString* title){
+    showHUDInfoDelay(delegate,view,title,1.0f);
+}
+
+void showHUDInfoDelay(id delegate,UIView * view, NSString* title,double delayInSeconds){
+    MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:view];
+	[view addSubview:hud];
+	
+	// The sample image is based on the work by http://www.pixelpressicons.com, http://creativecommons.org/licenses/by/2.5/ca/
+	// Make the customViews 37 by 37 pixels for best results (those are the bounds of the build-in progress indicators)
+	//HUD.customView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]] autorelease];
+	
+	// Set custom view mode
+	hud.mode = MBProgressHUDModeCustomView;
+	
+	hud.delegate = delegate;
+	hud.labelText = title;
+	
+	[hud show:YES];
+	[hud hide:YES afterDelay:delayInSeconds];
 }

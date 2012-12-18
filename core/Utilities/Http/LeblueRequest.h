@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface LeblueRequest : NSDictionary
-+(id)requestWithPostData:(NSDictionary*)postData;
++(id)requestWithHead:(NSInteger)NWCode WithPostData:(NSDictionary*)postData;
 @end

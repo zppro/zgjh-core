@@ -9,17 +9,19 @@
 #import "LeblueRequest.h"
 #import "JSON.h"
 #import "MacroFunctions.h"
+#import "Functions.h"
 
 @implementation LeblueRequest
-+(id)requestWithPostData:(NSDictionary*)postData{
-    
+
++(id)requestWithHead:(NSInteger)NWCode WithPostData:(NSDictionary*)postData{
+    NSDictionary *head = [NSDictionary dictionaryWithObjectsAndKeys:
+                          GetCurrentDateString(@"yyyyMMddHHmm"),@"NWGUID",NI(NWCode),@"NWCode",NI(1),@"NWVersion",@"",@"NWExID",nil];
     NSDictionary *content = [NSDictionary dictionaryWithObjectsAndKeys:
-                             postData,@"Data",nil];
+                             postData,@"Data",head,@"Head",nil];
 	NSDictionary *pData = [NSDictionary dictionaryWithObjectsAndKeys:content,@"Request",nil];
     
     
-    DebugLog(@"请求信息：%@", [pData JSONRepresentation]);
-    
+    DebugLog(@"请求信息：%@", [pData JSONRepresentation]); 
     
     return pData;
 }

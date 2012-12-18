@@ -311,6 +311,7 @@
 		ACACC69A16611B5A00CE5BC0 /* Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Functions.h; path = Utilities/Functions.h; sourceTree = "<group>"; };
 		ACACC69B16611B5A00CE5BC0 /* Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Functions.m; path = Utilities/Functions.m; sourceTree = "<group>"; };
 		ACACC69E16611C0200CE5BC0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		ACB162B6168057350029E395 /* CatalogOfNSString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CatalogOfNSString.h; path = Catalog/NSString/CatalogOfNSString.h; sourceTree = "<group>"; };
 		ACD3DCE7156BCA3100D299B2 /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
 		ACD3DCE8156BCA3100D299B2 /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSON.m"; sourceTree = "<group>"; };
 		ACD3DCEA156BCA3100D299B2 /* NSError+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Extensions.h"; sourceTree = "<group>"; };
@@ -509,6 +510,7 @@
 			children = (
 				AC08B22C15DF29670090EEDD /* NSString+MD5Addition.h */,
 				AC08B22D15DF29670090EEDD /* NSString+MD5Addition.m */,
+				ACB162B6168057350029E395 /* CatalogOfNSString.h */,
 			);
 			name = NSString;
 			sourceTree = "<group>";
