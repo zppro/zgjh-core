@@ -87,6 +87,9 @@
 		ACACC69C16611B5A00CE5BC0 /* Functions.h in Headers */ = {isa = PBXBuildFile; fileRef = ACACC69A16611B5A00CE5BC0 /* Functions.h */; };
 		ACACC69D16611B5A00CE5BC0 /* Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = ACACC69B16611B5A00CE5BC0 /* Functions.m */; };
 		ACACC69F16611C0200CE5BC0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACACC69E16611C0200CE5BC0 /* AudioToolbox.framework */; };
+		ACB162CC16897C030029E395 /* SharedObjectsContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = ACB162CA16897BFF0029E395 /* SharedObjectsContainer.h */; };
+		ACB162CD16897C030029E395 /* SharedObjectsContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB162CB16897C010029E395 /* SharedObjectsContainer.m */; };
+		ACB162CF16897E4E0029E395 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB162CE16897E4C0029E395 /* CoreLocation.framework */; };
 		ACD3DD20156BCA3100D299B2 /* NSObject+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD3DCE7156BCA3100D299B2 /* NSObject+JSON.h */; };
 		ACD3DD21156BCA3100D299B2 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD3DCE8156BCA3100D299B2 /* NSObject+JSON.m */; };
 		ACD3DD22156BCA3100D299B2 /* NSError+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD3DCEA156BCA3100D299B2 /* NSError+Extensions.h */; };
@@ -312,6 +315,9 @@
 		ACACC69B16611B5A00CE5BC0 /* Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Functions.m; path = Utilities/Functions.m; sourceTree = "<group>"; };
 		ACACC69E16611C0200CE5BC0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		ACB162B6168057350029E395 /* CatalogOfNSString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CatalogOfNSString.h; path = Catalog/NSString/CatalogOfNSString.h; sourceTree = "<group>"; };
+		ACB162CA16897BFF0029E395 /* SharedObjectsContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SharedObjectsContainer.h; path = Utilities/SharedObjectsContainer.h; sourceTree = "<group>"; };
+		ACB162CB16897C010029E395 /* SharedObjectsContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SharedObjectsContainer.m; path = Utilities/SharedObjectsContainer.m; sourceTree = "<group>"; };
+		ACB162CE16897E4C0029E395 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		ACD3DCE7156BCA3100D299B2 /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
 		ACD3DCE8156BCA3100D299B2 /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSON.m"; sourceTree = "<group>"; };
 		ACD3DCEA156BCA3100D299B2 /* NSError+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Extensions.h"; sourceTree = "<group>"; };
@@ -460,6 +466,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACB162CF16897E4E0029E395 /* CoreLocation.framework in Frameworks */,
 				AC4AB5D6167D7E3A006D88B7 /* CFNetwork.framework in Frameworks */,
 				ACACC69F16611C0200CE5BC0 /* AudioToolbox.framework in Frameworks */,
 				AC15B0E2165BD59600E856E4 /* libxml2.dylib in Frameworks */,
@@ -738,6 +745,7 @@
 			children = (
 				ACFBAD5415A7BE6D00B93F7B /* libz.dylib */,
 				AC15B0E1165BD59600E856E4 /* libxml2.dylib */,
+				ACB162CE16897E4C0029E395 /* CoreLocation.framework */,
 				AC4AB5D5167D7E3A006D88B7 /* CFNetwork.framework */,
 				ACACC69E16611C0200CE5BC0 /* AudioToolbox.framework */,
 				ACFBAD5615A7BE8900B93F7B /* GameKit.framework */,
@@ -812,6 +820,8 @@
 				ACDDF3BB1531D71900011F06 /* MacroConstants.h */,
 				ACDDF3BC1531D71900011F06 /* MacroFunctions.h */,
 				ACD3DDBE156E095C00D299B2 /* utility.h */,
+				ACB162CA16897BFF0029E395 /* SharedObjectsContainer.h */,
+				ACB162CB16897C010029E395 /* SharedObjectsContainer.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -1080,6 +1090,7 @@
 				AC4AB5EB167D823E006D88B7 /* Reachability.h in Headers */,
 				AC4AB5EF167D82CE006D88B7 /* LeblueRequest.h in Headers */,
 				AC4AB5F3167D8394006D88B7 /* LeblueResponse.h in Headers */,
+				ACB162CC16897C030029E395 /* SharedObjectsContainer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1225,6 +1236,7 @@
 				AC4AB5EC167D823E006D88B7 /* Reachability.m in Sources */,
 				AC4AB5F0167D82CE006D88B7 /* LeblueRequest.m in Sources */,
 				AC4AB5F4167D8394006D88B7 /* LeblueResponse.m in Sources */,
+				ACB162CD16897C030029E395 /* SharedObjectsContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

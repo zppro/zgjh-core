@@ -25,4 +25,7 @@
 #import "LeblueResponse.h"
 #import "HttpAsynchronous.h"
 #import "Http.h"
+
+#import "SharedObjectsContainer.h"
+
 #endif

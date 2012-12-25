@@ -14,6 +14,10 @@
 @implementation LeblueRequest
 
 +(id)requestWithHead:(NSInteger)NWCode WithPostData:(NSDictionary*)postData{
+    if(NWCode == -1){
+        DebugLog(@"无效的NWCode：%@", NI(NWCode));
+        return nil;
+    }
     NSDictionary *head = [NSDictionary dictionaryWithObjectsAndKeys:
                           GetCurrentDateString(@"yyyyMMddHHmm"),@"NWGUID",NI(NWCode),@"NWCode",NI(1),@"NWVersion",@"",@"NWExID",nil];
     NSDictionary *content = [NSDictionary dictionaryWithObjectsAndKeys:
