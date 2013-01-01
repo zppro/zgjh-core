@@ -27,4 +27,5 @@
 #import "NSManagedObject+e0571.h"
 #define moc ([[e0571CoreDataManager sharedInstance] contextForCurrentThread]) 
 
+
 #endif

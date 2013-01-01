@@ -16,6 +16,8 @@
 - (BOOL) existViewControllerInNavigation:(UIViewController*) controller;
 - (NSArray*) viewControllersInNavigationByClass:(Class) controllerClass;
 
+- (void)navigationToPrevious;
+- (void)navigationToRoot;
 - (void)navigationTo:(UIViewController *)controller;
 
 - (void)showWaitView;

@@ -76,6 +76,7 @@
 
 // MARK: - Number Helper
 #define NF(f) [NSNumber numberWithFloat:f]
+#define ND(d) [NSNumber numberWithDouble:d]
 #define NI(i) [NSNumber numberWithInt:i]
 #define NB(b) [NSNumber numberWithBool:b]
 

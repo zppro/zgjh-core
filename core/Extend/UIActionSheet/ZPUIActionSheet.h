@@ -16,5 +16,6 @@
 +(id)zSheetWithHeight:(float)height withSheetTitle:(NSString*)title;
 
 -(id)initWithHeight:(float)height withSheetTitle:(NSString*)title;
-
+-(void)done;
+-(void)docancel;
 @end

@@ -48,6 +48,13 @@
     return results;
 }
 
+- (void)navigationToPrevious{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+- (void)navigationToRoot{
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
 - (void)navigationTo:(UIViewController *)controller {
     [self performSelector:@selector(pushController:) withObject:controller afterDelay:0.07 * 2];
 }

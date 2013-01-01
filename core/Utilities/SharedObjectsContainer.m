@@ -7,6 +7,7 @@
 //
 
 #import "SharedObjectsContainer.h"
+#import "RomDevice.h"
 
 @implementation SharedObjectsContainer
 SYNTHESIZE_LESSER_SINGLETON_FOR_CLASS(SharedObjectsContainer);
@@ -17,4 +18,9 @@ SYNTHESIZE_LESSER_SINGLETON_FOR_CLASS(SharedObjectsContainer);
 @synthesize offsetMyLocation;
 @synthesize canLocation;
 @synthesize DebugMyLocation;
+
+- (RomDevice*) rom{
+    return [RomDevice sharedInstance];
+}
+
 @end

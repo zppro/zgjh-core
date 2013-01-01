@@ -189,6 +189,8 @@
 		ACDDF3DB1531D93900011F06 /* e0571CoreDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = ACDDF3D81531D93900011F06 /* e0571CoreDataManager.h */; };
 		ACDDF3DC1531D93900011F06 /* e0571CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDDF3D91531D93900011F06 /* e0571CoreDataManager.m */; };
 		ACDDF3DE1531D97B00011F06 /* SynthesizeSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = ACDDF3DD1531D97B00011F06 /* SynthesizeSingleton.h */; };
+		ACF41BD116930857008F5F56 /* RomDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = ACF41BCF16930856008F5F56 /* RomDevice.h */; };
+		ACF41BD216930857008F5F56 /* RomDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF41BD016930856008F5F56 /* RomDevice.m */; };
 		ACFBAD0115A47F2200B93F7B /* BaseController.h in Headers */ = {isa = PBXBuildFile; fileRef = ACFBACF915A47F2200B93F7B /* BaseController.h */; };
 		ACFBAD0215A47F2200B93F7B /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFBACFA15A47F2200B93F7B /* BaseController.m */; };
 		ACFBAD0315A47F2200B93F7B /* BaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = ACFBACFB15A47F2200B93F7B /* BaseModel.h */; };
@@ -420,6 +422,8 @@
 		ACDDF3D81531D93900011F06 /* e0571CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = e0571CoreDataManager.h; path = Catalog/NSManagedObject/e0571CoreDataManager.h; sourceTree = "<group>"; };
 		ACDDF3D91531D93900011F06 /* e0571CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = e0571CoreDataManager.m; path = Catalog/NSManagedObject/e0571CoreDataManager.m; sourceTree = "<group>"; };
 		ACDDF3DD1531D97B00011F06 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SynthesizeSingleton.h; path = Utilities/SynthesizeSingleton.h; sourceTree = "<group>"; };
+		ACF41BCF16930856008F5F56 /* RomDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RomDevice.h; path = Utilities/RomDevice.h; sourceTree = "<group>"; };
+		ACF41BD016930856008F5F56 /* RomDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RomDevice.m; path = Utilities/RomDevice.m; sourceTree = "<group>"; };
 		ACFBACF915A47F2200B93F7B /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseController.h; path = Base/BaseController.h; sourceTree = "<group>"; };
 		ACFBACFA15A47F2200B93F7B /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseController.m; path = Base/BaseController.m; sourceTree = "<group>"; };
 		ACFBACFB15A47F2200B93F7B /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseModel.h; path = Base/BaseModel.h; sourceTree = "<group>"; };
@@ -804,6 +808,8 @@
 			isa = PBXGroup;
 			children = (
 				AC4AB5E0167D81EC006D88B7 /* Http */,
+				ACF41BCF16930856008F5F56 /* RomDevice.h */,
+				ACF41BD016930856008F5F56 /* RomDevice.m */,
 				ACACC69A16611B5A00CE5BC0 /* Functions.h */,
 				ACACC69B16611B5A00CE5BC0 /* Functions.m */,
 				AC15B0C6165BCC5A00E856E4 /* EnumStrings.h */,
@@ -1091,6 +1097,7 @@
 				AC4AB5EF167D82CE006D88B7 /* LeblueRequest.h in Headers */,
 				AC4AB5F3167D8394006D88B7 /* LeblueResponse.h in Headers */,
 				ACB162CC16897C030029E395 /* SharedObjectsContainer.h in Headers */,
+				ACF41BD116930857008F5F56 /* RomDevice.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1237,6 +1244,7 @@
 				AC4AB5F0167D82CE006D88B7 /* LeblueRequest.m in Sources */,
 				AC4AB5F4167D8394006D88B7 /* LeblueResponse.m in Sources */,
 				ACB162CD16897C030029E395 /* SharedObjectsContainer.m in Sources */,
+				ACF41BD216930857008F5F56 /* RomDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

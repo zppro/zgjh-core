@@ -12,6 +12,7 @@
 #define soc [SharedObjectsContainer sharedInstance]
 
 @class Reachability;
+@class RomDevice;
 
 @interface SharedObjectsContainer : NSObject
 SYNTHESIZE_SINGLETON_FOR_CLASS_HEADER(SharedObjectsContainer);
@@ -23,4 +24,5 @@ SYNTHESIZE_SINGLETON_FOR_CLASS_HEADER(SharedObjectsContainer);
 @property (nonatomic, retain) CLLocation  *offsetMyLocation;
 @property (nonatomic) BOOL canLocation;
 @property (nonatomic, retain) CLLocation  *DebugMyLocation;
+@property (nonatomic, retain) RomDevice *rom;
 @end
