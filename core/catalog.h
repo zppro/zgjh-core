@@ -9,6 +9,7 @@
 #ifndef core_catalog_h
 #define core_catalog_h
 
+#import "CatalogOfNSManagedObject.h"
 #import "CatalogOfNSArray.h"
 #import "CatalogOfUIView.h"
 #import "CatalogOfUIDevice.h"

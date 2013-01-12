@@ -21,11 +21,5 @@
 
 #define kNotificationNameLocationDidUpdate @"locationDidUpdate"
 
-//CoreData 
-#import "e0571CoreDataManager.h"
-#import "NSManagedObjectContext+e0571.h"
-#import "NSManagedObject+e0571.h"
-#define moc ([[e0571CoreDataManager sharedInstance] contextForCurrentThread]) 
-
 
 #endif

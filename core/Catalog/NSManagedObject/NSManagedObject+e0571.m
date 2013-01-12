@@ -8,7 +8,7 @@
 
 #import "NSManagedObject+e0571.h"
 #import "NSManagedObjectContext+e0571.h"
-#import "MacroConstants.h"
+#import "CatalogOfNSManagedObject.h"
 
 @implementation NSManagedObject(e0571)
 

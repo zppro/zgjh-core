@@ -1,11 +1,13 @@
-/*
- *  e0571CoreData.h
- *  iPodMenuPlus
- *
- *  Created by yangxh on 11-5-6.
- *  Copyright 2011 __MyCompanyName__. All rights reserved.
- *
- */
+//
+//  CatalogOfNSManagedObject.h
+//  core
+//
+//  Created by zppro on 13-1-9.
+//
+//
+
+#ifndef core_CatalogOfNSManagedObject_h
+#define core_CatalogOfNSManagedObject_h
 
 #import "e0571CoreDataManager.h"
 #import "NSManagedObjectContext+e0571.h"
@@ -14,3 +16,5 @@
 #define moc ([[e0571CoreDataManager sharedInstance] contextForCurrentThread])
 #define CoreDataContext [[e0571CoreDataManager sharedInstance] contextForCurrentThread]
 #define CoreDataContextForTherad [[e0571CoreDataManager sharedInstance] contextForCurrentThread]
+
+#endif

@@ -185,7 +185,6 @@
 		ACDDF3D21531D84000011F06 /* DKPredicateBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDDF3CA1531D84000011F06 /* DKPredicateBuilder.m */; };
 		ACDDF3D51531D85300011F06 /* MACollectionUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = ACDDF3D31531D85300011F06 /* MACollectionUtilities.h */; };
 		ACDDF3D61531D85300011F06 /* MACollectionUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDDF3D41531D85300011F06 /* MACollectionUtilities.m */; };
-		ACDDF3DA1531D93900011F06 /* e0571CoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = ACDDF3D71531D93900011F06 /* e0571CoreData.h */; };
 		ACDDF3DB1531D93900011F06 /* e0571CoreDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = ACDDF3D81531D93900011F06 /* e0571CoreDataManager.h */; };
 		ACDDF3DC1531D93900011F06 /* e0571CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDDF3D91531D93900011F06 /* e0571CoreDataManager.m */; };
 		ACDDF3DE1531D97B00011F06 /* SynthesizeSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = ACDDF3DD1531D97B00011F06 /* SynthesizeSingleton.h */; };
@@ -304,6 +303,7 @@
 		AC4AB5EE167D82CD006D88B7 /* LeblueRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeblueRequest.m; path = Utilities/Http/LeblueRequest.m; sourceTree = "<group>"; };
 		AC4AB5F1167D8393006D88B7 /* LeblueResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeblueResponse.h; path = Utilities/Http/LeblueResponse.h; sourceTree = "<group>"; };
 		AC4AB5F2167D8393006D88B7 /* LeblueResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeblueResponse.m; path = Utilities/Http/LeblueResponse.m; sourceTree = "<group>"; };
+		AC8EB8AA169D0A98001F3A06 /* CatalogOfNSManagedObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CatalogOfNSManagedObject.h; path = Catalog/NSManagedObject/CatalogOfNSManagedObject.h; sourceTree = "<group>"; };
 		ACA95933166DEF9C00302D82 /* CatalogOfUIImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CatalogOfUIImage.h; path = Catalog/UIImage/CatalogOfUIImage.h; sourceTree = "<group>"; };
 		ACACC668165DC83300CE5BC0 /* CatalogOfNSArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CatalogOfNSArray.h; path = Catalog/NSArray/CatalogOfNSArray.h; sourceTree = "<group>"; };
 		ACACC6871661050500CE5BC0 /* CInputAssistView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CInputAssistView.h; path = OpenSource/AssistView/CInputAssistView.h; sourceTree = "<group>"; };
@@ -418,7 +418,6 @@
 		ACDDF3CA1531D84000011F06 /* DKPredicateBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DKPredicateBuilder.m; path = OpenSource/DKPredicateBuilder/DKPredicateBuilder.m; sourceTree = "<group>"; };
 		ACDDF3D31531D85300011F06 /* MACollectionUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MACollectionUtilities.h; path = Utilities/MACollectionUtilities.h; sourceTree = "<group>"; };
 		ACDDF3D41531D85300011F06 /* MACollectionUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MACollectionUtilities.m; path = Utilities/MACollectionUtilities.m; sourceTree = "<group>"; };
-		ACDDF3D71531D93900011F06 /* e0571CoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = e0571CoreData.h; path = Catalog/NSManagedObject/e0571CoreData.h; sourceTree = "<group>"; };
 		ACDDF3D81531D93900011F06 /* e0571CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = e0571CoreDataManager.h; path = Catalog/NSManagedObject/e0571CoreDataManager.h; sourceTree = "<group>"; };
 		ACDDF3D91531D93900011F06 /* e0571CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = e0571CoreDataManager.m; path = Catalog/NSManagedObject/e0571CoreDataManager.m; sourceTree = "<group>"; };
 		ACDDF3DD1531D97B00011F06 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SynthesizeSingleton.h; path = Utilities/SynthesizeSingleton.h; sourceTree = "<group>"; };
@@ -873,7 +872,6 @@
 		ACDDF3AC1531D51500011F06 /* NSManagedObject */ = {
 			isa = PBXGroup;
 			children = (
-				ACDDF3D71531D93900011F06 /* e0571CoreData.h */,
 				ACDDF3D81531D93900011F06 /* e0571CoreDataManager.h */,
 				ACDDF3D91531D93900011F06 /* e0571CoreDataManager.m */,
 				ACDDF3AD1531D5BB00011F06 /* NSManagedObject+e0571.h */,
@@ -882,6 +880,7 @@
 				ACDDF3B01531D5BB00011F06 /* NSManagedObject+ManagedObjectQuery.m */,
 				ACDDF3B11531D5BB00011F06 /* NSManagedObjectContext+e0571.h */,
 				ACDDF3B21531D5BB00011F06 /* NSManagedObjectContext+e0571.m */,
+				AC8EB8AA169D0A98001F3A06 /* CatalogOfNSManagedObject.h */,
 			);
 			name = NSManagedObject;
 			sourceTree = "<group>";
@@ -1002,7 +1001,6 @@
 				ACDDF3CF1531D84000011F06 /* DKPredicate.h in Headers */,
 				ACDDF3D11531D84000011F06 /* DKPredicateBuilder.h in Headers */,
 				ACDDF3D51531D85300011F06 /* MACollectionUtilities.h in Headers */,
-				ACDDF3DA1531D93900011F06 /* e0571CoreData.h in Headers */,
 				ACDDF3DB1531D93900011F06 /* e0571CoreDataManager.h in Headers */,
 				ACDDF3DE1531D97B00011F06 /* SynthesizeSingleton.h in Headers */,
 				ACD3DD20156BCA3100D299B2 /* NSObject+JSON.h in Headers */,

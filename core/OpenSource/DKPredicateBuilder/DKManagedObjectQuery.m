@@ -8,7 +8,7 @@
 
 #import "DKManagedObjectQuery.h"
 #import "NSManagedObject+e0571.h"
-#import "e0571CoreData.h"
+#import "CatalogOfNSManagedObject.h"
 
 @interface DKManagedObjectQuery()
 

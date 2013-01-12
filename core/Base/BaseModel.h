@@ -8,8 +8,19 @@
 
 #import <Foundation/Foundation.h>
  
-@interface BaseModel : NSObject
- 
+@interface BaseModel : NSManagedObject
+
++ (NSString*) localEntityKey;
++ (NSString*) dataSourceKey;
+
++ (id)createWithIEntity:(id)iEntity;
++ (BOOL)updateWithData:(NSArray *)data EntityKey:(NSString *)entityKey IEntityKey:(NSString *)iEntityKey fethchFormat:(NSString *)fetchFormat;
++ (BOOL)updateWithData:(NSArray *)data EntityKey:(NSString *)entityKey IEntityKey:(NSString *)iEntityKey;
+- (void)updateWithIEntity:(id)iEntity;
++ (id)objectByEntityKey:(NSString *)value;
+- (NSDictionary *)elementToPropertMappings;
+
+- (NSMutableDictionary*) toMutableDictionary;
 - (void)PrintSelf;
  
 
