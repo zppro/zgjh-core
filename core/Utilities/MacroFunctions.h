@@ -92,6 +92,8 @@
 #pragma mark - Helper
 #define IS_NIL_OR_EMPTY(obj) IsNilOrEmpty(obj)
 
+#define NURL(s) [NSURL fileURLWithPath:s]
+
 // MARK: - String Helper
 #define NULL_STR(str, default) (str ?: default)
 #define EMPTY_STR(str, default) (str ? (str.length == 0 ? default : str ) : default)
@@ -99,6 +101,20 @@
 #define SI(i) [NSString stringWithFormat:@"%d", i]
 #define SNI(ni) [NSString stringWithFormat:@"%d", [ni intValue]]
 #define S_A_T(a,t) [NSString stringWithFormat:@"%d/%d", a,t]
+#define JOIN(a,b) [a stringByAppendingFormat:@"%@",b]
+#define JOINF(s,a,b) [a stringByAppendingFormat:@"%@%@",s,b]
+#define JOIN2(a,b,c) [a stringByAppendingFormat:@"%@%@",b,c]
+#define JOINF2(s,a,b,c) [a stringByAppendingFormat:@"%@%@%@%@",s,b,s,c]
+#define JOIN3(a,b,c,d) [a stringByAppendingFormat:@"%@%@%@",b,c,d]
+#define JOINF3(s,a,b,c,d) [a stringByAppendingFormat:@"%@%@%@%@%@%@",s,b,s,c,s,d]
+#define JOINP(a,b) [a stringByAppendingPathComponent:b]
+#define JOINP2(a,b,c) JOINP(JOINP(a,b),c)
+#define JOINP3(a,b,c,d) JOINP(JOINP2(a,b,c),d)
+#define JOINA(s,a) [a componentsJoinedByString:s]
+#define JOINAP(a) [a componentsJoinedByString:@"/"]
+#define GUID [NSString guidString]
+#define SPLIT(s,a) [a componentsSeparatedByString: s]
+#define SPLITP(a) [a componentsSeparatedByString: @"/"]
 // MARK: - Path Helper
 #define DOCUMENTS_DIR ([NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject])
 
@@ -163,10 +179,13 @@ alpha:alphaValue]
 #endif 
 
 //file
+#define FMR [NSFileManager defaultManager]
 #define MF_ResourceDocument() [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Documents"]
-#define MF_DocumentFolder() [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
-#define MF_FileExists(fullPath) [[NSFileManager defaultManager] fileExistsAtPath:fullPath]
- 
+#define MF_DocumentFolder2() [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
+#define MF_DocumentFolder() [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+#define MF_FileExists(fullPath) [FMR fileExistsAtPath:fullPath]
+
+
 //设置
 #define AppSettingInteger(key) [[NSUserDefaults standardUserDefaults] integerForKey:key]
 #define AppSetting(key) [[NSUserDefaults standardUserDefaults] valueForKey:key]

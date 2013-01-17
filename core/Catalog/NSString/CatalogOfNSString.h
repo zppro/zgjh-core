@@ -10,5 +10,6 @@
 #define core_CatalogOfNSString_h
 
 #import "NSString+MD5Addition.h"
+#import "NSString+Formatter.h"
 
 #endif

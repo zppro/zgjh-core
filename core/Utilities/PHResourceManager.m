@@ -7,7 +7,7 @@
 //
 
 #import "PHResourceManager.h"
-#import "MacroFunctions.h"
+
 
 @implementation PHResourceManager
 
@@ -68,6 +68,52 @@
         }
     }
     return filePath;
+}
+
++ (void) moveResourceFrom:(NSString *)sourcePath To:(NSString*) destPath sucessBlock:(SuccessBlock)sucessBlock failedBlock:(FailedBlock)failedBlock completionBlock:(FinalBlock)completionBlock{
+    NSError *moveError;
+    if (!MF_FileExists(sourcePath)){
+        moveError = [NSError errorWithDomain:@"core" code:101 userInfo:[NSDictionary dictionaryWithObjectsAndKeys:@"sourcePath is not exist",@"message", nil ]];
+        
+        failedBlock(moveError);
+        completionBlock();
+        return;
+    }
+    if (MF_FileExists(destPath)){
+        //删除
+        if(![FMR removeItemAtPath:destPath error:&moveError]){
+            failedBlock(moveError);
+            completionBlock();
+            return;
+        } 
+    }
+    
+    
+    NSMutableArray *dirs = [NSMutableArray arrayWithArray:SPLITP(destPath)];
+    [dirs removeLastObject];
+    NSString *destDir = JOINAP(dirs);
+    if(!destDir){
+        moveError = [NSError errorWithDomain:@"core" code:102 userInfo:[NSDictionary dictionaryWithObjectsAndKeys:@"destPath is not valid",@"message", nil ]];
+        failedBlock(moveError);
+        completionBlock();
+        return;
+    }
+    BOOL isDir;
+    if (![FMR fileExistsAtPath:destDir isDirectory:&isDir]) {
+        if(isDir && ![FMR createDirectoryAtPath:destDir withIntermediateDirectories:YES attributes:nil error:&moveError]){
+            failedBlock(moveError);
+            completionBlock();
+            return;
+        }
+    }
+    
+    if([FMR moveItemAtPath:sourcePath toPath:destPath error:&moveError]){
+        sucessBlock([NSDictionary dictionary]);
+    }
+    else{
+        failedBlock(moveError);
+    }
+    completionBlock();
 }
 
 @end
