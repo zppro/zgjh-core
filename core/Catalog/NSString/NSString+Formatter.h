@@ -10,4 +10,7 @@
 
 @interface NSString (Formatter)
 +(NSString*)guidString;
+
+-(NSUInteger) indexOf:(NSString *) subStr;
+
 @end

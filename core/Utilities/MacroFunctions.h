@@ -92,13 +92,15 @@
 #pragma mark - Helper
 #define IS_NIL_OR_EMPTY(obj) IsNilOrEmpty(obj)
 
-#define NURL(s) [NSURL fileURLWithPath:s]
+#define NFURL(s) [NSURL fileURLWithPath:s]
+#define NHURL(s) [NSURL URLWithString:[s stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]
 
 // MARK: - String Helper
 #define NULL_STR(str, default) (str ?: default)
 #define EMPTY_STR(str, default) (str ? (str.length == 0 ? default : str ) : default)
 #define NULL_STR_DEFAULT_TO_EMPTY(str) NULL_STR(str, @"")
 #define SI(i) [NSString stringWithFormat:@"%d", i]
+#define SF(f) [NSString stringWithFormat:@"%f", f]
 #define SNI(ni) [NSString stringWithFormat:@"%d", [ni intValue]]
 #define S_A_T(a,t) [NSString stringWithFormat:@"%d/%d", a,t]
 #define JOIN(a,b) [a stringByAppendingFormat:@"%@",b]

@@ -80,6 +80,8 @@
 		AC8EB8DE16A6DD9C001F3A06 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8EB8DD16A6DD98001F3A06 /* AVFoundation.framework */; };
 		AC8EB8EC16A6E0A1001F3A06 /* NSString+Formatter.h in Headers */ = {isa = PBXBuildFile; fileRef = AC8EB8EA16A6E0A0001F3A06 /* NSString+Formatter.h */; };
 		AC8EB8ED16A6E0A1001F3A06 /* NSString+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8EB8EB16A6E0A0001F3A06 /* NSString+Formatter.m */; };
+		AC8EB91A16A91373001F3A06 /* HttpSynchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = AC8EB91816A91371001F3A06 /* HttpSynchronous.h */; };
+		AC8EB91B16A91373001F3A06 /* HttpSynchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8EB91916A91372001F3A06 /* HttpSynchronous.m */; };
 		ACACC6891661050500CE5BC0 /* CInputAssistView.h in Headers */ = {isa = PBXBuildFile; fileRef = ACACC6871661050500CE5BC0 /* CInputAssistView.h */; };
 		ACACC68A1661050500CE5BC0 /* CInputAssistView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACACC6881661050500CE5BC0 /* CInputAssistView.m */; };
 		ACACC6931661191E00CE5BC0 /* TableHeaderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = ACACC6901661191E00CE5BC0 /* TableHeaderDelegate.h */; };
@@ -310,6 +312,8 @@
 		AC8EB8DD16A6DD98001F3A06 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		AC8EB8EA16A6E0A0001F3A06 /* NSString+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Formatter.h"; path = "Catalog/NSString/NSString+Formatter.h"; sourceTree = "<group>"; };
 		AC8EB8EB16A6E0A0001F3A06 /* NSString+Formatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Formatter.m"; path = "Catalog/NSString/NSString+Formatter.m"; sourceTree = "<group>"; };
+		AC8EB91816A91371001F3A06 /* HttpSynchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpSynchronous.h; path = Utilities/Http/HttpSynchronous.h; sourceTree = "<group>"; };
+		AC8EB91916A91372001F3A06 /* HttpSynchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpSynchronous.m; path = Utilities/Http/HttpSynchronous.m; sourceTree = "<group>"; };
 		ACA95933166DEF9C00302D82 /* CatalogOfUIImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CatalogOfUIImage.h; path = Catalog/UIImage/CatalogOfUIImage.h; sourceTree = "<group>"; };
 		ACACC668165DC83300CE5BC0 /* CatalogOfNSArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CatalogOfNSArray.h; path = Catalog/NSArray/CatalogOfNSArray.h; sourceTree = "<group>"; };
 		ACACC6871661050500CE5BC0 /* CInputAssistView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CInputAssistView.h; path = OpenSource/AssistView/CInputAssistView.h; sourceTree = "<group>"; };
@@ -621,6 +625,8 @@
 			children = (
 				AC4AB5E1167D823E006D88B7 /* Http.h */,
 				AC4AB5E2167D823E006D88B7 /* Http.m */,
+				AC8EB91816A91371001F3A06 /* HttpSynchronous.h */,
+				AC8EB91916A91372001F3A06 /* HttpSynchronous.m */,
 				AC4AB5E3167D823E006D88B7 /* HttpAsynchronous.h */,
 				AC4AB5E4167D823E006D88B7 /* HttpAsynchronous.m */,
 				AC4AB5E5167D823E006D88B7 /* Reachability.h */,
@@ -1107,6 +1113,7 @@
 				ACB162CC16897C030029E395 /* SharedObjectsContainer.h in Headers */,
 				ACF41BD116930857008F5F56 /* RomDevice.h in Headers */,
 				AC8EB8EC16A6E0A1001F3A06 /* NSString+Formatter.h in Headers */,
+				AC8EB91A16A91373001F3A06 /* HttpSynchronous.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1255,6 +1262,7 @@
 				ACB162CD16897C030029E395 /* SharedObjectsContainer.m in Sources */,
 				ACF41BD216930857008F5F56 /* RomDevice.m in Sources */,
 				AC8EB8ED16A6E0A1001F3A06 /* NSString+Formatter.m in Sources */,
+				AC8EB91B16A91373001F3A06 /* HttpSynchronous.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,10 +22,14 @@
 #import "SkinContainer.h"
 #import "Skin.h"
 
+#import "ASIHTTPRequestDelegate.h"
+#import "ASIProgressDelegate.h"
 #import "LeblueRequest.h"
 #import "LeblueResponse.h"
 #import "HttpAsynchronous.h"
+#import "HttpSynchronous.h"
 #import "Http.h"
+
 
 #import "SharedObjectsContainer.h"
 

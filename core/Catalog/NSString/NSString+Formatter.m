@@ -16,6 +16,16 @@
     CFRelease(theUUID);
     return [(NSString *)string autorelease];
 }
- 
+
+-(NSUInteger) indexOf:(NSString *) subStr{
+    NSRange range = [self rangeOfString:subStr];
+    if (range.length == 0){
+        return -1;
+    }
+    else{
+        return range.location;
+    } 
+}
+
 
 @end
