@@ -25,4 +25,6 @@
 
 #import "TableHeaderView.h"
 
+#import "AddressBook.h"
+
 #endif

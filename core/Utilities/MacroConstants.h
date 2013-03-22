@@ -17,9 +17,9 @@
 #define kErrorCodeOfInvokeResult @"ErrorCode"
 #define kErrorMessageOfInvokeResult @"ErrorMessage"
 #define kErrorCodeForConcurrency 59999
-#define kErrorDomain @"codans"
+#define kErrorDomain @"zppro"
 
 #define kNotificationNameLocationDidUpdate @"locationDidUpdate"
-
+#define kNotificationLocalAddressBookDidChange @"LocalAddressBookDidChangeNotification"
 
 #endif

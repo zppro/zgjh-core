@@ -187,6 +187,8 @@ alpha:alphaValue]
 #define MF_DocumentFolder() [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
 #define MF_FileExists(fullPath) [FMR fileExistsAtPath:fullPath]
 
+//addressbook
+#define ab [ABAddressBook sharedAddressBook]
 
 //设置
 #define AppSettingInteger(key) [[NSUserDefaults standardUserDefaults] integerForKey:key]
