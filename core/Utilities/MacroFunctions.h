@@ -21,6 +21,8 @@
 #define DLog( s, ... ) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
 //#define DebugLog( s, ... ) NSLog( @"<<<<%p %@:(%d) %s>>>>\n%@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, __PRETTY_FUNCTION__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
 //#define DebugLog(...)  GTMLoggerDebug(__VA_ARGS__)//LOG_DEBUG(__VA_ARGS__)
+#define CMLog(format, ...) NSLog(@"%s:%@", __PRETTY_FUNCTION__,[NSString stringWithFormat:format, ## __VA_ARGS__]);
+#define MARK	CMLog(@"%s", __PRETTY_FUNCTION__);
 #else
 #define DLog( s, ... ) do { } while(0);
 //#define DebugLog( s, ... )  do { } while(0);
