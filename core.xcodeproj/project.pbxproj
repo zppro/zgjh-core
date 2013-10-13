@@ -118,6 +118,14 @@
 		ACB162CC16897C030029E395 /* SharedObjectsContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = ACB162CA16897BFF0029E395 /* SharedObjectsContainer.h */; };
 		ACB162CD16897C030029E395 /* SharedObjectsContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB162CB16897C010029E395 /* SharedObjectsContainer.m */; };
 		ACB162CF16897E4E0029E395 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB162CE16897E4C0029E395 /* CoreLocation.framework */; };
+		ACC3433017939D2500D5F5A1 /* HttpAppRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = ACC3432E17939D2400D5F5A1 /* HttpAppRequest.h */; };
+		ACC3433117939D2500D5F5A1 /* HttpAppRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC3432F17939D2500D5F5A1 /* HttpAppRequest.m */; };
+		ACC3433417939DB800D5F5A1 /* HttpAppResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = ACC3433217939DB700D5F5A1 /* HttpAppResponse.h */; };
+		ACC3433517939DB800D5F5A1 /* HttpAppResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC3433317939DB700D5F5A1 /* HttpAppResponse.m */; };
+		ACC3433817939F6E00D5F5A1 /* HttpAppAsynchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = ACC3433617939F6C00D5F5A1 /* HttpAppAsynchronous.h */; };
+		ACC3433917939F6E00D5F5A1 /* HttpAppAsynchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC3433717939F6D00D5F5A1 /* HttpAppAsynchronous.m */; };
+		ACC3436117968B2500D5F5A1 /* NSUserDefaults+Standard.h in Headers */ = {isa = PBXBuildFile; fileRef = ACC3435F17968B2500D5F5A1 /* NSUserDefaults+Standard.h */; };
+		ACC3436217968B2500D5F5A1 /* NSUserDefaults+Standard.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC3436017968B2500D5F5A1 /* NSUserDefaults+Standard.m */; };
 		ACD3DD20156BCA3100D299B2 /* NSObject+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD3DCE7156BCA3100D299B2 /* NSObject+JSON.h */; };
 		ACD3DD21156BCA3100D299B2 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD3DCE8156BCA3100D299B2 /* NSObject+JSON.m */; };
 		ACD3DD22156BCA3100D299B2 /* NSError+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD3DCEA156BCA3100D299B2 /* NSError+Extensions.h */; };
@@ -377,6 +385,16 @@
 		ACB162CA16897BFF0029E395 /* SharedObjectsContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SharedObjectsContainer.h; path = Utilities/SharedObjectsContainer.h; sourceTree = "<group>"; };
 		ACB162CB16897C010029E395 /* SharedObjectsContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SharedObjectsContainer.m; path = Utilities/SharedObjectsContainer.m; sourceTree = "<group>"; };
 		ACB162CE16897E4C0029E395 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		ACC3432E17939D2400D5F5A1 /* HttpAppRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpAppRequest.h; path = Utilities/Http/HttpAppRequest.h; sourceTree = "<group>"; };
+		ACC3432F17939D2500D5F5A1 /* HttpAppRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpAppRequest.m; path = Utilities/Http/HttpAppRequest.m; sourceTree = "<group>"; };
+		ACC3433217939DB700D5F5A1 /* HttpAppResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpAppResponse.h; path = Utilities/Http/HttpAppResponse.h; sourceTree = "<group>"; };
+		ACC3433317939DB700D5F5A1 /* HttpAppResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpAppResponse.m; path = Utilities/Http/HttpAppResponse.m; sourceTree = "<group>"; };
+		ACC3433617939F6C00D5F5A1 /* HttpAppAsynchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpAppAsynchronous.h; path = Utilities/Http/HttpAppAsynchronous.h; sourceTree = "<group>"; };
+		ACC3433717939F6D00D5F5A1 /* HttpAppAsynchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpAppAsynchronous.m; path = Utilities/Http/HttpAppAsynchronous.m; sourceTree = "<group>"; };
+		ACC3435D17968A6800D5F5A1 /* CatalogOfNSBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CatalogOfNSBundle.h; path = Catalog/NSBundle/CatalogOfNSBundle.h; sourceTree = "<group>"; };
+		ACC3435F17968B2500D5F5A1 /* NSUserDefaults+Standard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSUserDefaults+Standard.h"; path = "Catalog/NSUserDefault/NSUserDefaults+Standard.h"; sourceTree = "<group>"; };
+		ACC3436017968B2500D5F5A1 /* NSUserDefaults+Standard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSUserDefaults+Standard.m"; path = "Catalog/NSUserDefault/NSUserDefaults+Standard.m"; sourceTree = "<group>"; };
+		ACC3436317968B5700D5F5A1 /* CatalogOfNSUserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CatalogOfNSUserDefaults.h; path = Catalog/NSUserDefault/CatalogOfNSUserDefaults.h; sourceTree = "<group>"; };
 		ACD3DCE7156BCA3100D299B2 /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
 		ACD3DCE8156BCA3100D299B2 /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSON.m"; sourceTree = "<group>"; };
 		ACD3DCEA156BCA3100D299B2 /* NSError+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Extensions.h"; sourceTree = "<group>"; };
@@ -684,6 +702,12 @@
 				AC4AB5EE167D82CD006D88B7 /* LeblueRequest.m */,
 				AC4AB5F1167D8393006D88B7 /* LeblueResponse.h */,
 				AC4AB5F2167D8393006D88B7 /* LeblueResponse.m */,
+				ACC3432E17939D2400D5F5A1 /* HttpAppRequest.h */,
+				ACC3432F17939D2500D5F5A1 /* HttpAppRequest.m */,
+				ACC3433217939DB700D5F5A1 /* HttpAppResponse.h */,
+				ACC3433317939DB700D5F5A1 /* HttpAppResponse.m */,
+				ACC3433617939F6C00D5F5A1 /* HttpAppAsynchronous.h */,
+				ACC3433717939F6D00D5F5A1 /* HttpAppAsynchronous.m */,
 			);
 			name = Http;
 			sourceTree = "<group>";
@@ -741,6 +765,16 @@
 				ACACC6921661191E00CE5BC0 /* TableHeaderView.m */,
 			);
 			name = TableHeaderUI;
+			sourceTree = "<group>";
+		};
+		ACC3435E17968AFB00D5F5A1 /* NSUserDefault */ = {
+			isa = PBXGroup;
+			children = (
+				ACC3435F17968B2500D5F5A1 /* NSUserDefaults+Standard.h */,
+				ACC3436017968B2500D5F5A1 /* NSUserDefaults+Standard.m */,
+				ACC3436317968B5700D5F5A1 /* CatalogOfNSUserDefaults.h */,
+			);
+			name = NSUserDefault;
 			sourceTree = "<group>";
 		};
 		ACD3DCE6156BCA3100D299B2 /* JSON */ = {
@@ -892,6 +926,7 @@
 		ACDDF38A1531C03200011F06 /* Catalog */ = {
 			isa = PBXGroup;
 			children = (
+				ACC3435E17968AFB00D5F5A1 /* NSUserDefault */,
 				AC4AB5D0167D7AAE006D88B7 /* NSError */,
 				AC15B0CA165BCDDD00E856E4 /* NSArray */,
 				ACDDF3A71531D4BB00011F06 /* NSBundle */,
@@ -968,6 +1003,7 @@
 			children = (
 				ACDDF3A81531D4D400011F06 /* NSBundle+ECUtilities.h */,
 				ACDDF3A91531D4D400011F06 /* NSBundle+ECUtilities.m */,
+				ACC3435D17968A6800D5F5A1 /* CatalogOfNSBundle.h */,
 			);
 			name = NSBundle;
 			sourceTree = "<group>";
@@ -1215,6 +1251,10 @@
 				AC8EB94216AA74EF001F3A06 /* AddressBook.h in Headers */,
 				AC96F00416FACECB004BD83F /* SVSegmentedControl.h in Headers */,
 				AC96F00616FACECB004BD83F /* SVSegmentedThumb.h in Headers */,
+				ACC3433017939D2500D5F5A1 /* HttpAppRequest.h in Headers */,
+				ACC3433417939DB800D5F5A1 /* HttpAppResponse.h in Headers */,
+				ACC3433817939F6E00D5F5A1 /* HttpAppAsynchronous.h in Headers */,
+				ACC3436117968B2500D5F5A1 /* NSUserDefaults+Standard.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1373,6 +1413,10 @@
 				AC8EB94116AA74EF001F3A06 /* ABSource.m in Sources */,
 				AC96F00516FACECB004BD83F /* SVSegmentedControl.m in Sources */,
 				AC96F00716FACECB004BD83F /* SVSegmentedThumb.m in Sources */,
+				ACC3433117939D2500D5F5A1 /* HttpAppRequest.m in Sources */,
+				ACC3433517939DB800D5F5A1 /* HttpAppResponse.m in Sources */,
+				ACC3433917939F6E00D5F5A1 /* HttpAppAsynchronous.m in Sources */,
+				ACC3436217968B2500D5F5A1 /* NSUserDefaults+Standard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

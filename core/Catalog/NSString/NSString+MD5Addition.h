@@ -11,5 +11,5 @@
 @interface NSString(MD5Addition)
 
 - (NSString *) stringFromMD5;
-
+-(NSString *) MD5;
 @end

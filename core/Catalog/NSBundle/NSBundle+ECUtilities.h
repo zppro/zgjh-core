@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+#define SETTING_DEPLOY_VERSION_KEY @"deploy_version"
 
 @interface NSBundle (ECUtilities)
 

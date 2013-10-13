@@ -30,9 +30,9 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(e0571CoreDataManager);
 - (NSString *)dbName {
     
     BOOL debug = NO;
-    NSNumber *isDebug = [[NSUserDefaults standardUserDefaults] valueForKey:SETTING_DEBUG_KEY];
-    if (isDebug) {
-        debug = [isDebug boolValue];
+    NSNumber *_isDebug = [[NSUserDefaults standardUserDefaults] valueForKey:SETTING_DEBUG_KEY];
+    if (_isDebug) {
+        debug = [_isDebug boolValue];
     }
     
     NSString *baseDbName = [[NSBundle mainBundle] bundleName];

@@ -15,4 +15,6 @@
 #import "CatalogOfUIDevice.h"
 #import "CatalogOfUIImage.h"
 #import "CatalogOfNSString.h"
+#import "CatalogOfNSBundle.h"
+#import "CatalogOfNSUserDefaults.h"
 #endif

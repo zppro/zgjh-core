@@ -101,25 +101,39 @@
                                                                          range:NSMakeRange(0, [value length])];
                  
                 */
-                NSPredicate *dateStringPredict = [NSPredicate predicateWithFormat:@"SELF MATCHES '((19|20)[0-9][0-9])-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])[T]([0-5][0-9]):([0-5][0-9]):([0-5][0-9])(\\.?[0-9]{0,3})?'"];
-                BOOL isMatch = [dateStringPredict evaluateWithObject:value];
-                if(isMatch){
-                    //日期
-                    NSDate * valueDate = ParseDateFromStringFormat(value, @"yyyy-MM-dd'T'HH:mm:ss");
-                    if(valueDate == nil){
-                        valueDate = ParseDateFromStringFormat(value, @"yyyy-MM-dd'T'HH:mm:ss.S");
-                    }
-                    if(valueDate == nil){
-                        valueDate = ParseDateFromStringFormat(value, @"yyyy-MM-dd'T'HH:mm:ss.SS");
-                    }
-                    if(valueDate == nil){
-                        valueDate = ParseDateFromStringFormat(value, @"yyyy-MM-dd'T'HH:mm:ss.SSS");
-                    }
-                    [self setValue:valueDate forKey:[mapings objectForKey:key]];
+                
+                // Expect date in this format "/Date(1268123281843)/"
+                NSRange range = [value rangeOfString:@"/Date"];
+                if(range.length>0 && range.location==0){
+                    int startPos = [value rangeOfString:@"("].location+1;
+                    int endPos = [value rangeOfString:@")"].location;
+                    NSRange range = NSMakeRange(startPos,endPos-startPos);
+                    unsigned long long milliseconds = [[value substringWithRange:range] longLongValue];
+                    NSTimeInterval interval = milliseconds/1000;
+                    [self setValue:[NSDate dateWithTimeIntervalSince1970:interval] forKey:[mapings objectForKey:key]];
                 }
                 else{
-                   [self setValue:value forKey:[mapings objectForKey:key]]; 
+                    NSPredicate *dateStringPredict = [NSPredicate predicateWithFormat:@"SELF MATCHES '((19|20)[0-9][0-9])-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])[T]([0-5][0-9]):([0-5][0-9]):([0-5][0-9])(\\.?[0-9]{0,3})?'"];
+                    BOOL isMatch = [dateStringPredict evaluateWithObject:value];
+                    if(isMatch){
+                        //日期
+                        NSDate * valueDate = ParseDateFromStringFormat(value, @"yyyy-MM-dd'T'HH:mm:ss");
+                        if(valueDate == nil){
+                            valueDate = ParseDateFromStringFormat(value, @"yyyy-MM-dd'T'HH:mm:ss.S");
+                        }
+                        if(valueDate == nil){
+                            valueDate = ParseDateFromStringFormat(value, @"yyyy-MM-dd'T'HH:mm:ss.SS");
+                        }
+                        if(valueDate == nil){
+                            valueDate = ParseDateFromStringFormat(value, @"yyyy-MM-dd'T'HH:mm:ss.SSS");
+                        }
+                        [self setValue:valueDate forKey:[mapings objectForKey:key]];
+                    }
+                    else{
+                        [self setValue:value forKey:[mapings objectForKey:key]];
+                    }
                 }
+                
             }
             else{
                 [self setValue:value forKey:[mapings objectForKey:key]];

@@ -27,7 +27,10 @@
 #import "ASIProgressDelegate.h"
 #import "LeblueRequest.h"
 #import "LeblueResponse.h"
+#import "HttpAppRequest.h"
+#import "HttpAppResponse.h"
 #import "HttpAsynchronous.h"
+#import "HttpAppAsynchronous.h"
 #import "HttpSynchronous.h"
 #import "Http.h"
 
