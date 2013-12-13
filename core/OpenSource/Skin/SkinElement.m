@@ -133,7 +133,7 @@
         [label setTextColor:MF_ColorFromString(_textColor)];
     }
     if (_textAlignment) {
-        [label setTextAlignment:[EnumStrings UITextAlignmentFromString:_textAlignment]];
+        [label setTextAlignment:[EnumStrings NSTextAlignmentFromString:_textAlignment]];
     }
     if (_backgroundColor) {
         [label setBackgroundColor:MF_ColorFromString(_backgroundColor)];
@@ -153,7 +153,7 @@
         [button setTitleColor:MF_ColorFromString(_textColor) forState:UIControlStateNormal];
     }
     if (_textAlignment) {
-        [button.titleLabel setTextAlignment:[EnumStrings UITextAlignmentFromString:_textAlignment]];
+        [button.titleLabel setTextAlignment:[EnumStrings NSTextAlignmentFromString:_textAlignment]];
     }
     if (_backgroundColor) { 
         [button setBackgroundColor:MF_ColorFromString(_backgroundColor)];
@@ -179,7 +179,7 @@
         [textField setTextColor:MF_ColorFromString(_textColor)];
     }
     if (_textAlignment) {
-        [textField setTextAlignment:[EnumStrings UITextAlignmentFromString:_textAlignment]];
+        [textField setTextAlignment:[EnumStrings NSTextAlignmentFromString:_textAlignment]];
     }
     if (_backgroundColor) {
         [textField setBackgroundColor:MF_ColorFromString(_backgroundColor)];
@@ -201,7 +201,7 @@
         [textView setTextColor:MF_ColorFromString(_textColor)];
     }
     if (_textAlignment) {
-        [textView setTextAlignment:[EnumStrings UITextAlignmentFromString:_textAlignment]];
+        [textView setTextAlignment:[EnumStrings NSTextAlignmentFromString:_textAlignment]];
     }
     if (_backgroundColor) {
         [textView setBackgroundColor:MF_ColorFromString(_backgroundColor)];

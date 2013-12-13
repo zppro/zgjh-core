@@ -11,9 +11,11 @@
 
 
 #define kNamesOfUITextAlignment @"Left", @"Center", @"Right", nil
+#define kNamesOfNSTextAlignment @"Left", @"Center", @"Right", nil
 #define kNamesOfCERenderType @"Image", @"Text",@"TextAndImage", nil
 
 static NSArray* namesOfUITextAlignment;
+static NSArray* namesOfNSTextAlignment;
 static NSArray* namesOfCERenderType;
 
 @implementation EnumStrings
@@ -21,6 +23,9 @@ static NSArray* namesOfCERenderType;
 + (void) initialize {
     if (namesOfUITextAlignment == nil) {
         namesOfUITextAlignment = [[NSArray alloc] initWithObjects: kNamesOfUITextAlignment];
+    }
+    if (namesOfNSTextAlignment == nil) {
+        namesOfNSTextAlignment = [[NSArray alloc] initWithObjects: kNamesOfNSTextAlignment];
     }
     if(namesOfCERenderType == nil){
         namesOfCERenderType = [[NSArray alloc] initWithObjects: kNamesOfCERenderType];
@@ -39,6 +44,17 @@ static NSArray* namesOfCERenderType;
         n = UITextAlignmentLeft;
     }
     return (UITextAlignment) n;
+}
+
++(NSString*) NSTextAlignmentToString:(NSTextAlignment) align{
+    return [namesOfNSTextAlignment objectAtIndex:align];
+}
++(NSTextAlignment) NSTextAlignmentFromString:(NSString*)s{
+    NSUInteger n = [namesOfNSTextAlignment indexOfObject:s];
+    if ( n == NSNotFound ) {
+        n = NSTextAlignmentLeft;
+    }
+    return (NSTextAlignment) n;
 }
 
 +(NSString*) CERenderTypeToString:(CERenderType) renderType{

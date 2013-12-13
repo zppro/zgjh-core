@@ -10,4 +10,7 @@
 
 @interface UIImage (Scale)
 -(UIImage*)scaleToSize:(CGSize)size;
++ (id) createRoundedRectImage:(UIImage*)image size:(CGSize)size;
++ (CGImageRef) createRoundedRectImageRef:(UIImage*)image size:(CGSize)size;
+-(UIColor*) asBackgroundColor;
 @end

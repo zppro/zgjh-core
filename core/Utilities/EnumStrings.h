@@ -25,6 +25,9 @@ typedef enum{
 +(NSString*) UITextAlignmentToString:(UITextAlignment) align;
 +(UITextAlignment) UITextAlignmentFromString:(NSString*)s;
 
++(NSString*) NSTextAlignmentToString:(NSTextAlignment) align;
++(NSTextAlignment) NSTextAlignmentFromString:(NSString*)s;
+
 +(NSString*) CERenderTypeToString:(CERenderType) renderType;
 +(CERenderType) CERenderTypeFromString:(NSString*)s;
 @end

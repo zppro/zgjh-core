@@ -144,9 +144,9 @@
 		posY--;
 	
 	int i = 0;
-	
+
 	for(NSString *titleString in titlesArray) {
-		[titleString drawInRect:CGRectMake((segmentWidth*i), posY, segmentWidth, self.font.pointSize) withFont:self.font lineBreakMode:UILineBreakModeClip alignment:UITextAlignmentCenter];
+		[titleString drawInRect:CGRectMake((segmentWidth*i), posY, segmentWidth, self.font.pointSize) withFont:self.font lineBreakMode:NSLineBreakByClipping alignment:NSTextAlignmentCenter];
 		i++;
 	}
 	

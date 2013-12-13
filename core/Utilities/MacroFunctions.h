@@ -54,6 +54,10 @@
 
 #define IS_IOS_5 SYSTEM_VERSION_LIKE(@"5.")
 
+#define IS_IOS_6 SYSTEM_VERSION_LIKE(@"6.")
+
+#define IS_IOS_7 SYSTEM_VERSION_LIKE(@"7.")
+
 #define IS_IPHONE ([UIDevice currentDevice].platformType == UIDevice1GiPod || [UIDevice currentDevice].platformType == UIDevice2GiPod || [UIDevice currentDevice].platformType == UIDevice3GiPod || [UIDevice currentDevice].platformType == UIDevice4GiPod || [UIDevice currentDevice].platformType == UIDeviceUnknowniPod)
 #define IS_IPHONE_1 ([UIDevice currentDevice].platformType == UIDevice1GiPhone)
 #define IS_IPHONE_3 ([UIDevice currentDevice].platformType == UIDevice3GiPhone)
