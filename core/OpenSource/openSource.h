@@ -29,4 +29,5 @@
 #import "JSBadgeView.h"
 #import "MWFSlideNavigationViewController.h"
 #import "RNGridMenu.h"
+#import "BZGFormField.h"
 #endif

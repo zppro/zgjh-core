@@ -44,6 +44,8 @@
 		AC15B0E2165BD59600E856E4 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AC15B0E1165BD59600E856E4 /* libxml2.dylib */; };
 		AC17EF6D16688F0800E9FD41 /* ZPUIActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = AC17EF6B16688F0800E9FD41 /* ZPUIActionSheet.h */; };
 		AC17EF6E16688F0800E9FD41 /* ZPUIActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = AC17EF6C16688F0800E9FD41 /* ZPUIActionSheet.m */; };
+		AC395509185ED84B00B87255 /* BZGFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = AC395507185ED84B00B87255 /* BZGFormField.h */; };
+		AC39550A185ED84B00B87255 /* BZGFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = AC395508185ED84B00B87255 /* BZGFormField.m */; };
 		AC4AB5BC167D7A2D006D88B7 /* ASIAuthenticationDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = AC4AB5A8167D7A2D006D88B7 /* ASIAuthenticationDialog.h */; };
 		AC4AB5BD167D7A2D006D88B7 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4AB5A9167D7A2D006D88B7 /* ASIAuthenticationDialog.m */; };
 		AC4AB5BE167D7A2D006D88B7 /* ASICacheDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AC4AB5AA167D7A2D006D88B7 /* ASICacheDelegate.h */; };
@@ -318,6 +320,8 @@
 		AC17EF6C16688F0800E9FD41 /* ZPUIActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZPUIActionSheet.m; path = Extend/UIActionSheet/ZPUIActionSheet.m; sourceTree = "<group>"; };
 		AC17EF6F1668908E00E9FD41 /* extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = extend.h; path = Extend/extend.h; sourceTree = "<group>"; };
 		AC17EF70166890C800E9FD41 /* ExtendOfUIActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ExtendOfUIActionSheet.h; path = Extend/UIActionSheet/ExtendOfUIActionSheet.h; sourceTree = "<group>"; };
+		AC395507185ED84B00B87255 /* BZGFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BZGFormField.h; path = OpenSource/BZGFormField/BZGFormField.h; sourceTree = "<group>"; };
+		AC395508185ED84B00B87255 /* BZGFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BZGFormField.m; path = OpenSource/BZGFormField/BZGFormField.m; sourceTree = "<group>"; };
 		AC4AB5A8167D7A2D006D88B7 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIAuthenticationDialog.h; path = OpenSource/AsiHttpRequest/ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		AC4AB5A9167D7A2D006D88B7 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIAuthenticationDialog.m; path = OpenSource/AsiHttpRequest/ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		AC4AB5AA167D7A2D006D88B7 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASICacheDelegate.h; path = OpenSource/AsiHttpRequest/ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -674,6 +678,15 @@
 				AC17EF70166890C800E9FD41 /* ExtendOfUIActionSheet.h */,
 			);
 			name = UIActionSheet;
+			sourceTree = "<group>";
+		};
+		AC395506185ED80500B87255 /* BZGFormField */ = {
+			isa = PBXGroup;
+			children = (
+				AC395507185ED84B00B87255 /* BZGFormField.h */,
+				AC395508185ED84B00B87255 /* BZGFormField.m */,
+			);
+			name = BZGFormField;
 			sourceTree = "<group>";
 		};
 		AC4AB5A7167D7A1E006D88B7 /* AsiHttpRequest */ = {
@@ -1102,6 +1115,7 @@
 		ACDDF3BF1531D79D00011F06 /* OpenSoucre */ = {
 			isa = PBXGroup;
 			children = (
+				AC395506185ED80500B87255 /* BZGFormField */,
 				ACA606D1185AA73A00523D4A /* RNGridMenu */,
 				ACAD45B41859FD02005ED3E9 /* JWFolders */,
 				ACAD45A71859E564005ED3E9 /* Navigation */,
@@ -1318,6 +1332,7 @@
 				AC4AB5EB167D823E006D88B7 /* Reachability.h in Headers */,
 				AC4AB5EF167D82CE006D88B7 /* LeblueRequest.h in Headers */,
 				ACAD45AA1859E57C005ED3E9 /* MWFSlideNavigationViewController.h in Headers */,
+				AC395509185ED84B00B87255 /* BZGFormField.h in Headers */,
 				AC4AB5F3167D8394006D88B7 /* LeblueResponse.h in Headers */,
 				ACB162CC16897C030029E395 /* SharedObjectsContainer.h in Headers */,
 				ACF41BD116930857008F5F56 /* RomDevice.h in Headers */,
@@ -1397,6 +1412,7 @@
 				ACA606D5185AA76300523D4A /* RNGridMenu.m in Sources */,
 				ACDDF3961531C43600011F06 /* UIView+Positioning.m in Sources */,
 				ACDDF3981531C43600011F06 /* UIView+Size.m in Sources */,
+				AC39550A185ED84B00B87255 /* BZGFormField.m in Sources */,
 				ACDDF39D1531D35700011F06 /* UIView+Helper.m in Sources */,
 				ACDDF3A41531D49300011F06 /* NSData+ECUtilities.m in Sources */,
 				ACDDF3A61531D49300011F06 /* NSDate+ECUtilities.m in Sources */,
