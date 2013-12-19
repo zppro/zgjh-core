@@ -14,7 +14,7 @@
 #import "ASIFormDataRequest.h"
 #import "HttpAppRequest.h"
 #import "HttpAppResponse.h"
- 
+#import "NSBundle+ECUtilities.h"
 
 @implementation HttpAppAsynchronous
 
@@ -22,7 +22,7 @@
     NSURL *nUrl = [NSURL URLWithString:[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:nUrl];
-    [request setTimeOutSeconds:5];
+    [request setTimeOutSeconds:60];
     [request addRequestHeader:@"User-Agent" value:@"iphone"];
     [request addRequestHeader:@"Cache-control" value:@"no-cache"];
     [request addRequestHeader:@"Referer" value:url];
@@ -55,7 +55,7 @@
             sucessBlock(res);
         }
         else{
-            NSError *error = [NSError errorWithDomain:@"leblue" code:res.errorCode userInfo:[NSDictionary dictionaryWithObjectsAndKeys:res.errorMessage,@"message", nil ]];
+            NSError *error = [NSError errorWithDomain:[[NSBundle mainBundle] bundleName] code:res.errorCode userInfo:[NSDictionary dictionaryWithObjectsAndKeys:res.errorMessage,@"message", nil ]];
             
             failedBlock(error);
         }
@@ -74,7 +74,7 @@
     NSURL *nUrl = [NSURL URLWithString:[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     DebugLog(@"%@",url);
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:nUrl];
-    [request setTimeOutSeconds:5];
+    [request setTimeOutSeconds:60];
     [request addRequestHeader:@"User-Agent" value:@"iphone"];
     [request addRequestHeader:@"Cache-control" value:@"no-cache"];
     [request addRequestHeader:@"Referer" value:url];
@@ -104,7 +104,7 @@
         }
         else{
             
-            NSError *error = [NSError errorWithDomain:@"leblue" code:res.errorCode userInfo:[NSDictionary dictionaryWithObjectsAndKeys:res.errorMessage,@"message", nil ]];
+            NSError *error = [NSError errorWithDomain:[[NSBundle mainBundle] bundleName] code:res.errorCode userInfo:[NSDictionary dictionaryWithObjectsAndKeys:res.errorMessage,@"message", nil ]];
             
             failedBlock(error);
         }

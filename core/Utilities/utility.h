@@ -34,7 +34,10 @@
 #import "HttpSynchronous.h"
 #import "Http.h"
 
+#import "e0571DES.h"
 
 #import "SharedObjectsContainer.h"
+
+#define moDevice [RomDevice sharedInstance] 
 
 #endif

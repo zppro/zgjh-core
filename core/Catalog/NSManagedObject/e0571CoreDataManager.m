@@ -8,6 +8,7 @@
 
 #import "e0571CoreDataManager.h"
 #import "NSBundle+ECUtilities.h"
+#import "MacroFunctions.h"
 
 //@interface e0571CoreDataManager()
 
@@ -118,11 +119,21 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(e0571CoreDataManager);
 	NSError *error = nil;
     persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     
+    NSMutableDictionary *pragmaOptions = [NSMutableDictionary dictionary];
+    [pragmaOptions setObject:@"DELETE" forKey:@"journal_mode"];
+    /** for ios 7**/
     NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:
                              [NSNumber numberWithBool:YES], NSMigratePersistentStoresAutomaticallyOption,
-                             [NSNumber numberWithBool:YES], NSInferMappingModelAutomaticallyOption, nil];
+                             [NSNumber numberWithBool:YES], NSInferMappingModelAutomaticallyOption,
+                             pragmaOptions,
+                             NSSQLitePragmasOption, nil];
+    /** for <= ios 7**/
+    NSDictionary *options2 = [NSDictionary dictionaryWithObjectsAndKeys:
+                             [NSNumber numberWithBool:YES], NSMigratePersistentStoresAutomaticallyOption,
+                             [NSNumber numberWithBool:YES], NSInferMappingModelAutomaticallyOption,
+                             nil];
     
-    if (![persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:options error:&error]) {
+    if (![persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:(SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")?options:options2) error:&error]) {
 		/*
 		 Replace this implementation with code to handle the error appropriately.
 		 

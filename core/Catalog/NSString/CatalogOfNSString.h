@@ -11,5 +11,5 @@
 
 #import "NSString+MD5Addition.h"
 #import "NSString+Formatter.h"
-
+#import "NSString+Reverse.h"
 #endif

@@ -13,6 +13,7 @@
 #import "ASIFormDataRequest.h"
 #import "LeblueRequest.h"
 #import "LeblueResponse.h"
+#import "NSBundle+ECUtilities.h"
 
 #define AESKey @"01234567890123456789012345678901"
 
@@ -28,7 +29,7 @@
     NSURL *nUrl = [NSURL URLWithString:[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:nUrl];
-    [request setTimeOutSeconds:5];
+    [request setTimeOutSeconds:60];
     [request addRequestHeader:@"User-Agent" value:@"iphone"];
     [request addRequestHeader:@"Cache-control" value:@"no-cache"];
     [request addRequestHeader:@"Referer" value:url];
@@ -56,7 +57,7 @@
         }
         else{
             
-            NSError *error = [NSError errorWithDomain:@"leblue" code:res.code.intValue userInfo:[NSDictionary dictionaryWithObjectsAndKeys:res.message,@"message", nil ]];
+            NSError *error = [NSError errorWithDomain:[[NSBundle mainBundle] bundleName] code:res.code.intValue userInfo:[NSDictionary dictionaryWithObjectsAndKeys:res.message,@"message", nil ]];
             
             failedBlock(error);
         } 
@@ -78,7 +79,7 @@
     NSURL *nUrl = [NSURL URLWithString:[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:nUrl];
-    [request setTimeOutSeconds:5];
+    [request setTimeOutSeconds:30];
     [request addRequestHeader:@"User-Agent" value:@"iphone"];
     [request addRequestHeader:@"Cache-control" value:@"no-cache"];
     [request addRequestHeader:@"Referer" value:url];
@@ -115,7 +116,7 @@
         }
         else{
             
-            NSError *error = [NSError errorWithDomain:@"leblue" code:res.code.intValue userInfo:[NSDictionary dictionaryWithObjectsAndKeys:res.message,@"message", nil ]];
+            NSError *error = [NSError errorWithDomain:[[NSBundle mainBundle] bundleName] code:res.code.intValue userInfo:[NSDictionary dictionaryWithObjectsAndKeys:res.message,@"message", nil ]];
             
             failedBlock(error);
         } 
