@@ -26,6 +26,7 @@
 @property (retain, nonatomic) RATreeNodeCollectionController *treeNodeCollectionController;
 @property (assign, nonatomic) UITableView *tableView;
 
+
 - (RATreeNode *)treeNodeForIndex:(NSInteger)index;
 - (NSIndexPath *)indexPathForItem:(id)item;
 - (void)setupTreeStructure;

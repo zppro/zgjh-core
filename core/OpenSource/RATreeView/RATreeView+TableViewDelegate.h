@@ -21,5 +21,7 @@
 #import "RATreeView.h"
 
 @interface RATreeView (TableViewDelegate) <UITableViewDelegate>
-
+@property (retain, nonatomic) NSTimer *tapTimer;
+@property (nonatomic) int tapCount;
+@property (nonatomic) int tappedRow;
 @end

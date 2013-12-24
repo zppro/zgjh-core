@@ -31,9 +31,12 @@
 
 @interface RATreeView ()
 
+
 @property (retain, nonatomic) UITableView *tableView;
 @property (retain, nonatomic) RATreeNodeCollectionController *treeNodeCollectionController;
-
+@property (retain, nonatomic) NSTimer *tapTimer;
+@property (nonatomic) int tapCount;
+@property (nonatomic) int tappedRow;
 @end
 
 @implementation RATreeView
@@ -78,6 +81,7 @@
 // mrc-arc by zppro
 - (void)dealloc {
     [_tableView release];
+    [_tapTimer release];
     self.treeNodeCollectionController = nil;
     [super dealloc];
 }
@@ -125,6 +129,9 @@
      // mrc-arc by zppro end
     self.rowsExpandingAnimation = RATreeViewRowAnimationTop;
     self.rowsExpandingAnimation = RATreeViewRowAnimationBottom;
+    
+    self.tapCount = 0;
+    self.tappedRow = -1;
 }
 
 

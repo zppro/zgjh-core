@@ -27,6 +27,9 @@
 #import "RATreeNode.h"
 
 @implementation RATreeView (TableViewDelegate)
+@dynamic tapTimer;
+@dynamic tapCount;
+@dynamic tappedRow;
 
 #pragma mark Configuring Rows for the Table View
 
@@ -82,31 +85,73 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  RATreeNode *treeNode = [self treeNodeForIndex:indexPath.row];
-  if ([self.delegate respondsToSelector:@selector(treeView:didSelectRowForItem:treeNodeInfo:)]) {
-    [self.delegate treeView:self didSelectRowForItem:treeNode.item treeNodeInfo:[treeNode treeNodeInfo]];
-  }
-  if ([[treeNode treeNodeInfo].children count] == 0) {
-    return;
-  }
-  
-  if (treeNode.expanded) {
-    if ([self.delegate respondsToSelector:@selector(treeView:shouldCollapaseRowForItem:treeNodeInfo:)]) {
-      if ([self.delegate treeView:self shouldCollapaseRowForItem:treeNode.item treeNodeInfo:[treeNode treeNodeInfo]]) {
-        [self collapseCellForTreeNode:treeNode informDelegate:YES];
-      }
-    } else {
-      [self collapseCellForTreeNode:treeNode informDelegate:YES];
+    //NSLog(@"tapCount:%d,tappedRow:%d,tapTimer:%@",self.tapCount,self.tappedRow,self.tapTimer);
+    RATreeNode *treeNode = [self treeNodeForIndex:indexPath.row];
+    if(self.tapCount == 1 && self.tapTimer != nil && self.tappedRow == indexPath.row){
+        //double tap - Put your double tap code here
+        [self.tapTimer invalidate];
+        [self setTapTimer:nil];
+        self.tapCount = 0;
+        self.tappedRow = -1;
+        
+        
+        if ([[treeNode treeNodeInfo].children count] == 0) {
+            return;
+        }
+        
+        if (treeNode.expanded) {
+            if ([self.delegate respondsToSelector:@selector(treeView:shouldCollapaseRowForItem:treeNodeInfo:)]) {
+                if ([self.delegate treeView:self shouldCollapaseRowForItem:treeNode.item treeNodeInfo:[treeNode treeNodeInfo]]) {
+                    [self collapseCellForTreeNode:treeNode informDelegate:YES];
+                }
+            } else {
+                [self collapseCellForTreeNode:treeNode informDelegate:YES];
+            }
+        } else {
+            if ([self.delegate respondsToSelector:@selector(treeView:shouldExpandRowForItem:treeNodeInfo:)]) {
+                if ([self.delegate treeView:self shouldExpandRowForItem:treeNode.item treeNodeInfo:[treeNode treeNodeInfo]]) {
+                    [self expandCellForTreeNode:treeNode informDelegate:YES];
+                }
+            } else {
+                [self expandCellForTreeNode:treeNode informDelegate:YES];
+            }
+        }
+
+        
     }
-  } else {
-    if ([self.delegate respondsToSelector:@selector(treeView:shouldExpandRowForItem:treeNodeInfo:)]) {
-      if ([self.delegate treeView:self shouldExpandRowForItem:treeNode.item treeNodeInfo:[treeNode treeNodeInfo]]) {
-        [self expandCellForTreeNode:treeNode informDelegate:YES];
-      }
-    } else {
-      [self expandCellForTreeNode:treeNode informDelegate:YES];
+    else if(self.tapCount == 0){
+        //This is the first tap. If there is no tap till tapTimer is fired, it is a single tap
+        self.tapCount = self.tapCount + 1;
+        self.tappedRow = indexPath.row;
+        [self setTapTimer:[NSTimer scheduledTimerWithTimeInterval:0.2 target:self selector:@selector(tapTimerFired:) userInfo:treeNode repeats:NO]];
+        
+        
     }
-  }
+    else if(self.tappedRow != indexPath.row){
+        //tap on new row
+        self.tapCount = 0;
+        if(self.tapTimer != nil){
+            [self.tapTimer invalidate];
+            [self setTapTimer:nil];
+        }
+    }
+    
+}
+
+- (void)tapTimerFired:(NSTimer *)aTimer{
+    //timer fired, there was a single tap on indexPath.row = tappedRow
+    if(self.tapTimer != nil){
+        RATreeNode *treeNode = aTimer.userInfo;
+        if ([self.delegate respondsToSelector:@selector(treeView:didSelectRowForItem:treeNodeInfo:)]) {
+            [self.delegate treeView:self didSelectRowForItem:treeNode.item treeNodeInfo:[treeNode treeNodeInfo]];
+        }
+        
+        self.tapCount = 0;
+        self.tappedRow = -1;
+        [self.tapTimer invalidate];
+        [self setTapTimer:nil];
+        
+    }
 }
 
 - (NSIndexPath *)tableView:(UITableView *)tableView willDeselectRowAtIndexPath:(NSIndexPath *)indexPath
