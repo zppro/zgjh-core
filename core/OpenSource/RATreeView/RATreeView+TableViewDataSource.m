@@ -52,6 +52,7 @@
   if ([self.dataSource respondsToSelector:@selector(treeView:commitEditingStyle:forRowForItem:treeNodeInfo:)]) {
     RATreeNode *treeNode = [self treeNodeForIndex:indexPath.row];
     [self.dataSource treeView:self commitEditingStyle:editingStyle forRowForItem:treeNode.item treeNodeInfo:[treeNode treeNodeInfo]];
+      [self setEditing:NO animated:YES];
   }
 }
 

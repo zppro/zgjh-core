@@ -62,7 +62,7 @@
     }
     _children = treeNodesInfos;
   }
-  return _children;
+  return [_children retain];
 }
 
 
