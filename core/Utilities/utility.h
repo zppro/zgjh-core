@@ -9,6 +9,7 @@
 #ifndef core_utility_h
 #define core_utility_h
 
+
 #import "MacroConstants.h"
 #import "RomDevice.h"
 #import "Reachability.h"

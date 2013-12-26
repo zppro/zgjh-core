@@ -9,6 +9,8 @@
 
 #import <Foundation/Foundation.h>
 #import <AudioToolbox/AudioServices.h>
+@class BaseController;
+
 typedef enum
 {
 	DialogButton_Ok=1 << 0,			//确定
@@ -60,6 +62,22 @@ id GetFirstResponser(id occurViewOrController);
 BOOL IsValidMobile(NSString* mobile);
 
 BOOL IsValidMobileByError(NSString* mobile,NSString** error);
+
+// 正则判断手机号码地址格式
+BOOL IsValidPhone(NSString *phoneNo);
+
+// 正则判断电邮格式
+BOOL IsValidMail(NSString *mail);
+
+NSArray* matchMobile(NSString* searchedString);
+NSArray* matchPhoneShort(NSString* searchedString);
+NSArray* matchTel(NSString* searchedString);
+NSArray* matchMail(NSString* searchedString);
+
+void CallPrompt(NSString* phoneNo);
+void SMSPrompt(NSString* phoneNo,BaseController *ctl);
+void MailPrompt(NSString* mail,BaseController *ctl);
+void SMS(NSString* phoneNo);
 
 BOOL IsNilOrEmpty(id obj);
 

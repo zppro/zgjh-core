@@ -106,6 +106,7 @@
 		AC4AB5F0167D82CE006D88B7 /* LeblueRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4AB5EE167D82CD006D88B7 /* LeblueRequest.m */; };
 		AC4AB5F3167D8394006D88B7 /* LeblueResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AC4AB5F1167D8393006D88B7 /* LeblueResponse.h */; };
 		AC4AB5F4167D8394006D88B7 /* LeblueResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4AB5F2167D8393006D88B7 /* LeblueResponse.m */; };
+		AC69033E186C6C8D00B2EE86 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC69033D186C6C8D00B2EE86 /* MessageUI.framework */; };
 		AC8EB8DE16A6DD9C001F3A06 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8EB8DD16A6DD98001F3A06 /* AVFoundation.framework */; };
 		AC8EB8EC16A6E0A1001F3A06 /* NSString+Formatter.h in Headers */ = {isa = PBXBuildFile; fileRef = AC8EB8EA16A6E0A0001F3A06 /* NSString+Formatter.h */; };
 		AC8EB8ED16A6E0A1001F3A06 /* NSString+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8EB8EB16A6E0A0001F3A06 /* NSString+Formatter.m */; };
@@ -409,6 +410,7 @@
 		AC4AB5EE167D82CD006D88B7 /* LeblueRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeblueRequest.m; path = Utilities/Http/LeblueRequest.m; sourceTree = "<group>"; };
 		AC4AB5F1167D8393006D88B7 /* LeblueResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeblueResponse.h; path = Utilities/Http/LeblueResponse.h; sourceTree = "<group>"; };
 		AC4AB5F2167D8393006D88B7 /* LeblueResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeblueResponse.m; path = Utilities/Http/LeblueResponse.m; sourceTree = "<group>"; };
+		AC69033D186C6C8D00B2EE86 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		AC8EB8AA169D0A98001F3A06 /* CatalogOfNSManagedObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CatalogOfNSManagedObject.h; path = Catalog/NSManagedObject/CatalogOfNSManagedObject.h; sourceTree = "<group>"; };
 		AC8EB8DD16A6DD98001F3A06 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		AC8EB8EA16A6E0A0001F3A06 /* NSString+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Formatter.h"; path = "Catalog/NSString/NSString+Formatter.h"; sourceTree = "<group>"; };
@@ -627,6 +629,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC69033E186C6C8D00B2EE86 /* MessageUI.framework in Frameworks */,
 				ACA606D7185AA78A00523D4A /* Accelerate.framework in Frameworks */,
 				ACFBAD1315A480F700B93F7B /* QuartzCore.framework in Frameworks */,
 				ACD3DDCD156E185100D299B2 /* UIKit.framework in Frameworks */,
@@ -1059,6 +1062,7 @@
 		ACDDF37C1531BFE400011F06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AC69033D186C6C8D00B2EE86 /* MessageUI.framework */,
 				ACA606D6185AA78A00523D4A /* Accelerate.framework */,
 				AC8EB94316AA755A001F3A06 /* AddressBook.framework */,
 				AC8EB94416AA755D001F3A06 /* AddressBookUI.framework */,

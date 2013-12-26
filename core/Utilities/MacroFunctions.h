@@ -101,6 +101,12 @@
 
 #pragma mark - Helper
 #define IS_NIL_OR_EMPTY(obj) IsNilOrEmpty(obj)
+#define v_phone(o) IsValidPhone(o)
+#define v_mail(o) IsValidMail(o)
+#define mt_mobile(o) matchMobile(o)
+#define mt_phone_short(o) matchPhoneShort(o)
+#define mt_Tel(o) matchTel(o)
+#define mt_mail(o) matchMail(o)
 
 #define NFURL(s) [NSURL fileURLWithPath:s]
 #define NHURL(s) [NSURL URLWithString:[s stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]
@@ -127,6 +133,12 @@
 #define GUID [NSString guidString]
 #define SPLIT(s,a) [a componentsSeparatedByString: s]
 #define SPLITP(a) [a componentsSeparatedByString: @"/"]
+
+// MARK: - NSArray Helper
+#define JOINARR(a,b) [a arrayByAddingObjectsFromArray:b]
+#define JOINARR2(a,b,c) [[a arrayByAddingObjectsFromArray:b] arrayByAddingObjectsFromArray:c]
+#define JOINARR3(a,b,c,d) [[[a arrayByAddingObjectsFromArray:b] arrayByAddingObjectsFromArray:c] arrayByAddingObjectsFromArray:d]
+
 // MARK: - Path Helper
 #define DOCUMENTS_DIR ([NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject])
 
@@ -145,7 +157,7 @@ typedef void (^FinalBlock)(void);
 
 #pragma mark - Release
 #define MCRelease(x) [x release], x = nil
-
+#define moApp [UIApplication sharedApplication]
 //颜色
 
 #define MF_ColorFromRGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
@@ -199,6 +211,10 @@ alpha:alphaValue]
 
 //addressbook
 #define ab [ABAddressBook sharedAddressBook]
+
+#define call(p) CallPrompt(p)
+#define sms(p,c) SMSPrompt(p,c)
+#define mail(m,c) MailPrompt(m,c)
 
 //设置
 #define AppSettingInteger(key) [[NSUserDefaults standardUserDefaults] integerForKey:key]

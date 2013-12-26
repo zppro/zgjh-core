@@ -11,6 +11,9 @@
 #import "Functions.h" 
 #import "MacroFunctions.h"
 #import "MBProgressHUD.h"
+#import "MACollectionUtilities.h"
+#import "UIDevice-Hardware.h"
+#import "BaseController.h"
 
 void ShowInfo(NSString* message){
 	UIAlertView *alertDialog=[[UIAlertView alloc] initWithTitle:@"信息" message:message delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
@@ -178,6 +181,157 @@ BOOL IsValidMobileByError(NSString* mobile,NSString** error){
     }
     return isMatch;
 }
+
+// 正则判断电话号码地址格式
+BOOL IsValidPhone(NSString *phoneNo){
+    /**
+     * 手机号码
+     * 移动：134[0-8],135,136,137,138,139,150,151,157,158,159,182,187,188
+     * 联通：130,131,132,152,155,156,185,186
+     * 电信：133,1349,153,180,189
+     */
+    NSString * MOBILE = @"^1(3[0-9]|5[0-35-9]|8[025-9])\\d{8}$";
+    /**
+     10         * 中国移动：China Mobile
+     11         * 134[0-8],135,136,137,138,139,150,151,157,158,159,182,187,188
+     12         */
+    NSString * CM = @"^1(34[0-8]|(3[5-9]|5[017-9]|8[278])\\d)\\d{7}$";
+    /**
+     15         * 中国联通：China Unicom
+     16         * 130,131,132,152,155,156,185,186
+     17         */
+    NSString * CU = @"^1(3[0-2]|5[256]|8[56])\\d{8}$";
+    /**
+     20         * 中国电信：China Telecom
+     21         * 133,1349,153,180,189
+     22         */
+    NSString * CT = @"^1((33|53|8[09])[0-9]|349)\\d{7}$";
+    /**
+     25         * 大陆地区固话及小灵通
+     26         * 区号：010,020,021,022,023,024,025,027,028,029
+     27         * 号码：七位或八位
+     28         */
+    NSString * PHS = @"^0(10|2[0-5789]|\\d{3})\\d{7,8}$";
+    
+    NSPredicate *regextestmobile = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", MOBILE];
+    NSPredicate *regextestcm = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", CM];
+    NSPredicate *regextestcu = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", CU];
+    NSPredicate *regextestct = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", CT];
+    NSPredicate *regextestphs = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", PHS];
+    
+    if (([regextestmobile evaluateWithObject:phoneNo] == YES)
+        || ([regextestcm evaluateWithObject:phoneNo] == YES)
+        || ([regextestct evaluateWithObject:phoneNo] == YES)
+        || ([regextestcu evaluateWithObject:phoneNo] == YES)
+        || ([regextestphs evaluateWithObject:phoneNo] == YES))
+    {
+        return YES;
+    }
+    else
+    {
+        return NO;
+    }
+}
+
+BOOL IsValidMail(NSString *mail){
+    NSString *mailRegex = @"^\\w+((\\-\\w+)|(\\.\\w+))*@[A-Za-z0-9]+((\\.|\\-)[A-Za-z0-9]+)*.[A-Za-z0-9]+$";
+    NSPredicate *mailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", mailRegex];
+    return [mailTest evaluateWithObject:mail];
+}
+
+NSArray* matchMobile(NSString* searchedString){
+    NSRange  searchedRange = NSMakeRange(0, [searchedString length]);
+    NSString *patternMobile = @"1(3[0-9]|5[0-35-9]|8[025-9])\\d{8}";
+    NSError  *error = nil;
+    NSMutableArray *results = [NSMutableArray array];
+    NSRegularExpression* regexMobile = [NSRegularExpression regularExpressionWithPattern:patternMobile options:0 error:&error];
+    NSArray* matches = [regexMobile matchesInString:searchedString options:0 range: searchedRange];
+    for (NSTextCheckingResult* match in matches) {
+        [results addObject:[searchedString substringWithRange:[match range]]];
+    }
+    return results;
+}
+
+NSArray* matchPhoneShort(NSString* searchedString){
+    
+    NSRange  searchedRange = NSMakeRange(0, [searchedString length]);
+    NSString *patternPhoneShort = @"\\d{6}";
+    NSError  *error = nil;
+    NSMutableArray *results = [NSMutableArray array];
+    NSRegularExpression* regexPhoneShort = [NSRegularExpression regularExpressionWithPattern:patternPhoneShort options:0 error:&error];
+    
+    NSArray* matches = [regexPhoneShort matchesInString:searchedString options:0 range: searchedRange];
+    for (NSTextCheckingResult* match in matches) {
+        [results addObject:[searchedString substringWithRange:[match range]]];
+    }
+    return results;
+    
+}
+
+NSArray* matchTel(NSString* searchedString){
+    NSRange  searchedRange = NSMakeRange(0, [searchedString length]);
+    NSString *patternTel= @"0(10|2[0-5789]|\\d{3})\\d{7,8}";
+    NSError  *error = nil;
+    NSMutableArray *results = [NSMutableArray array];
+    NSRegularExpression* regexTel = [NSRegularExpression regularExpressionWithPattern:patternTel options:0 error:&error];
+    NSArray* matches = [regexTel matchesInString:searchedString options:0 range: searchedRange];
+    for (NSTextCheckingResult* match in matches) {
+        [results addObject:[searchedString substringWithRange:[match range]]];
+    }
+    return results;
+}
+
+NSArray* matchMail(NSString* searchedString){
+    NSRange  searchedRange = NSMakeRange(0, [searchedString length]);
+    NSString *patternMail= @"\\w+((\\-\\w+)|(\\.\\w+))*@[A-Za-z0-9]+((\\.|\\-)[A-Za-z0-9]+)*.[A-Za-z0-9]+";
+    NSError  *error = nil;
+    NSMutableArray *results = [NSMutableArray array];
+    NSRegularExpression* regexMail = [NSRegularExpression regularExpressionWithPattern:patternMail options:0 error:&error];
+    NSArray* matches = [regexMail matchesInString:searchedString options:0 range: searchedRange];
+    for (NSTextCheckingResult* match in matches) {
+        [results addObject:[searchedString substringWithRange:[match range]]];
+    }
+    return results;
+}
+
+void CallPrompt(NSString* phoneNo){
+    if([moApp canOpenURL:[NSURL URLWithString:@"telprompt://"]]){
+        [moApp openURL:[NSURL URLWithString:JOIN(@"telprompt:", phoneNo)]];
+    }
+    else {
+        UIAlertView *Notpermitted=[[UIAlertView alloc] initWithTitle:@"警告" message:@"您的设备不支持拨号." delegate:nil cancelButtonTitle:@"好" otherButtonTitles:nil];
+        [Notpermitted show];
+        [Notpermitted release];
+    }
+}
+
+void SMSPrompt(NSString* phoneNo,BaseController *ctl){
+    MFMessageComposeViewController *picker = [[[MFMessageComposeViewController alloc] init] autorelease];
+    [picker setRecipients:[NSArray arrayWithObject:phoneNo]];
+    [picker setBody:@""];
+    [ctl presentSms:picker From:ctl];
+}
+
+void MailPrompt(NSString* mail,BaseController *ctl){
+    MFMailComposeViewController *picker = [[[MFMailComposeViewController alloc] init] autorelease];
+    [picker setToRecipients:[NSArray arrayWithObject:mail]];
+    [picker setSubject:@""];
+    [picker setMessageBody:@"" isHTML:NO];
+    [ctl presentMail:picker From:ctl];
+}
+
+void SMS(NSString* phoneNo){
+    if([moApp canOpenURL:[NSURL URLWithString:@"sms://"]]){
+        [moApp openURL:[NSURL URLWithString:JOIN(@"sms:", phoneNo)]];
+    }
+    else {
+        UIAlertView *Notpermitted=[[UIAlertView alloc] initWithTitle:@"警告" message:@"您的设备不支持发送短信." delegate:nil cancelButtonTitle:@"好" otherButtonTitles:nil];
+        [Notpermitted show];
+        [Notpermitted release];
+    }
+}
+
+
 
 BOOL IsNilOrEmpty(id obj) {
     if (obj == nil) {

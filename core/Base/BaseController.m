@@ -20,6 +20,63 @@
     [super dealloc];
 }
 
+#pragma mark common function
+- (void)presentSms:(MFMessageComposeViewController*) picker From:(UIViewController*) fromController{
+    pickerFromController = fromController;
+    picker.messageComposeDelegate = self;
+    [pickerFromController presentModalViewController:picker animated:YES];
+    
+}
+- (void)presentMail:(MFMailComposeViewController*) picker From:(UIViewController*) fromController{
+    pickerFromController = fromController;
+    picker.mailComposeDelegate = self;
+    [pickerFromController presentModalViewController:picker animated:YES];
+}
+
+
+#pragma mark MFMessageComposeViewControllerDelegate
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller
+                 didFinishWithResult:(MessageComposeResult)result {
+    switch (result) {
+        case MessageComposeResultCancelled:
+            break;
+        case MessageComposeResultSent:
+            [self showWaitViewWithTitle:@"短信发送成功"];
+            break;
+        case MessageComposeResultFailed:
+            [self showWaitViewWithTitle:@"短信发送失败"];
+            break;
+        default:
+            break;
+    }
+    [pickerFromController dismissModalViewControllerAnimated:YES];
+}
+
+
+#pragma mark MFMailComposeViewControllerDelegate
+- (void)mailComposeController:(MFMailComposeViewController*)controller
+          didFinishWithResult:(MFMailComposeResult)result
+                        error:(NSError*)error {
+    switch (result)
+    {
+        case MFMailComposeResultCancelled: {
+            break;
+        }
+        case MFMailComposeResultSaved:
+            [self showWaitViewWithTitle:@"邮件保存成功"];
+            break;
+        case MFMailComposeResultSent:
+            [self showWaitViewWithTitle:@"邮件发送成功"];
+            break;
+        case MFMailComposeResultFailed:
+            [self showWaitViewWithTitle:@"邮件发送失败"];
+            break;
+        default:
+            break;
+    }
+    [pickerFromController dismissModalViewControllerAnimated:YES];
+}
+
 #pragma mark -
 #pragma mark MBProgressHUDDelegate methods
 - (void)hudWasHidden:(MBProgressHUD *)hud {
