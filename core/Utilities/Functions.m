@@ -305,16 +305,26 @@ void CallPrompt(NSString* phoneNo){
     }
 }
 
-void SMSPrompt(NSString* phoneNo,BaseController *ctl){
+void SMSPrompt(id phoneNos,BaseController *ctl){
     MFMessageComposeViewController *picker = [[[MFMessageComposeViewController alloc] init] autorelease];
-    [picker setRecipients:[NSArray arrayWithObject:phoneNo]];
+    if([phoneNos isKindOfClass:[NSArray class]]){
+        [picker setRecipients:phoneNos];
+    }
+    else {
+        [picker setRecipients:[NSArray arrayWithObject:phoneNos]];
+    }
     [picker setBody:@""];
     [ctl presentSms:picker From:ctl];
 }
 
-void MailPrompt(NSString* mail,BaseController *ctl){
+void MailPrompt(id mails,BaseController *ctl){
     MFMailComposeViewController *picker = [[[MFMailComposeViewController alloc] init] autorelease];
-    [picker setToRecipients:[NSArray arrayWithObject:mail]];
+    if([mails isKindOfClass:[NSArray class]]){
+        [picker setToRecipients:mails];
+    }
+    else {
+        [picker setToRecipients:[NSArray arrayWithObject:mails]];
+    }
     [picker setSubject:@""];
     [picker setMessageBody:@"" isHTML:NO];
     [ctl presentMail:picker From:ctl];
@@ -330,8 +340,7 @@ void SMS(NSString* phoneNo){
         [Notpermitted release];
     }
 }
-
-
+ 
 
 BOOL IsNilOrEmpty(id obj) {
     if (obj == nil) {

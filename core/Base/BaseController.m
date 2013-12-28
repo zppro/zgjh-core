@@ -7,7 +7,7 @@
 //
 
 #import "BaseController.h"
-
+#define t_msg_delay 2.0
 @implementation BaseController
 
 @synthesize waitView = _waitView;
@@ -41,10 +41,10 @@
         case MessageComposeResultCancelled:
             break;
         case MessageComposeResultSent:
-            [self showWaitViewWithTitle:@"短信发送成功"];
+            [self showWaitViewWithTitle:@"短信发送成功" andCloseDelay:t_msg_delay];
             break;
         case MessageComposeResultFailed:
-            [self showWaitViewWithTitle:@"短信发送失败"];
+            [self showWaitViewWithTitle:@"短信发送失败" andCloseDelay:t_msg_delay];
             break;
         default:
             break;
@@ -63,13 +63,13 @@
             break;
         }
         case MFMailComposeResultSaved:
-            [self showWaitViewWithTitle:@"邮件保存成功"];
+            [self showWaitViewWithTitle:@"邮件保存成功" andCloseDelay:t_msg_delay];
             break;
         case MFMailComposeResultSent:
-            [self showWaitViewWithTitle:@"邮件发送成功"];
+            [self showWaitViewWithTitle:@"邮件发送成功" andCloseDelay:t_msg_delay];
             break;
         case MFMailComposeResultFailed:
-            [self showWaitViewWithTitle:@"邮件发送失败"];
+            [self showWaitViewWithTitle:@"邮件发送失败" andCloseDelay:t_msg_delay];
             break;
         default:
             break;
@@ -142,7 +142,7 @@
 - (void)showWaitViewWithTitle:(NSString *)title andCloseDelay:(double) delayInSeconds withAnimation:(BOOL) animated {
     self.waitView.labelText = title;
     [self.view addSubview:self.waitView];
-    DebugLog(@"view:%@",NSStringFromCGRect(self.view.frame));
+    //DebugLog(@"view:%@",NSStringFromCGRect(self.view.frame));
     [self.view bringSubviewToFront:self.waitView]; 
     [self.waitView show:animated];
     if(delayInSeconds > 0){

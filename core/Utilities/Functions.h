@@ -9,6 +9,8 @@
 
 #import <Foundation/Foundation.h>
 #import <AudioToolbox/AudioServices.h>
+#import "ABAddressBook.h"
+
 @class BaseController;
 
 typedef enum
@@ -75,12 +77,12 @@ NSArray* matchTel(NSString* searchedString);
 NSArray* matchMail(NSString* searchedString);
 
 void CallPrompt(NSString* phoneNo);
-void SMSPrompt(NSString* phoneNo,BaseController *ctl);
-void MailPrompt(NSString* mail,BaseController *ctl);
+void SMSPrompt(id phoneNos,BaseController *ctl);
+void MailPrompt(id mails,BaseController *ctl);
 void SMS(NSString* phoneNo);
 
 BOOL IsNilOrEmpty(id obj);
-
+ 
 void showHUDInfo(id delegate,UIView * view, NSString* title);
 void showHUDInfoDelay(id delegate,UIView * view, NSString* title,double delayInSeconds);
  

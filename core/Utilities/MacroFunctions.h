@@ -133,12 +133,17 @@
 #define GUID [NSString guidString]
 #define SPLIT(s,a) [a componentsSeparatedByString: s]
 #define SPLITP(a) [a componentsSeparatedByString: @"/"]
+#define substring(str,start,length) [str substringWithRange:NSMakeRange(start, length)]
 
 // MARK: - NSArray Helper
 #define JOINARR(a,b) [a arrayByAddingObjectsFromArray:b]
 #define JOINARR2(a,b,c) [[a arrayByAddingObjectsFromArray:b] arrayByAddingObjectsFromArray:c]
 #define JOINARR3(a,b,c,d) [[[a arrayByAddingObjectsFromArray:b] arrayByAddingObjectsFromArray:c] arrayByAddingObjectsFromArray:d]
+#define JOINARR4(a,b,c,d,e) [[[[a arrayByAddingObjectsFromArray:b] arrayByAddingObjectsFromArray:c] arrayByAddingObjectsFromArray:d] arrayByAddingObjectsFromArray:e]
 
+// MARK: - Local Permission
+#define canAccessAB ABAddressBookGetAuthorizationStatus() == kABAuthorizationStatusAuthorized
+#define isABAccessNotDetermined ABAddressBookGetAuthorizationStatus() == kABAuthorizationStatusNotDetermined
 // MARK: - Path Helper
 #define DOCUMENTS_DIR ([NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject])
 
