@@ -53,14 +53,15 @@
 {
   NSArray *children = [self childrenForItem:parentTreeNode.item];
   for (id item in children) {
-    BOOL expanded = NO;
-    if ([self.dataSource respondsToSelector:@selector(treeView:shouldItemBeExpandedAfterDataReload:treeDepthLevel:)]) {
-      expanded = [self.delegate treeView:self shouldItemBeExpandedAfterDataReload:item treeDepthLevel:treeDepthLevel];
-    }
-    RATreeNode *treeNode = [[RATreeNode alloc] initWithItem:item parent:parentTreeNode expanded:expanded];
-    
-    [self setupTreeStructureWithParentNode:treeNode treeDepthLevel:(treeDepthLevel + 1)];
-    [self.treeNodeCollectionController addTreeNode:treeNode];
+      BOOL expanded = NO;
+      if ([self.dataSource respondsToSelector:@selector(treeView:shouldItemBeExpandedAfterDataReload:treeDepthLevel:)]) {
+          expanded = [self.delegate treeView:self shouldItemBeExpandedAfterDataReload:item treeDepthLevel:treeDepthLevel];
+      }
+      
+      RATreeNode *treeNode = [[RATreeNode alloc] initWithItem:item parent:parentTreeNode expanded:expanded];
+      
+      [self setupTreeStructureWithParentNode:treeNode treeDepthLevel:(treeDepthLevel + 1)];
+      [self.treeNodeCollectionController addTreeNode:treeNode];
       [treeNode release];
   }
 }

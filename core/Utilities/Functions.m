@@ -270,7 +270,7 @@ NSArray* matchPhoneShort(NSString* searchedString){
 
 NSArray* matchTel(NSString* searchedString){
     NSRange  searchedRange = NSMakeRange(0, [searchedString length]);
-    NSString *patternTel= @"0(10|2[0-5789]|\\d{3})\\d{7,8}";
+    NSString *patternTel= @"0(10|2[0-5789]|\\d{3})-?\\d{7,8}";
     NSError  *error = nil;
     NSMutableArray *results = [NSMutableArray array];
     NSRegularExpression* regexTel = [NSRegularExpression regularExpressionWithPattern:patternTel options:0 error:&error];

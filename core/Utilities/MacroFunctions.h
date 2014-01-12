@@ -223,6 +223,7 @@ alpha:alphaValue]
 
 //设置
 #define AppSettingInteger(key) [[NSUserDefaults standardUserDefaults] integerForKey:key]
+#define AppSettingBool(key) [[NSUserDefaults standardUserDefaults] boolForKey:key]
 #define AppSetting(key) [[NSUserDefaults standardUserDefaults] valueForKey:key]
 #define savB(key,bval) [NSUserDefaults setBool:bval forKey:key]
 #define savI(key,sval) [NSUserDefaults setInt:sval forKey:key]
