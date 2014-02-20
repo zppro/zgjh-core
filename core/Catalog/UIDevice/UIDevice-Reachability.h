@@ -27,6 +27,7 @@
 - (NSString *) whatismyipdotcom;
 
 - (BOOL) hostAvailable: (NSString *) theHost;
+- (BOOL)checkServerAvailability: (NSString *) theHost;
 - (BOOL) networkAvailable;
 - (BOOL) activeWLAN;
 - (BOOL) activeWWAN;

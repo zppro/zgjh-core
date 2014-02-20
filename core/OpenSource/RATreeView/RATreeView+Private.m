@@ -59,10 +59,11 @@
       }
       
       RATreeNode *treeNode = [[RATreeNode alloc] initWithItem:item parent:parentTreeNode expanded:expanded];
-      
       [self setupTreeStructureWithParentNode:treeNode treeDepthLevel:(treeDepthLevel + 1)];
+      
       [self.treeNodeCollectionController addTreeNode:treeNode];
       [treeNode release];
+      
   }
 }
 

@@ -150,9 +150,24 @@ SCNetworkReachabilityRef reachability;
         printf("Error. Could not recover network reachability flags\n");
         return NO;
     }
-	
+
     BOOL isReachable = flags & kSCNetworkFlagsReachable;
     return isReachable ? YES : NO;;
+}
+
+- (BOOL)checkServerAvailability: (NSString *) theHost {
+    bool success = false;
+    const char *host_name = [theHost cStringUsingEncoding:NSASCIIStringEncoding];
+    
+    SCNetworkReachabilityRef reachability =
+    SCNetworkReachabilityCreateWithName(NULL, host_name);
+    SCNetworkReachabilityFlags flags;
+    success = SCNetworkReachabilityGetFlags(reachability, &flags);
+    bool isAvailable = success && (flags & kSCNetworkFlagsReachable)
+    && !(flags & kSCNetworkFlagsConnectionRequired);
+    
+    CFRelease(reachability);
+    return isAvailable;
 }
 
 #pragma mark Checking Connections
