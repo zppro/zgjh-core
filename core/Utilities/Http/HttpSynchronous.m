@@ -53,7 +53,7 @@
  */
 +(void)httpUploadTo:(NSString *)url file:(NSString *) path data:(NSDictionary *)dict delegate:(id) delegate sucessBlock:(SuccessBlock)sucessBlock failedBlock:(FailedBlock)failedBlock completionBlock:(FinalBlock)completionBlock{
     
-    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:NHURL(url)];
+    __block ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:NHURL(url)];
     [[dict allKeys] each:^(id obj) {
         [request setPostValue:[dict objectForKey:obj] forKey:obj];
     }];
@@ -107,7 +107,7 @@
     }
     //DebugLog(@"Download File From %@ to %@", url, path);
     
-    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:nUrl];
+    __block ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:nUrl];
     request.delegate=delegate;
     request.uploadProgressDelegate = delegate;
     [request setDownloadDestinationPath:path];

@@ -21,7 +21,7 @@
 +(void)httpPostWithUrl:(NSString *)url req:(HttpAppRequest *)req  sucessBlock:(SuccessBlock)sucessBlock failedBlock:(FailedBlock)failedBlock completionBlock:(FinalBlock)completionBlock{
     NSURL *nUrl = [NSURL URLWithString:[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     
-    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:nUrl];
+    __block ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:nUrl];
     [request setTimeOutSeconds:60];
     [request addRequestHeader:@"User-Agent" value:@"iphone"];
     [request addRequestHeader:@"Cache-control" value:@"no-cache"];
@@ -73,8 +73,8 @@
     
     NSURL *nUrl = [NSURL URLWithString:[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     DebugLog(@"%@",url);
-    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:nUrl];
-    [request setTimeOutSeconds:60];
+    __block ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:nUrl];
+    [request setTimeOutSeconds:120];
     [request addRequestHeader:@"User-Agent" value:@"iphone"];
     [request addRequestHeader:@"Cache-control" value:@"no-cache"];
     [request addRequestHeader:@"Referer" value:url];

@@ -73,7 +73,7 @@
 	if(!newSuperview || newSuperview == nil)
 		return;
 
-	int c = [titlesArray count];
+	unsigned long c = [titlesArray count];
 	int i = 0;
 	
 	segmentWidth = 0;
@@ -91,12 +91,17 @@
 	
 	self.bounds = CGRectMake(0, 0, segmentWidth*c, self.height);
 	
+    /*
 	i = 0;
-    
 	for(NSString *titleString in titlesArray) {
 		thumbRects[i] = CGRectMake(segmentWidth*i, 0, segmentWidth, CGRectGetHeight(self.bounds)-1);
 		i++;
-	} 
+	}
+    */
+    
+    for(i=0;i<[titlesArray count];i++){
+        thumbRects[i] = CGRectMake(segmentWidth*i, 0, segmentWidth, CGRectGetHeight(self.bounds)-1);
+    }
 	
 	self.thumb.frame = CGRectInset(thumbRects[0], 2, 2);
 	self.thumb.layer.shadowPath = [UIBezierPath bezierPathWithRoundedRect:thumb.bounds cornerRadius:2].CGPath;
@@ -246,7 +251,7 @@
     else
         self.thumb.secondTitleAlpha = 0;
 
-	int index;
+	unsigned long index;
 	
 	if(snapToIndex != -1)
 		index = snapToIndex;

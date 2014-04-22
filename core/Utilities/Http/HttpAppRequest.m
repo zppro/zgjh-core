@@ -12,6 +12,14 @@
 #import "Functions.h"
 
 @implementation HttpAppRequest
+@synthesize headData;
+@synthesize bodyData;
+
+- (void)dealloc {
+    self.headData = nil;
+    self.bodyData = nil;
+     [super dealloc];
+}
 
 +(HttpAppRequest*)requestWithHead:head andBody:(NSDictionary*)body{
     

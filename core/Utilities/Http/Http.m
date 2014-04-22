@@ -72,7 +72,7 @@
     NSURL *nUrl = [NSURL URLWithString:[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     DebugLog(@"HTTP URL:%@", nUrl);
     
-    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:nUrl];
+    __block ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:nUrl];
     //DebugLog(@"Time Out:%d", kTimeOut);
     [request setTimeOutSeconds:kTimeOut];
     [request addRequestHeader:@"Content-Type" value:@"application/json"]; //@"application/json" //@"text/xml;charset=UTF-8"
@@ -130,7 +130,7 @@
     NSURL *nUrl = [NSURL URLWithString:[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     DebugLog(@"HTTP URL:%@", nUrl);
     
-    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:nUrl];
+    __block ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:nUrl];
     //DebugLog(@"Time Out:%d", kTimeOut);
     [request setTimeOutSeconds:kTimeOut];
     [request addRequestHeader:@"Content-Type" value:@"application/json"]; //@"application/json" //@"text/xml;charset=UTF-8"
@@ -187,7 +187,7 @@
     NSURL *nUrl = [NSURL URLWithString:[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     //DebugLog(@"HTTP URL:%@", nUrl);
     
-    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:nUrl];
+    __block ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:nUrl];
     //DebugLog(@"Time Out:%d", kTimeOut);
     [request setTimeOutSeconds:kTimeOut];
     [request addRequestHeader:@"Content-Type" value:@"application/json"]; //@"application/json" //@"text/xml;charset=UTF-8"
@@ -215,7 +215,7 @@
     NSURL *nUrl = [NSURL URLWithString:[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     //DebugLog(@"Download File From %@ to %@", url, path);
     
-    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:nUrl];
+    __block ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:nUrl];
     [request setDownloadDestinationPath:path];
     [request startSynchronous];
     
@@ -239,7 +239,7 @@
 + (void)download:(NSString *)url destination:(NSString *)path complete:(HTTPCompletionBlock)complete failed:(HTTPFailedBlock)failed {
     NSURL *nUrl = [NSURL URLWithString:[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     
-    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:nUrl];
+    __block ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:nUrl];
     [request setDownloadDestinationPath:path];
     [request startAsynchronous];
     
@@ -425,7 +425,7 @@
     NSURL *nUrl = [NSURL URLWithString:[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     DebugLog(@"HTTP URL:%@", nUrl);
     
-    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:nUrl];
+    __block ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:nUrl];
     //DebugLog(@"Time Out:%d", kTimeOut);
     [request setTimeOutSeconds:kTimeOut];
     [request addRequestHeader:@"Content-Type" value:@"application/json"]; //@"application/json" //@"text/xml;charset=UTF-8"

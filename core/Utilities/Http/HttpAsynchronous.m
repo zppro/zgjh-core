@@ -28,7 +28,7 @@
     
     NSURL *nUrl = [NSURL URLWithString:[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     
-    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:nUrl];
+    __block ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:nUrl];
     [request setTimeOutSeconds:60];
     [request addRequestHeader:@"User-Agent" value:@"iphone"];
     [request addRequestHeader:@"Cache-control" value:@"no-cache"];
@@ -78,7 +78,7 @@
     
     NSURL *nUrl = [NSURL URLWithString:[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     
-    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:nUrl];
+    __block ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:nUrl];
     [request setTimeOutSeconds:30];
     [request addRequestHeader:@"User-Agent" value:@"iphone"];
     [request addRequestHeader:@"Cache-control" value:@"no-cache"];

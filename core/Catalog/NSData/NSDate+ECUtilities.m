@@ -12,7 +12,7 @@
 static const NSTimeInterval kMinute = 60;
 static const NSTimeInterval kHour = 60 * 60;
 static const NSTimeInterval kMaxHours = 60 * 60 * 8;
-static const NSTimeInterval kDay = 60 * 60 * 24;
+//static const NSTimeInterval kDay = 60 * 60 * 24;
 
 @implementation NSDate(ECUtilities)
 
@@ -40,11 +40,11 @@ static const NSTimeInterval kDay = 60 * 60 * 24;
 	}
 	else if (interval < kHour)
 	{
-		result = [NSString stringWithFormat: @"%d minutes ago", (NSUInteger) (interval / kMinute)];
+		result = [NSString stringWithFormat: @"%lu minutes ago", (unsigned long) (interval / kMinute)];
 	}
 	else if (interval < kMaxHours)
 	{
-		result = [NSString stringWithFormat: @"%d hours ago", (NSUInteger) (interval / kHour)];
+		result = [NSString stringWithFormat: @"%lu hours ago", (unsigned long) (interval / kHour)];
 	}
 	else
 	{
@@ -109,7 +109,7 @@ static const NSTimeInterval kDay = 60 * 60 * 24;
 		}
 		else if (dayDiff < 8)
 		{
-			result = [NSString stringWithFormat: @"%d days ago", dayDiff];
+			result = [NSString stringWithFormat: @"%lu days ago", (unsigned long)dayDiff];
 		}
 		else if (dayDiff < 365)
 		{

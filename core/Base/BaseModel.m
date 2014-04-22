@@ -62,9 +62,9 @@
         
         if ([fetchFormat length] > 0) {
             NSPredicate *sourcePredicate = [NSPredicate predicateWithFormat:fetchFormat];
-            predicate = [[NSCompoundPredicate alloc] initWithType:NSAndPredicateType
+            predicate = [[[NSCompoundPredicate alloc] initWithType:NSAndPredicateType
                                                     subpredicates:[NSArray arrayWithObjects:
-                                                                   predicate, sourcePredicate, nil]];
+                                                                   predicate, sourcePredicate, nil]] autorelease];
         }
         
         NSArray *entities = [self fetchWithPredicate:predicate];
@@ -113,6 +113,9 @@
                     [self setValue:[NSDate dateWithTimeIntervalSince1970:interval] forKey:[mapings objectForKey:key]];
                 }
                 else{
+                    
+                    [self setValue:value forKey:[mapings objectForKey:key]];
+                    /*
                     NSPredicate *dateStringPredict = [NSPredicate predicateWithFormat:@"SELF MATCHES '((19|20)[0-9][0-9])-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])[T]([0-5][0-9]):([0-5][0-9]):([0-5][0-9])(\\.?[0-9]{0,3})?'"];
                     BOOL isMatch = [dateStringPredict evaluateWithObject:value];
                     if(isMatch){
@@ -132,6 +135,7 @@
                     else{
                         [self setValue:value forKey:[mapings objectForKey:key]];
                     }
+                    */
                 }
                 
             }
