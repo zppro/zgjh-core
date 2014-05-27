@@ -140,7 +140,7 @@
 	// no need to update in that case
 	if (currentPage == pageNumber)
 		return ;
-	int oldPage = currentPage;
+	NSInteger oldPage = currentPage;
 	// determine if the page number is in the available range
 	currentPage = MIN(MAX(0, pageNumber), numberOfPages - 1) ;
 	

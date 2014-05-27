@@ -19,7 +19,7 @@
 - (NSString*) reverseString
 {
 	NSMutableString *reversedStr;
-	int len = [self length];
+	NSUInteger len = [self length];
 	
 	// auto released string
 	reversedStr = [NSMutableString stringWithCapacity:len];

@@ -20,6 +20,7 @@
 #import "ASIHTTPRequestDelegate.h"
 #import "ASIProgressDelegate.h"
 #import "NSString+Formatter.h"
+#import "NSBundle+ECUtilities.h"
 
 @implementation HttpSynchronous
 /*
@@ -128,6 +129,80 @@
     }
     else{
         sucessBlock(request);
+    }
+    completionBlock();
+}
+
++(void)httpPostWithRequestInfo:(NSString *)url req:(LeblueRequest *)req  sucessBlock:(SuccessBlock)sucessBlock failedBlock:(FailedBlock)failedBlock completionBlock:(FinalBlock)completionBlock{
+    NSURL *nUrl = [NSURL URLWithString:[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    
+    __block ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:nUrl];
+    [request setTimeOutSeconds:60];
+    [request addRequestHeader:@"User-Agent" value:@"iphone"];
+    [request addRequestHeader:@"Cache-control" value:@"no-cache"];
+    [request addRequestHeader:@"Referer" value:url];
+    [request addRequestHeader:@"Content-Type" value:@"text/xml;charset=UTF-8"];
+    //[request addRequestHeader:@"Content-Type" value:@"application/json"];
+    [request addRequestHeader:@"Accept" value:@"application/json"];
+    
+    
+    NSMutableData *body = [[[req JSONString]  dataUsingEncoding:NSUTF8StringEncoding] mutableCopy];
+    [request setPostBody:body];
+    [body release];
+    [request setRequestMethod:@"POST"];
+    [request startSynchronous];
+    
+    NSString *retResult = [request responseString];
+    retResult = [retResult stringByReplacingOccurrencesOfString:@"\n" withString:@"\\n"];
+    retResult = [retResult stringByReplacingOccurrencesOfString:@":null}" withString:@":\"\"}"];
+    
+    id result = [retResult JSONValue];
+    
+    LeblueResponse* res = [LeblueResponse responseWithDict:result];
+    if (res.isSuccess) {
+        sucessBlock(res);
+    }
+    else{
+        
+        NSError *error = [NSError errorWithDomain:[[NSBundle mainBundle] bundleName] code:res.code.intValue userInfo:[NSDictionary dictionaryWithObjectsAndKeys:res.message,@"message", nil ]];
+        
+        failedBlock(error);
+    }
+    completionBlock();
+    
+}
+
++(void)httpGetWithInfo:(NSString *)url sucessBlock:(SuccessBlock)sucessBlock failedBlock:(FailedBlock)failedBlock completionBlock:(FinalBlock)completionBlock{
+    NSURL *nUrl = [NSURL URLWithString:[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    
+    __block ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:nUrl];
+    [request setTimeOutSeconds:30];
+    [request addRequestHeader:@"User-Agent" value:@"iphone"];
+    [request addRequestHeader:@"Cache-control" value:@"no-cache"];
+    [request addRequestHeader:@"Referer" value:url];
+    [request addRequestHeader:@"Content-Type" value:@"text/xml;charset=UTF-8"];
+    [request addRequestHeader:@"Accept" value:@"application/json"];
+    
+    
+    [request setPostBody:nil];
+    
+    [request setRequestMethod:@"GET"];
+    [request startSynchronous];
+    
+    NSString *retResult = [request responseString];
+    retResult = [retResult stringByReplacingOccurrencesOfString:@"\n" withString:@"\\n"];
+    retResult = [retResult stringByReplacingOccurrencesOfString:@":null}" withString:@":\"\"}"];
+    
+    id result = [retResult JSONValue];
+    LeblueResponse* res = [LeblueResponse responseWithDict:result];
+    if (res.isSuccess) {
+        sucessBlock(result);
+    }
+    else{
+        
+        NSError *error = [NSError errorWithDomain:[[NSBundle mainBundle] bundleName] code:res.code.intValue userInfo:[NSDictionary dictionaryWithObjectsAndKeys:res.message,@"message", nil ]];
+        
+        failedBlock(error);
     }
     completionBlock();
 }

@@ -33,6 +33,7 @@
 #import "HttpAsynchronous.h"
 #import "HttpAppAsynchronous.h"
 #import "HttpSynchronous.h"
+#import "HttpAppSynchronous.h"
 #import "Http.h"
 
 #import "e0571DES.h"

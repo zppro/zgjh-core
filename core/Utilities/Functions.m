@@ -14,6 +14,7 @@
 #import "MACollectionUtilities.h"
 #import "UIDevice-Hardware.h"
 #import "BaseController.h"
+#import "UIAlertView+BlocksKit.h"
 
 void ShowInfo(NSString* message){
 	UIAlertView *alertDialog=[[UIAlertView alloc] initWithTitle:@"信息" message:message delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
@@ -25,7 +26,14 @@ void ShowError(NSString* message){
 	UIAlertView *alertDialog=[[UIAlertView alloc] initWithTitle:@"错误" message:message delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
 	[alertDialog show];
 	[alertDialog release];
-} 
+}
+
+void ShowConfirm(NSString* message,ConfirmContinueBlock continueBlock,ConfirmCancelBlock cancelBlock){
+    UIAlertView *alertDialog = [UIAlertView alertWithTitle:@"确认对话框" message:message];
+    [alertDialog addButtonWithTitle:@"继续" handler:continueBlock];
+    [alertDialog addButtonWithTitle:@"取消" handler:cancelBlock];
+    [alertDialog show];
+}
 
 
 NSString* FormatNullString(NSString* formatString){

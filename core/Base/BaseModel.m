@@ -105,8 +105,8 @@
                 // Expect date in this format "/Date(1268123281843)/"
                 NSRange range = [value rangeOfString:@"/Date"];
                 if(range.length>0 && range.location==0){
-                    int startPos = [value rangeOfString:@"("].location+1;
-                    int endPos = [value rangeOfString:@")"].location;
+                    NSUInteger startPos = [value rangeOfString:@"("].location+1;
+                    NSUInteger endPos = [value rangeOfString:@")"].location;
                     NSRange range = NSMakeRange(startPos,endPos-startPos);
                     unsigned long long milliseconds = [[value substringWithRange:range] longLongValue];
                     NSTimeInterval interval = milliseconds/1000;
@@ -160,6 +160,15 @@
 
 // 必须重写
 - (NSDictionary*)elementToPropertMappings{return nil;}
+
+
++ (BOOL)createWithData:(NSArray *)data{
+    for (id iEntity in data) {
+        id instance = [self create];
+        [instance updateWithIEntity:iEntity];
+    }
+    return [moc save];
+}
 
 + (id)createWithIEntity:(id)iEntity{
     id instance = [self create];

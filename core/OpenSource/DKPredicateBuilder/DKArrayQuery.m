@@ -42,11 +42,11 @@
     // Apply the limit/offset
     if (self.limit || self.offset) {
         
-        int count = [results count];
+        NSUInteger count = [results count];
         
         // Calculate the start/end of the range
         int start = self.offset ? [self.offset intValue] : 0;
-        int length = self.limit ? [self.limit intValue] : count;
+        NSUInteger length = self.limit ? [self.limit intValue] : count;
         
         // If the length is more than the total results
         if (length > count)

@@ -22,10 +22,14 @@ typedef enum
     
 } DialogButton;
 
+typedef void(^ConfirmContinueBlock)(void);
+typedef void(^ConfirmCancelBlock)(void);
 
 void ShowInfo(NSString* message);
 
 void ShowError(NSString* message);
+
+void ShowConfirm(NSString* message,ConfirmContinueBlock continueBlock,ConfirmCancelBlock cancelBlock);
 
 NSString* FormatNullString(NSString* formatString);
 

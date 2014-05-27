@@ -107,6 +107,8 @@
 		AC4AB5F3167D8394006D88B7 /* LeblueResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AC4AB5F1167D8393006D88B7 /* LeblueResponse.h */; };
 		AC4AB5F4167D8394006D88B7 /* LeblueResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4AB5F2167D8393006D88B7 /* LeblueResponse.m */; };
 		AC69033E186C6C8D00B2EE86 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC69033D186C6C8D00B2EE86 /* MessageUI.framework */; };
+		AC8E33E51906BA310036DFE5 /* HttpAppSynchronous.h in Headers */ = {isa = PBXBuildFile; fileRef = AC8E33E31906BA310036DFE5 /* HttpAppSynchronous.h */; };
+		AC8E33E61906BA310036DFE5 /* HttpAppSynchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8E33E41906BA310036DFE5 /* HttpAppSynchronous.m */; };
 		AC8EB8DE16A6DD9C001F3A06 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8EB8DD16A6DD98001F3A06 /* AVFoundation.framework */; };
 		AC8EB8EC16A6E0A1001F3A06 /* NSString+Formatter.h in Headers */ = {isa = PBXBuildFile; fileRef = AC8EB8EA16A6E0A0001F3A06 /* NSString+Formatter.h */; };
 		AC8EB8ED16A6E0A1001F3A06 /* NSString+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8EB8EB16A6E0A0001F3A06 /* NSString+Formatter.m */; };
@@ -411,6 +413,8 @@
 		AC4AB5F1167D8393006D88B7 /* LeblueResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeblueResponse.h; path = Utilities/Http/LeblueResponse.h; sourceTree = "<group>"; };
 		AC4AB5F2167D8393006D88B7 /* LeblueResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeblueResponse.m; path = Utilities/Http/LeblueResponse.m; sourceTree = "<group>"; };
 		AC69033D186C6C8D00B2EE86 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		AC8E33E31906BA310036DFE5 /* HttpAppSynchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpAppSynchronous.h; path = Utilities/Http/HttpAppSynchronous.h; sourceTree = "<group>"; };
+		AC8E33E41906BA310036DFE5 /* HttpAppSynchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpAppSynchronous.m; path = Utilities/Http/HttpAppSynchronous.m; sourceTree = "<group>"; };
 		AC8EB8AA169D0A98001F3A06 /* CatalogOfNSManagedObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CatalogOfNSManagedObject.h; path = Catalog/NSManagedObject/CatalogOfNSManagedObject.h; sourceTree = "<group>"; };
 		AC8EB8DD16A6DD98001F3A06 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		AC8EB8EA16A6E0A0001F3A06 /* NSString+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Formatter.h"; path = "Catalog/NSString/NSString+Formatter.h"; sourceTree = "<group>"; };
@@ -844,6 +848,8 @@
 				ACC3433317939DB700D5F5A1 /* HttpAppResponse.m */,
 				ACC3433617939F6C00D5F5A1 /* HttpAppAsynchronous.h */,
 				ACC3433717939F6D00D5F5A1 /* HttpAppAsynchronous.m */,
+				AC8E33E31906BA310036DFE5 /* HttpAppSynchronous.h */,
+				AC8E33E41906BA310036DFE5 /* HttpAppSynchronous.m */,
 			);
 			name = Http;
 			sourceTree = "<group>";
@@ -1389,6 +1395,7 @@
 				ACFBAD0F15A47F9900B93F7B /* MBProgressHUD.h in Headers */,
 				ACFBAD3F15A7338A00B93F7B /* UIImage+Scale.h in Headers */,
 				ACFBADBA15AC71D900B93F7B /* CCGGeometry.h in Headers */,
+				AC8E33E51906BA310036DFE5 /* HttpAppSynchronous.h in Headers */,
 				ACFBADBB15AC71D900B93F7B /* Tile.h in Headers */,
 				ACFBADBD15AC71DA00B93F7B /* TileBlock.h in Headers */,
 				ACFBADBF15AC71DA00B93F7B /* TileWall.h in Headers */,
@@ -1644,6 +1651,7 @@
 				ACAD45BC1859FD22005ED3E9 /* JWFolders.m in Sources */,
 				AC8EB93B16AA74EF001F3A06 /* ABPerson.m in Sources */,
 				AC8EB93E16AA74EF001F3A06 /* ABRecord.m in Sources */,
+				AC8E33E61906BA310036DFE5 /* HttpAppSynchronous.m in Sources */,
 				AC8EB94116AA74EF001F3A06 /* ABSource.m in Sources */,
 				AC96F00516FACECB004BD83F /* SVSegmentedControl.m in Sources */,
 				AC96F00716FACECB004BD83F /* SVSegmentedThumb.m in Sources */,

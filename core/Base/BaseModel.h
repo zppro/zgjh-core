@@ -13,7 +13,9 @@
 + (NSString*) localEntityKey;
 + (NSString*) dataSourceKey;
 
++ (BOOL)createWithData:(NSArray *)data;
 + (id)createWithIEntity:(id)iEntity;
+
 + (BOOL)updateWithData:(NSArray *)data EntityKey:(NSString *)entityKey IEntityKey:(NSString *)iEntityKey fethchFormat:(NSString *)fetchFormat;
 + (BOOL)updateWithData:(NSArray *)data EntityKey:(NSString *)entityKey IEntityKey:(NSString *)iEntityKey;
 - (void)updateWithIEntity:(id)iEntity;
