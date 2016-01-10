@@ -21,7 +21,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS_HEADER(RomDevice);
 
 @property (nonatomic,readonly) NSString *deviceName;
 @property (nonatomic,readonly) NSString *model;
-@property (nonatomic,readonly) NSString *sn;
+//@property (nonatomic,readonly) NSString *sn;
 @property (nonatomic,readonly) NSString *udid;
 @property (nonatomic,readonly) NSString *osversion;
 @property (nonatomic,readonly) DeviceType deviceType;

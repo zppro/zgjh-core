@@ -16,7 +16,7 @@ SYNTHESIZE_LESSER_SINGLETON_FOR_CLASS(RomDevice);
 
 @synthesize deviceName;
 @synthesize model;
-@synthesize sn;
+//@synthesize sn;
 @synthesize udid;
 @synthesize osversion;
 @synthesize mac;
@@ -31,7 +31,7 @@ SYNTHESIZE_LESSER_SINGLETON_FOR_CLASS(RomDevice);
     
     [deviceName release];
     [model release];
-    [sn release];
+    //[sn release];
     [udid release];
     [osversion release]; 
     [mac release]; 
@@ -53,8 +53,8 @@ SYNTHESIZE_LESSER_SINGLETON_FOR_CLASS(RomDevice);
         [deviceName retain];
         model = device.model;
         [model retain];
-        sn = device.serialNumber;
-        [sn retain];
+        //sn = device.serialNumber;
+        //[sn retain];
         udid = device.uniqueDeviceIdentifier;
         [udid retain];
         osversion = device.systemVersion;
